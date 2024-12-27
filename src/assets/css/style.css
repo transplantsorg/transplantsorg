@@ -18852,7 +18852,9 @@ input::-webkit-inner-spin-button {
 }
 @media (min-width: 1200px) {
   .navbar .dropdown-menu {
-    transform: translateY(20px);
+    /*-webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);*/
     transition: all 0.3s ease-in-out;
     opacity: 0;
     visibility: hidden;
@@ -18891,8 +18893,69 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.navbar .container .navbar-brand {
+  order: 1;
+}
+.navbar .container .nav {
+  order: 2;
+}
+.navbar .container .navbar-collapse {
+  order: 3;
+}
+
+@media (min-width: 992px) {
+  .navbar .container .navbar-brand {
+    order: 1;
+  }
+  .navbar .container .navbar-collapse {
+    order: 2;
+  }
+  .navbar .container .nav {
+    order: 3;
+  }
+}
 .navbar {
   transition: all 0.25s ease !important;
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: none;
+}
+
+.navbar-nav .nav-link.show {
+  background: rgba(33, 99, 232, 0.1);
+  border-radius: 6px;
+}
+
+.navbar {
+  /*  position: relative;*/
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+}
+
+.navbar .dropdown-fullwidth:hover .dropdown-menu {
+  display: none;
+}
+.navbar .dropdown-fullwidth .dropdown-menu {
+  border-top: 1px solid #dee2e6;
+  clip-path: inset(0 -5px -5px -5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  display: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ededf3;
+  box-shadow: 0 2px 5px rgba(102, 83, 255, 0.05);
+  z-index: 1000000;
+}
+.navbar .dropdown-fullwidth .dropdown-menu.show {
+  top: 100%;
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .headroom--unpinned .navbar {
@@ -24480,17 +24543,16 @@ body {
   pointer-events: none;
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
   background: transparent;
-  background: #f1f5f9;
+  background: $gray-100;
   width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e2e8f0;
+  background: $gray-200;
   border-radius: 0.5rem;
-}
-
+}*/
 .password-field:after {
   content: "";
   background-color: var(--to-gray-200);
