@@ -18914,55 +18914,51 @@ input::-webkit-inner-spin-button {
     order: 3;
   }
 }
-.navbar {
-  transition: all 0.25s ease !important;
-  border-bottom: 1px solid #dee2e6;
-  box-shadow: none;
+@media (min-width: 992px) {
+  .navbar {
+    transition: all 0.25s ease !important;
+    border-bottom: 1px solid #dee2e6;
+    box-shadow: none;
+  }
+  .navbar-nav .nav-link.show {
+    background: rgba(33, 99, 232, 0.1);
+    border-radius: 6px;
+  }
+  .navbar {
+    /*  position: relative;*/
+  }
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+  }
+  .navbar .dropdown-fullwidth:hover .dropdown-menu {
+    display: none;
+  }
+  .navbar .dropdown-fullwidth .dropdown-menu {
+    border-top: 1px solid #dee2e6;
+    clip-path: inset(0 -5px -5px -5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    display: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ededf3;
+    box-shadow: 0 2px 5px rgba(102, 83, 255, 0.05);
+    z-index: 1000000;
+  }
+  .navbar .dropdown-fullwidth .dropdown-menu.show {
+    top: 100%;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  .headroom--unpinned .navbar {
+    transform: translateY(-100%) !important;
+    opacity: 0 !important;
+  }
 }
-
-.navbar-nav .nav-link.show {
-  background: rgba(33, 99, 232, 0.1);
-  border-radius: 6px;
-}
-
-.navbar {
-  /*  position: relative;*/
-}
-
-.dropdown-menu[data-bs-popper] {
-  top: 100%;
-}
-
-.navbar .dropdown-fullwidth:hover .dropdown-menu {
-  display: none;
-}
-.navbar .dropdown-fullwidth .dropdown-menu {
-  border-top: 1px solid #dee2e6;
-  clip-path: inset(0 -5px -5px -5px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 100%;
-  display: none;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid #ededf3;
-  box-shadow: 0 2px 5px rgba(102, 83, 255, 0.05);
-  z-index: 1000000;
-}
-.navbar .dropdown-fullwidth .dropdown-menu.show {
-  top: 100%;
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-.headroom--unpinned .navbar {
-  transform: translateY(-100%) !important;
-  opacity: 0 !important;
-}
-
 .offcanvas .navbar-nav .nav-link {
   padding: 0.5rem 0.5rem;
   line-height: inherit;
