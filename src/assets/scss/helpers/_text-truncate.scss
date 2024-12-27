@@ -1,0 +1,10 @@
+// Text Truncate
+
+@mixin text-truncate-line-2() {
+  max-height: 3rem;
+  overflow: hidden;
+}
+
+.text-truncate-line-2 {
+  @include text-truncate-line-2();
+}

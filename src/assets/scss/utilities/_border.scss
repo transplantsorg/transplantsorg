@@ -1,0 +1,74 @@
+// Border
+
+.border-dashed {
+  border: 2px dashed var(--#{$prefix}gray-300) !important;
+}
+
+.small-divider {
+  height: 0.125rem;
+  width: 2.25rem;
+}
+
+.process-line {
+  z-index: 1;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    left: 0;
+    width: 200px;
+    margin: 0 80px;
+    border-bottom: 2px solid var(--#{$prefix}primary);
+    @media (max-width: 420px) {
+      display: none;
+    }
+    @media (max-width: 990px) {
+      width: 120px;
+    }
+  }
+}
+
+.step-line {
+  position: relative;
+
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    background-color: var(--#{$prefix}gray-200);
+    min-width: 13rem;
+    height: 2px;
+    
+    @media (max-width: 1200px) {
+      min-width: 10rem;
+    }
+
+    @media (max-width: 768px) {
+      min-width: 6.9rem;
+    }
+  }
+}
+
+.active .step-line::after {
+  background-color: var(--#{$prefix}primary);
+}
+
+.list-timeline-activity {
+  z-index: 1;
+  position: relative;
+  
+  .list-group-item:not(:last-child) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: 1.25rem;
+      height: 100%;
+      border-left: 1px solid var(--#{$prefix}border-color);
+    }
+  }
+}

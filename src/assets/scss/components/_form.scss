@@ -1,0 +1,54 @@
+// Form
+
+.no-resize {
+  resize: none;
+}
+
+.form-control-simple {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.form-focus-none {
+  &.form-control {
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-check {
+  margin-bottom: 0;
+}
+
+.form-switch-price {
+  .form-check-input {
+    width: 2.5em;
+    height: 1.5em;
+  }
+
+  .form-check-input:checked {
+    background-color: var(--#{$prefix}dark-primary);
+    border-color: var(--#{$prefix}dark-primary);
+  }
+}
+
+.form-switch {
+  display: flex;
+  align-items: center;
+
+  .form-check-input {
+    height: 1.6em;
+    width: 3em;
+    margin-right: .5rem;
+    border-color: var(--#{$prefix}gray-200);
+  }
+}

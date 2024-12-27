@@ -1,0 +1,23 @@
+// Badge
+
+@mixin bg-soft-variant($color, $soft-background: rgba($color, 0.1)) {
+  background-color: $soft-background;
+  color: $color;
+}
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}-soft {
+    @include bg-soft-variant($value);
+  }
+}
+
+.badge-dot {
+  display: inline-block !important;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-size: 0;
+  line-height: 1;
+}

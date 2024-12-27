@@ -1,0 +1,305 @@
+// Navbar
+
+.navbar {
+  background-color: var(--#{$prefix}navbar-bg);
+  padding: 0;
+  box-shadow: $box-shadow-sm;
+
+  .navbar-brand {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    img {
+      width: 185px;
+      height: auto;
+    }
+  }
+
+  .navbar-toggler {
+    padding: 0.75rem 0.563rem;
+    border: 1px solid var(--#{$prefix}primary);
+    
+    &:focus {
+      box-shadow: none;
+      outline: 0rem;
+    }
+
+    .icon-bar {
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      background-color: var(--#{$prefix}primary);
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin-top: 0.25rem;
+    }
+
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 16% 190%;
+      background-color: var(--#{$prefix}primary);
+    }
+
+    .middle-bar {
+      opacity: 0;
+    }
+
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 10% -80%;
+      background-color: var(--#{$prefix}primary);
+    }
+  }
+
+  .navbar-collapse {
+    .navbar-toggler {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.5rem;
+      z-index: 1;
+    }
+  }
+
+  .navbar-toggler.collapsed {
+    .top-bar {
+      transform: rotate(0);
+      background-color: var(--#{$prefix}primary);
+    }
+
+    .middle-bar {
+      opacity: 1;
+    }
+
+    .bottom-bar {
+      transform: rotate(0);
+      background-color: var(--#{$prefix}primary);
+    }
+  }
+
+  .dropdown {
+    .dropdown-toggle {
+      &:after {
+        content: "\e92e";
+        background-size: 0.625rem 0.625rem;
+        background-repeat: no-repeat;
+        float: right;
+        margin-left: 0.375rem;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        color: var(--#{$prefix}gray-600);
+        font-size: 16px;
+        font-family: "Feather" !important;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    top: 28px;
+    min-width: 14rem;
+    margin: 1.125rem 0;
+    padding: 1rem 0.75rem;
+    border: 0;
+    color: var(--#{$prefix}gray-800);
+    line-height: 1.2rem;
+    
+    .dropdown-list-group-item {
+      min-width: 100%;
+    }
+
+    .dropdown-submenu {
+      a {
+        &::after {
+          transform: rotate(-90deg);
+          position: absolute;
+          right: 1rem;
+        }
+      }
+    }
+
+    .dropdown-submenu.dropend {
+      .dropdown-menu {
+        top: -18px;
+        right: 0;
+        left: 100%;
+        min-width: 16rem;
+        border-radius: 0.5rem;
+        box-shadow: var(--#{$prefix}dropdown-shadow);
+      }
+    }
+
+    .dropdown-submenu.dropstart {
+      .dropdown-menu {
+        top: -18px;
+        right: 100%;
+        left: auto;
+        min-width: 16rem;
+        border-radius: 0.5rem;
+        box-shadow: var(--#{$prefix}dropdown-shadow);
+      }
+    }
+  }
+
+  .dropdown-fullwidth {
+    position: static;
+    .dropdown-menu {
+      top: 42px;
+      right: 0;
+      left: 0;
+      max-width: 1024px;
+      margin: 1.25rem auto;
+      padding: 1rem 0;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        padding: 0.3125rem 0.5rem;
+        color: var(--#{$prefix}gray-800);
+        font-weight: 500;
+        
+        @media (max-width: 1200px) {
+          padding: 0.3125rem 0.35rem;
+        }
+
+        @media (max-width: 992px) {
+          padding: 0.75rem 0rem !important;
+          border-bottom: 1px solid var(--#{$prefix}gray-200);
+
+          &:hover {
+            color: var(--#{$prefix}dark);
+          }
+        }
+
+        &:hover {
+          color: var(--#{$prefix}primary);
+        }
+
+        &.active {
+          color: var(--#{$prefix}primary);
+        }
+
+        &:focus-visible {
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    .navbar-nav {
+      .dropdown-menu {
+        margin: 0;
+        box-shadow: none;
+
+        .dropdown-submenu {
+          .dropdown-menu {
+            margin: 0;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    .nav-top-wrap {
+      flex-direction: row;
+
+      .dropdown {
+        position: static;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        right: 0;
+        margin: 2.25rem 0.75rem !important;
+        
+        .dropdown-submenu .dropdown-menu {
+          position: relative;
+          top: -7px !important;
+          right: 0;
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    .dropdown-menu {
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      display: block;
+    }
+
+    .dropdown-menu-end {
+      right: 0;
+      left: auto;
+    }
+
+    .dropdown-menu-start {
+      right: auto;
+      left: 0;
+    }
+
+    .dropdown {
+      &:hover {
+        > .dropdown-menu {
+          -webkit-transform: scaleY(1);
+          -ms-transform: scaleY(1);
+          transform: scaleY(1);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .dropdown-submenu {
+      &:hover {
+        > .dropdown-menu {
+          -webkit-transform: scaleY(1);
+          -ms-transform: scaleY(1);
+          transform: scaleY(1);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.navbar-transparent {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  width: 100%;
+  
+  @media (max-width: 768px) {
+    position: relative;
+  }
+}
+
+.navbar {
+  -webkit-transition: all 0.25s ease !important;
+  -moz-transition: all 0.25s ease !important;
+  -ms-transition: all 0.25s ease !important;
+  -o-transition: all 0.25s ease !important;
+  transition: all 0.25s ease !important;
+}
+
+.headroom--unpinned .navbar {
+  transform: translateY(-100%) !important;
+  opacity: 0 !important; 
+}

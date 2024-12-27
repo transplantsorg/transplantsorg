@@ -1,0 +1,23 @@
+// Progress
+
+.progress-tooltip {
+  overflow: visible;
+
+  .progress-bar {
+    position: relative;
+    overflow: visible;
+    border-radius: 0.5rem;
+
+    span {
+      position: absolute;
+      top: -20px;
+      right: -1.4em;
+      padding: 2px 3px 2px 4px;
+      border-radius: 2px;
+      color: var(--#{$prefix}dark);
+      font-size: 13px;
+      font-weight: $font-weight-medium;
+      line-height: 10px;
+    }
+  }
+}

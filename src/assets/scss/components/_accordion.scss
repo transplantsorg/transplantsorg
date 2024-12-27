@@ -1,0 +1,47 @@
+// Accordion
+
+.btn-collapse {
+  svg {
+    transition: transform 0.3s;
+    margin-left: 5px;
+  }
+
+  &.show-more svg {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion-flush {
+  a[aria-expanded="true"] {
+    color: var(--#{$prefix}primary);
+  }
+}
+
+.chevron-arrow {
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+}
+
+[aria-expanded="true"] .chevron-arrow {
+  transform: rotate(-180deg);
+}
+
+.collapse-toggle {
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+}
+
+[aria-expanded="true"] .collapse-toggle {
+  transform: rotate(180deg);
+}
+
+.accordion-single .accordion-header-single {
+  background-color: var(--#{$prefix}body-bg);
+  padding: 16px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid var(--#{$prefix}gray-300);
+}
+
+.accordion-body-single {
+  padding: 24px;
+}

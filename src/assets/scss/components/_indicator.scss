@@ -1,0 +1,22 @@
+// Indicator
+
+.indicator {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0rem;
+    right: 0.18rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid var(--#{$prefix}white);
+    border-radius: 50%;
+  }
+}
+
+.indicator-primary.indicator {
+  &::before {
+    background-color: var(--#{$prefix}primary);
+  }
+}

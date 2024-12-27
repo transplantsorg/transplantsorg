@@ -1,0 +1,57 @@
+// Text
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  letter-spacing: 0.01rem;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  letter-spacing: 0.01rem;
+}
+
+.lead {
+  letter-spacing: 0.01rem;
+}
+
+.blockquote-left {
+  border-left: 4px solid var(--#{$prefix}gray-200);
+}
+
+a {
+  &:hover .text-primary-hover {
+    color: var(--#{$prefix}primary) !important;
+  }
+
+  &.text-body {
+    &:hover {
+      color: var(--#{$prefix}primary) !important;
+    }
+  }
+}
+
+.text-inverse {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.text-inverse-dark {
+  -webkit-filter: brightness(2) invert(1);
+  filter: brightness(2) invert(1);
+}
+
+.text-inherit {
+  color: var(--#{$prefix}gray-800);
+  &:hover {
+    color: var(--#{$prefix}primary) !important;
+  }
+  &.active {
+    color: var(--#{$prefix}primary) !important;
+  }
+}

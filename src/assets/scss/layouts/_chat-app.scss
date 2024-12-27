@@ -1,0 +1,68 @@
+// Chat App
+
+.chat-item {
+  transition: background-color 0.3s;
+  position: relative;
+  
+  .chat-actions {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.75rem;
+    background-color: var(--#{$prefix}light);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 3rem;
+  }
+
+  &:hover {
+    background-color: var(--#{$prefix}light);
+    .chat-actions {
+      pointer-events: initial;
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+  }
+}
+
+.chat-layout {
+  height: 100vh;
+  overflow-y: hidden;
+
+  @media (max-width: 1199.98px) {
+    .chat-body {
+      transform: translateX(100%);
+      transition: transform 0.3s ease, visibility 0.3s ease;
+      visibility: hidden;
+      z-index: 1020;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: var(--#{$prefix}gray-100);
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .chat-layout .chat-body.chat-body-visible {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.chat-footer {
+  @media (min-width: 1200px) {
+    bottom: 60px;
+  }
+  
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}

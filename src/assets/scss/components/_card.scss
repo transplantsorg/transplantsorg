@@ -1,0 +1,123 @@
+// Card
+
+.card {
+  box-shadow: $box-shadow-sm;
+}
+
+.img-left-rounded {
+  border-radius: 0.5rem 0 0 0.5rem;
+
+  @media (max-width: 991.98px) {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+.card-header-height {
+  height: 3.75rem;
+}
+
+.card-hover {
+  transition: box-shadow 0.25s ease;
+
+  &:hover,
+  &:focus,
+  &.active {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  }
+}
+
+.accordion {
+  > .card {
+    > .card-header {
+      margin-bottom: 0rem;
+    }
+  }
+}
+
+.card-img-size-600 {
+  width: 100%;
+
+  @media (min-width: 990px) {
+    width: 600px;
+  }
+}
+
+.card-bordered {
+  border: 1px solid var(--#{$prefix}gray-200);
+  box-shadow: none;
+}
+
+.card-dashed-hover {
+  transition: 0.5s ease;
+  border-style: dashed !important;
+
+  &:hover {
+    border: 2px dashed var(--#{$prefix}primary) !important;
+  }
+}
+
+.card-hover-with-icon {
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+  
+  &:hover,
+  &:focus,
+  &.active {
+    transition: ease 1s;
+    border-top-color: var(--#{$prefix}primary) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    
+    .card-icon {
+      background-color: var(--#{$prefix}light-primary) !important;
+      color: var(--#{$prefix}primary) !important;
+    }
+  }
+}
+
+.card-lift {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, border-radius $border-radius-lg, box-shadow 0.2s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &.active {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  }
+}
+
+.card-border-primary {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid transparent;
+  
+  &:hover {
+    transform: translateY(-0.25rem);
+    border-color: $primary;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  }
+}
+
+.card-light-primary {
+  &:hover {
+    background-color: var(--#{$prefix}primary-bg-subtle);
+  }
+}
+
+.card-hover-svg {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: block;
+  box-shadow: 0.2s ease-in-out;
+  
+  & svg {
+    fill: var(--#{$prefix}gray-500);
+  }
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+
+    & svg {
+      fill: var(--#{$prefix}primary);
+    }
+  }
+}

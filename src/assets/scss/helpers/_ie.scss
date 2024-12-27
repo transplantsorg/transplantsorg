@@ -1,0 +1,23 @@
+// IE
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .dropdown {
+    .dropdown-toggle {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  
+  .search-icon {
+    margin-top: -10px;
+  }
+
+  .avatar-indicators::before {
+    right: 16%;
+  }
+
+  .navbar-vertical .navbar-nav .nav-item .nav-link[data-bs-toggle="collapse"]:after {
+    top: 0.5rem;
+  }
+}

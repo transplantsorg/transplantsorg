@@ -1,0 +1,126 @@
+// Mail
+
+.navbar-mail {
+  .navbar-nav {
+    .nav-item {
+      margin-bottom: 0.25rem;
+
+      .nav-link {
+        padding: 0.5rem 0.75rem;
+        color: var(--#{$prefix}gray-500);
+        font-weight: $font-weight-medium;
+
+        &:hover,
+        &.active {
+          background-color: var(--#{$prefix}gray-100);
+          border-radius: $border-radius;
+          color: var(--#{$prefix}gray-800);
+        }
+      }
+    }
+  }
+}
+
+.list-group-mail {
+  .list-mail {
+    color: var(--#{$prefix}gray-700);
+    
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: var(--#{$prefix}gray-100);
+      border-color: var(--#{$prefix}gray-100);
+      box-shadow: $box-shadow-smooth-sm;
+      color: var(--#{$prefix}gray-700);
+
+      .actions-mail {
+        opacity: 1;
+      }
+    }
+
+    .list-title {
+      -webkit-flex-basis: 168px;
+      flex-basis: 168px;
+      max-width: 168px;
+      overflow: hidden;
+      padding-right: 1rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      
+      @media (max-width: 768px) {
+        -webkit-flex-basis: 88px;
+        flex-basis: 88px;
+        max-width: 88px;
+      }
+
+      a {
+        color: var(--#{$prefix}gray-700);
+      }
+    }
+
+    .list-text {
+      flex: 1 1 auto;
+      overflow: hidden;
+      white-space: nowrap;
+      color: var(--#{$prefix}gray-700);
+      text-overflow: ellipsis;
+    }
+
+    .list-time {
+      position: absolute;
+      right: 0;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.actions-mail {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--#{$prefix}white);
+  margin-top: 0.47rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: $box-shadow-sm;
+  line-height: 1;
+  
+  span {
+    margin-right: 0.25rem;
+    color: var(--#{$prefix}gray-500);
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+      color: var(--#{$prefix}primary);
+    }
+  }
+}
+
+.compose-mail {
+  .ql-toolbar.ql-snow {
+    border: none;
+    border-bottom: 1px solid var(--#{$prefix}gray-200);
+    border-radius: 0px;
+  }
+
+  .ql-container.ql-snow {
+    border: none;
+  }
+  .ql-editor {
+    height: 250px;
+  }
+
+  .compose-img-upload {
+    cursor: pointer;
+    & > input {
+      display: none;
+    }
+
+    label {
+      cursor: pointer;
+    }
+  }
+}
