@@ -228,7 +228,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .navbar {
     .dropdown-menu {
       -webkit-transform: translateY(20px);
@@ -277,7 +277,7 @@
     }
   }
 }
-
+*/
 .navbar-transparent {
   z-index: 1;
   position: absolute;
@@ -291,7 +291,7 @@
   }
 }
 
-.navbar {
+.headroom .navbar {
   -webkit-transition: all 0.25s ease !important;
   -moz-transition: all 0.25s ease !important;
   -ms-transition: all 0.25s ease !important;
@@ -299,7 +299,8 @@
   transition: all 0.25s ease !important;
 }
 
-.headroom--unpinned .navbar {
-  transform: translateY(-100%) !important;
-  opacity: 0 !important; 
+@include media-breakpoint-up(lg) {
+  .headroom--unpinned .navbar {
+    transform: translateY(-100%) !important;
+  }
 }

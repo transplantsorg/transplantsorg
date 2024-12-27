@@ -80,7 +80,7 @@ body {
   pointer-events: none;
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
   background: transparent;
   background: $gray-100;
   width: 6px;
@@ -89,7 +89,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: $gray-200;
   border-radius: 0.5rem;
-}
+}*/
 
 
 .password-field {
