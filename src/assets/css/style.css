@@ -17384,12 +17384,20 @@ $utilities: (
     transform: translateX(-50%);
   }
 }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, ul, li, blockquote, i, b, span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+}
+
 h1,
 .h1,
 h2,
 h3,
 .h2,
 .h3 {
+  font-family: "ArizonaText";
   letter-spacing: 0.01rem;
 }
 
@@ -18758,6 +18766,12 @@ input::-webkit-inner-spin-button {
 .navbar .nav {
   order: 2;
 }
+.navbar.navbar-transparent {
+  z-index: 1;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+}
 
 .navbar .dropdown-menu {
   top: 28px;
@@ -18861,8 +18875,14 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (min-width: 992px) {
+  .headroom--unpinned .navbar {
+    transform: translateY(-100%) !important;
+    opacity: 0 !important;
+  }
   .navbar {
+    transition: all 0.25s ease !important;
     box-shadow: none;
+    border-bottom: 1px solid #dee2e6;
   }
   .navbar .navbar-brand {
     padding-top: 2rem;
@@ -18874,74 +18894,47 @@ input::-webkit-inner-spin-button {
   .navbar .navbar-collapse {
     order: 2;
   }
+  .navbar .navbar-collapse .navbar-nav .nav-link.show {
+    background: rgba(33, 99, 232, 0.1);
+    border-radius: 6px;
+  }
   .navbar .nav {
     order: 3;
   }
-}
-@media (min-width: 1200px) {
-  .navbar .dropdown-menu {
-    /*-webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    transform: translateY(20px);*/
+  .navbar .dropdown .dropdown-menu {
     transition: all 0.3s ease-in-out;
     opacity: 0;
     visibility: hidden;
     display: block;
   }
-  .navbar .dropdown-menu-end {
+  .navbar .dropdown .dropdown-menu-end {
     right: 0;
     left: auto;
   }
-  .navbar .dropdown-menu-start {
+  .navbar .dropdown .dropdown-menu-start {
     right: auto;
     left: 0;
   }
-  .navbar .dropdown:hover > .dropdown-menu {
-    transform: scaleY(1);
-    opacity: 1;
-    visibility: visible;
-  }
-  .navbar .dropdown-submenu:hover > .dropdown-menu {
-    transform: scaleY(1);
-    opacity: 1;
-    visibility: visible;
-  }
-}
-.navbar-transparent {
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: transparent;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .navbar-transparent {
-    position: relative;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    transition: all 0.25s ease !important;
-    border-bottom: 1px solid #dee2e6;
-    box-shadow: none;
-  }
-  .navbar-nav .nav-link.show {
-    background: rgba(33, 99, 232, 0.1);
-    border-radius: 6px;
-  }
-  .dropdown-menu[data-bs-popper] {
-    top: 100%;
-  }
-  .navbar .dropdown-fullwidth:hover .dropdown-menu {
+  .navbar .dropdown:hover .dropdown-menu {
     display: none;
   }
-  .navbar .dropdown-fullwidth .dropdown-menu {
+  .navbar .dropdown .dropdown-menu.show {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  .navbar .dropdown .dropdown-menu.show .dropdown-submenu:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  .navbar .dropdown.dropdown-fullwidth .dropdown-menu {
     border-top: 1px solid #dee2e6;
     clip-path: inset(0 -5px -5px -5px);
+    z-index: 1000000;
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
     width: 100%;
     max-width: 100%;
@@ -18950,17 +18943,17 @@ input::-webkit-inner-spin-button {
     padding: 0;
     border-radius: 0;
     border-bottom: 1px solid #dee2e6;
-    z-index: 1000000;
   }
-  .navbar .dropdown-fullwidth .dropdown-menu.show {
-    top: 100%;
-    display: block;
+  .navbar .dropdown.dropdown-fullwidth .dropdown-menu.show {
+    transform: scaleY(1);
     opacity: 1;
     visibility: visible;
+    display: block;
   }
-  .headroom--unpinned .navbar {
-    transform: translateY(-100%) !important;
-    opacity: 0 !important;
+  .navbar.navbar-transparent {
+    position: absolute;
+    right: 0;
+    left: 0;
   }
 }
 .offcanvas .navbar-nav .nav-link {
@@ -24521,13 +24514,18 @@ a.fc-event:hover {
   font-style: normal;
   font-family: "Founders Grotesk";
 }
-html * {
-  /*-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-feature-settings:'kern';*/
+@font-face {
+  src: url("../fonts/arizonatext-light/arizonatext-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-family: "ArizonaText";
 }
-
+@font-face {
+  src: url("../fonts/arizonatext-light/arizonatext-light-italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-family: "ArizonaText";
+}
 body {
   color: #000;
   font-weight: 400;

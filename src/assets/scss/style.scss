@@ -48,11 +48,22 @@
   font-family:'Founders Grotesk';
 }
 
+@font-face {
+  src: url('../fonts/arizonatext-light/arizonatext-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'ArizonaText';
+}
+
+@font-face {
+  src: url('../fonts/arizonatext-light/arizonatext-light-italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'ArizonaText';
+}
+
 html * {
-  /*-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-feature-settings:'kern';*/
+  
 }
 
 body {

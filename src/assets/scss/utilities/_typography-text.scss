@@ -1,11 +1,19 @@
 // Text
 
+h1, h2, h3, h4, h5, p, ul, li, blockquote, i, b, span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings:'kern';
+}
+
 h1,
 h2,
 h3,
 .h1,
 .h2,
 .h3 {
+  font-family: "ArizonaText";
   letter-spacing: 0.01rem;
 }
 
