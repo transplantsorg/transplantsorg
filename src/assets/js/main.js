@@ -2,20 +2,6 @@
 // Main js
 //
 
-
-import Headroom from "headroom.js";
-
-const element = document.querySelector("body");
-const options = {
-    tolerance: {
-        up: 5,
-        down: 10
-    },
-}
-
-const headroom = new Headroom(element, options);
-headroom.init();
-
 (function () {
   // Multi level menu dropdown
   const dropdownLinks = document.querySelectorAll(".dropdown-menu a.dropdown-toggle");

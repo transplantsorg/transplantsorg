@@ -32,6 +32,7 @@
     </div>
   </div>
 </div>
+
 <div class="sticky-top">
   <nav class="navbar navbar-light navbar-expand-lg">
     <div class="container">
@@ -51,40 +52,23 @@
           </div>
         </div>
         <div class="nav-item">
-          <a href="#" class="btn btn-sm btn-pill btn-primary mb-0 mx-2">Give Today</a>
+          <a href="#" class="btn btn-sm rounded-pill btn-primary mb-0 mx-2">Give Today</a>
         </div>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler collapsed ms-2 ms-lg-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-default"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="icon-bar top-bar rounded-pill mt-0"></span>
+          <span class="icon-bar middle-bar rounded-pill"></span>
+          <span class="icon-bar bottom-bar rounded-pill"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav navbar-nav-scroll me-auto"> 
-          <li class="nav-item dropdown dropdown-fullwidth d-none">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Test
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <div class="container container-test" id="myType">
-                <p>
-                  <a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Heart</a>
-                  <a data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Lung</a>
-                  <a data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Marrow</a>
-                </p>
-                <div class="collapse multi-collapse" id="multiCollapseExample1" data-bs-parent="#myType">
-                  <!-- <a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">Close Heart</a> -->
-                  Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-                <div class="collapse multi-collapse" id="multiCollapseExample2" data-bs-parent="#myType">
-                  <!-- <a data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="true" aria-controls="multiCollapseExample2">Close Lung</a> -->
-                  Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-                <div class="collapse multi-collapse" id="multiCollapseExample3" data-bs-parent="#myType">
-                  <!-- <a data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="true" aria-controls="multiCollapseExample3">Close Marrow</a> -->
-                  Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
-            </div>
-          </li>
+      <div class="collapse navbar-collapse" id="navbar-default">
+        <ul class="navbar-nav navbar-nav-scroll me-auto">
           <li class="nav-item dropdown dropdown-fullwidth">
             <a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Patient Care &amp; Support">Patient Care &amp; Support</a>
             <div class="dropdown-menu megamenu" aria-labelledby="megaMenu">
@@ -123,14 +107,14 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+            <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
             <ul class="dropdown-menu" aria-labelledby="pagesMenu">
-              <li> <a class="dropdown-item" href="about-us.html">Page</a></li>
+              <li> <a class="dropdown-item" href="about-us.html">About Us</a></li>
               <!-- Dropdown submenu -->
               <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="#">Page</a>
+                <a class="dropdown-item dropdown-toggle" href="#">About Us</a>
                 <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                  <li> <a class="dropdown-item" href="shop-grid.html">Inner Page</a> </li>
+                  <li> <a class="dropdown-item" href="shop-grid.html">Founding Story</a> </li>
                 </ul>
               </li>
             </ul>
@@ -140,5 +124,3 @@
     </div>
   </nav>
 </div>
-
-
