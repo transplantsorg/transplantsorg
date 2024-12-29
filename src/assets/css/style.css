@@ -18875,7 +18875,7 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (min-width: 992px) {
-  .headroom--unpinned .navbar {
+  .headroom--unpinned .navbar-default {
     transform: translateY(-100%) !important;
     opacity: 0 !important;
   }
