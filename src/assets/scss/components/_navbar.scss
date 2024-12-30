@@ -19,7 +19,7 @@
 
   .navbar-toggler {
     padding: 0.75rem 0.563rem;
-    border: transparent;
+    border: 1px solid $primary;
     
     &:focus {
       box-shadow: none;
@@ -31,7 +31,7 @@
       transition: all 0.2s;
       background-color: $black;
       display: block;
-      width: 20px;
+      width: 22px;
       height: 2px;
       margin-top: 0.25rem;
     }
@@ -171,13 +171,6 @@
       margin-right: -0.5rem;
       padding: 0.75rem 0.65rem;
       border: transparent;
-
-      .icon-bar {
-        display: block;
-        width: 20px;
-        height: 2px;
-        margin-top: 0.25rem;
-      }
     }
 
     .nav {
@@ -191,7 +184,6 @@
 }
 
 @include media-breakpoint-up(lg) {
-
   .headroom--unpinned .navbar-main {
     transform: translateY(-100%) !important;
     opacity: 0 !important; 

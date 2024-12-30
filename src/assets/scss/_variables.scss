@@ -6,6 +6,7 @@ $min-contrast-ratio: 2 !default;
 $enable-negative-margins: true !default;
 
 
+
 // General Colors
 $white: #FFF !default;
 $gray-100: #f1f5f9 !default;
@@ -37,8 +38,9 @@ $grays: map-merge(
   ),
   $grays
 );
-$primary: #2670F1 !default;
+$primary: #0B2C41 !default;
 $secondary: #64748b !default;
+$tertiary: #2670F1 !default;
 $success: #38a169 !default;
 $info: #0ea5e9 !default;
 $warning: #f59e0b !default;
@@ -63,6 +65,7 @@ $dark-danger: #ae302e !default;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
+  "tertiary": $tertiary,
   "success": $success,
   "info": $info,
   "warning": $warning,
