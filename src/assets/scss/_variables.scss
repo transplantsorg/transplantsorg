@@ -471,7 +471,8 @@ $modal-inner-padding: 1.5rem !default;
 
 // Navbar
 $navbar-border-color: #dee2e6;
-$navbar-box-shadow: 0;
+$navbar-box-shadow: none;
+$navbar-dropdown-fullwidth-box-shadow: 0 2px 5px rgba(102, 83, 255, .05);
 $navbar-light-color: var(--#{$prefix}gray-500);
 $navbar-light-hover-color: var(--#{$prefix}gray-600);
 $navbar-light-active-color: var(--#{$prefix}primary);
