@@ -1,0 +1,125 @@
+// Dark Mode
+
+[data-bs-theme="dark"] {
+
+  // Color System
+  $white: #000000;
+  $gray-100: #f1f5f9;
+  $gray-200: #e2e8f0;
+  $gray-300: #cbd5e1;
+  $gray-400: #94a3b8;
+  $gray-500: #64748b;
+  $gray-600: #475569;
+  $gray-700: #334155;
+  $gray-800: #1e293b;
+  $gray-900: #0f172a;
+  $gray-1000: #0b1324;
+  $black: #111111;
+  $grays: ();
+  $grays: map-merge(
+    (
+      "white": $white,
+      "100": $gray-100,
+      "200": $gray-200,
+      "300": $gray-300,
+      "400": $gray-400,
+      "500": $gray-500,
+      "600": $gray-600,
+      "700": $gray-700,
+      "800": $gray-800,
+      "900": $gray-900,
+      "1000": $gray-1000,
+      "black": $black
+    ),
+    $grays
+  );
+  $primary: #BBAAAA;
+  $secondary: #64748b;
+  $tertiary: #AAA;
+  $success: #38a169;
+  $info: #0ea5e9;
+  $warning: #f59e0b;
+  $danger: #dc2626;
+  $light: $gray-100;
+  $dark: $gray-900;
+  $white: $white;
+  $black: $black;
+  $light-primary: #ede9fe;
+  $light-secondary: #e4e3e9;
+  $light-tertiary: #e4e3e9;
+  $light-success: #d1f5ea;
+  $light-info: #e1f6ff;
+  $light-warning: #ffeeda;
+  $light-danger: #fad9d8;
+  $light-dark: #d1cfd8;
+  $dark-primary: #593cc1;
+  $dark-secondary: #5c596d;
+  $dark-tertiary: #5c596d;
+  $dark-success: #139a74;
+  $dark-info: #51a0c2;
+  $dark-warning: #c28135;
+  $dark-danger: #ae302e;
+  $theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "black": $black,
+    "white": $white,
+    "light-primary": $light-primary,
+    "light-secondary": $light-secondary,
+    "light-success": $light-success,
+    "light-info": $light-info,
+    "light-warning": $light-warning,
+    "light-danger": $light-danger,
+    "light-dark": $light-dark,
+    "dark-primary": $dark-primary,
+    "dark-secondary": $dark-secondary,
+    "dark-tertiary": $dark-tertiary,
+    "dark-success": $dark-success,
+    "dark-info": $dark-info,
+    "dark-warning": $dark-warning,
+    "dark-danger": $dark-danger
+  );
+
+  @each $color, $value in $grays {
+    --#{$prefix}gray-#{$color}: #{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$prefix}#{$color}: #{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    $color-rgb: to-rgb($value);
+    .text-bg-#{$color} {
+      color: color-contrast($value) if($enable-important-utilities, !important, null);
+      background-color: rgba($color-rgb, var(--#{$prefix}bg-opacity, 1))
+        if($enable-important-utilities, !important, null);
+    }
+
+    .bg-#{$color} {
+      // color: color-contrast($value) if($enable-important-utilities, !important, null);
+      background-color: rgba($color-rgb, var(--#{$prefix}bg-opacity, 1))
+        if($enable-important-utilities, !important, null);
+    }
+
+    .text-#{$color} {
+      color: $value !important;
+    }
+  }
+
+  @each $color, $value in $grays {
+    .bg-gray-#{$color} {
+      background-color: $value !important;
+    }
+    .text-gray-#{$color} {
+      color: $value !important;
+    }
+  }
+}

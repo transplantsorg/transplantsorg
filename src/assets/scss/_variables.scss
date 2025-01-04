@@ -1,3 +1,6 @@
+// Import Bootstrap functions to use inside variables values
+@import "../../../node_modules/bootstrap/scss/functions";
+
 // Variables
 
 $prefix: "to-";
@@ -5,9 +8,7 @@ $prefix: $prefix !default;
 $min-contrast-ratio: 2 !default;
 $enable-negative-margins: true !default;
 
-
-
-// General Colors
+// Color System
 $white: #FFF !default;
 $gray-100: #f1f5f9 !default;
 $gray-200: #e2e8f0 !default;
