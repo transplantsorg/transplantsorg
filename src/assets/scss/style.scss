@@ -3,16 +3,12 @@
 // Configuration & Utilities
 @import "fonts";
 @import "variables";
+@import "utilities";
+@import "bootstrap-core";
 @import "variables-light";
 @import "variables-dark";
 
-// Bootstrap
-@import "bootstrap-core";
-
-
-
 // Layout, Animations & Components
-@import "utilities";
 @import "components";
 @import "helpers";
 @import "layouts";
@@ -24,7 +20,6 @@
 // Styles
 
 body {
-  color: #000;
   font-weight: 400;
   font-style: normal;
   font-family: 'Founders Grotesk', Arial, sans-serif !important;

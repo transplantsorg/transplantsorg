@@ -1,90 +1,5 @@
 // Light Mode
 
-// Colors
-  $gray-100: #0b1324;
-  $gray-200: #0f172a;
-  $gray-300: #1e293b;
-  $gray-400: #334155;
-  $gray-500: #475569;
-  $gray-600: #64748b;
-  $gray-700: #94a3b8;
-  $gray-800: #cbd5e1;
-  $gray-900: #e2e8f0;
-  $gray-1000: #f1f5f9;
-  $grays: (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900,
-    "1000": $gray-1000
-  );
-  $light-primary: #312b4d;
-  $light-secondary: #312b4d;
-  $light-success: #25483e;
-  $light-info: #184457;
-  $light-warning: #5a4327;
-  $light-danger: #442626;
-  $theme-colors: () !default;
-  $theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $gray-200,
-    "dark": $white,
-    "white": $gray-100,
-    "black": $white,
-    "light-primary": $light-primary,
-    "light-secondary": $light-secondary,
-    "light-success": $light-success,
-    "light-info": $light-info,
-    "light-warning": $light-warning,
-    "light-danger": $light-danger
-  );
-  
-  @each $color, $value in $grays {
-    --#{$prefix}gray-#{$color}: #{$value};
-  }
-
-  @each $color, $value in $theme-colors {
-    --#{$prefix}#{$color}: #{$value};
-  }
-
-  @each $color, $value in $theme-colors {
-    $color-rgb: to-rgb($value);
-    .text-bg-#{$color} {
-      color: color-contrast($value) if($enable-important-utilities, !important, null);
-      background-color: rgba($color-rgb, var(--#{$prefix}bg-opacity, 1))
-        if($enable-important-utilities, !important, null);
-    }
-
-    .bg-#{$color} {
-      // color: color-contrast($value) if($enable-important-utilities, !important, null);
-      background-color: rgba($color-rgb, var(--#{$prefix}bg-opacity, 1))
-        if($enable-important-utilities, !important, null);
-    }
-
-    .text-#{$color} {
-      color: $value !important;
-    }
-  }
-
-  @each $color, $value in $grays {
-    .bg-gray-#{$color} {
-      background-color: $value !important;
-    }
-    .text-gray-#{$color} {
-      color: $value !important;
-    }
-  }
-
 :root {
   // Body
   $body-bg: $gray-100;
@@ -116,34 +31,27 @@
   // Check
   --#{$prefix}input-check-border: var(--#{$prefix}input-border);
 
-
   // Dropdown
   --#{$prefix}dropdown-background: #{$white};
   --#{$prefix}dropdown-border-width: 0px;
   --#{$prefix}dropdown-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.1);
   --#{$prefix}dropdown-link-color: #{$gray-900};
   --#{$prefix}dropdown-link-hover-bg: #{$gray-100};
-  --#{$prefix}dropdown-link-hover-color: #{shade-color($gray-900, 10%)};
-
 
   // Form
   --#{$prefix}input-bg: #{$white};
   --#{$prefix}input-border: #{$gray-300};
   --#{$prefix}input-placeholder-color: #{$gray-500};
-  --#{$prefix}input-focus-border: #{tint-color($component-active-bg, 50%)};  
   --#{$prefix}input-focus-box-shadow: 0px 0px 0px 3px rgba(231, 225, 253, 0.75);
   --#{$prefix}input-disabled-bg: #{$gray-200};
-
 
   // Inputs
   --#{$prefix}input-group-addon-bg: #{$gray-200};
   --#{$prefix}form-text-color: #{$gray-400};
   --#{$prefix}form-label-color: #{$gray-700};
 
-
   // Modal
   --#{$prefix}modal-bg: #{$gray-100};
-
 
   // Navbar
   --#{$prefix}navbar-bg: #{$white};
@@ -152,14 +60,11 @@
   --#{$prefix}navbar-vertical-link: #{$gray-400};
   --#{$prefix}navbar-vertical-link-hover: #{$gray-300};
 
-
   // Pagination
   --#{$prefix}page-link-hover-color: #{$gray-100};
 
-
   // Progress
   --#{$prefix}progress-background: #{$gray-300};
-
 
   // Tagify
   --#{$prefix}tagify-border-color: #{$gray-300};

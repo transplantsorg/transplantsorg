@@ -1,7 +1,8 @@
 // Dark Mode
 
 [data-bs-theme="dark"] {
-  // Colors
+
+  // Color System
   $gray-100: #0b1324;
   $gray-200: #0f172a;
   $gray-300: #1e293b;
@@ -86,7 +87,6 @@
     }
   }
 
-
   // Body
   --#{$prefix}body: #{$gray-200};
   --#{$prefix}body-bg: #{$gray-200};
@@ -101,14 +101,11 @@
     filter: invert(1);
   }
 
-
   // Accordion
   --#{$prefix}accordion-bg: #{$gray-300};
 
-
   // Border
   --#{$prefix}border-color: #{$gray-400};
-
 
   // Buttons
   @each $color, $value in $theme-colors {
@@ -159,22 +156,18 @@
     --to-btn-border-radius: 50rem;
   }
 
-
   // Card
   --#{$prefix}-to-card-to-body: #{$gray-100};
   --#{$prefix}card-background: #{$gray-300};
   
-
   // Check
   --#{$prefix}input-check-border: var(--#{$prefix}input-border);
-
 
   // Code
   :not(pre) > code[class*="language-"],
   pre[class*="language-"] {
     background: $gray-200 !important;
   }
-
 
   // Dropdown
   --#{$prefix}dropdown-background: #{$gray-300};
@@ -184,7 +177,6 @@
   --#{$prefix}dropdown-border-width: 1px;
   --#{$prefix}dropdown-shadow: 0 8px 12px 1px rgba(11, 9, 36, 0.29);
 
-
   // Hero
   .hero-graphics {
     background-image: url(../images/hero/hero-icon-bg-dark.svg);
@@ -192,7 +184,6 @@
     background-repeat: no-repeat;
     background-position: top center;
   }
-
 
   // Inputs
   --#{$prefix}input-bg: #{$gray-100};
@@ -210,10 +201,8 @@
     background-color: var(--#{$prefix}input-bg);
   }
 
-
   // Modal
   --#{$prefix}modal-bg: #{$gray-400};
-
 
   // Navbar
   --#{$prefix}navbar-bg: #{$gray-300};
@@ -230,10 +219,8 @@
     filter: brightness(0) invert(0);
   }
 
-
   // Pagination
   --#{$prefix}page-link-hover-color: #{$gray-1000};
-
 
   // Popover
   .popover {
@@ -269,11 +256,9 @@
     border-bottom-color: $gray-400;
   }
  
-
   // Progress
   --#{$prefix}progress-background: #{$gray-400};
   
-
   // Table
   .table-light {
     background-color: #{$gray-400};
@@ -284,7 +269,6 @@
       border-color: #{$gray-400};
     }
   }
-
 
   // Tagify
   --#{$prefix}tagify-border-color: #{$gray-100};
