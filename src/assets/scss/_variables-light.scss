@@ -1,6 +1,7 @@
 // Light Mode
 
-:root {
+:root,
+[data-bs-theme="light"] {
   // Body
   $body-bg: $gray-100;
   $body-color: $gray-200;

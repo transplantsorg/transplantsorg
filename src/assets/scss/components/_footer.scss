@@ -4,6 +4,10 @@
   color: var(--#{$prefix}gray-500);
 }
 
+.footer img {
+  width: 200px;
+}
+
 .nav-footer {
   .nav-link {
     font-size: 0.875rem;
