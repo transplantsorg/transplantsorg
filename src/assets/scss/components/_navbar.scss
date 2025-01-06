@@ -238,9 +238,9 @@
     }
 
     .dropdown-menu {
-      -webkit-transform: translateY(20px);
+      /*-webkit-transform: translateY(20px);
       -ms-transform: translateY(20px);
-      transform: translateY(20px);
+      transform: translateY(20px);*/
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
@@ -357,18 +357,21 @@
 
     .nav-top-wrap {
       flex-direction: row;
+
       .dropdown {
         position: static;
       }
+
       .dropdown-menu {
         position: absolute;
-        margin: 2.25rem 0.75rem !important;
         right: 0;
+        margin: 2.25rem 0.75rem !important;
+        
         .dropdown-submenu .dropdown-menu {
           position: relative;
-          top: -7px !important;
-          padding: 0px !important;
           right: 0;
+          top: -7px !important;
+          padding: 0 !important;
         }
       }
     }

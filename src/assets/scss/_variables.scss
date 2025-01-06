@@ -1,27 +1,24 @@
 // Variables
 
 // Color System
-$prefix: "to-";
-$prefix: $prefix !default;
-$min-contrast-ratio: 2 !default;
+$prefix: "to-" !default;
+$icon-prefix: "to-" !default;
 
-$white: #FFF !default;
-$gray-100: #f1f5f9 !default;
-$gray-200: #e2e8f0 !default;
-$gray-300: #cbd5e1 !default;
-$gray-400: #94a3b8 !default;
-$gray-500: #64748b !default;
-$gray-600: #475569 !default;
-$gray-700: #334155 !default;
-$gray-800: #1e293b !default;
-$gray-900: #0f172a !default;
-$gray-1000: #001D38 !default;
-$black: #000 !default;
-
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$gray-1000: #060708 !default;
 $grays: () !default;
 $grays: map-merge(
   (
-    "black": $black,
+    "white": $white,
     "100": $gray-100,
     "200": $gray-200,
     "300": $gray-300,
@@ -31,39 +28,64 @@ $grays: map-merge(
     "700": $gray-700,
     "800": $gray-800,
     "900": $gray-900,
-    "1000": $gray-1000,
-
-    "white": $white
+    "1000": $gray-1000
   ),
   $grays
 );
 
-$primary: #001D38 !default;
-$secondary: #64748b !default;
-$success: #38a169 !default;
-$info: #0ea5e9 !default;
-$warning: #754ffe !default;
-$danger: #dc2626 !default;
+$primary: #0057B8 !default;
+$secondary: #02CD94 !default;
+$success: #03a765 !default;
+$info: #001D38 !default;
+$warning: #f25d27 !default;
+$danger: #dc2f44 !default;
 $light: $gray-100 !default;
-$dark: $gray-900 !default;
+$dark: #021324 !default;
+$color-placeholder: #001D38 !default;
+
+$primary-bg-subtle:       tint-color($primary, 20%) !default;
+$secondary-bg-subtle:     tint-color($secondary, 20%) !default;
+$success-bg-subtle:       tint-color($success, 20%) !default;
+$info-bg-subtle:          tint-color($info, 20%) !default;
+$warning-bg-subtle:       tint-color($warning, 20%) !default;
+$danger-bg-subtle:        tint-color($danger, 20%) !default;
+$light-bg-subtle:         mix($light, $white) !default;
+$dark-bg-subtle:          tint-color($dark, 20%) !default;
+
+$primary-border-subtle:   tint-color($primary, 40%) !default;
+$secondary-border-subtle: tint-color($secondary, 40%) !default;
+$success-border-subtle:   tint-color($success, 40%) !default;
+$info-border-subtle:      tint-color($info, 40%) !default;
+$warning-border-subtle:   tint-color($warning, 40%) !default;
+$danger-border-subtle:    tint-color($danger, 40%) !default;
+$light-border-subtle:     $gray-200 !default;
+$dark-border-subtle:      tint-color($dark, 40%) !default;
+
+$primary-text-emphasis:   shade-color($primary, 60%) !default;
+$secondary-text-emphasis: shade-color($secondary, 60%) !default;
+$success-text-emphasis:   shade-color($success, 60%) !default;
+$info-text-emphasis:      shade-color($info, 60%) !default;
+$warning-text-emphasis:   shade-color($warning, 60%) !default;
+$danger-text-emphasis:    shade-color($danger, 60%) !default;
+$light-text-emphasis:     $gray-700 !default;
+$dark-text-emphasis:      shade-color($dark, 60%) !default;
 
 // Light Color
-$light-primary: #ede9fe !default; // NEW
-$light-secondary: #e4e3e9 !default; // NEW
-$light-success: #d1f5ea !default; // NEW
-$light-danger: #fad9d8 !default; // NEW
-$light-warning: #ffeeda !default; // NEW
-$light-info: #e1f6ff !default; // NEW
-$light-dark: #d1cfd8 !default; // NEW
+$light-primary: #39f !default;
+$light-secondary: #39f !default;
+$light-success: #39f !default;
+$light-danger: #39f !default;
+$light-warning: #39f !default;
+$light-info: #39f !default;
+$light-dark: #39f !default;
 
 // Dark Color
-$dark-primary: #593cc1 !default; // NEW
-$dark-secondary: #5c596d !default; // NEW
-$dark-success: #139a74 !default; // NEW
-$dark-danger: #ae302e !default; // NEW
-$dark-warning: #c28135 !default; // NEW
-$dark-info: #51a0c2 !default; // NEW
-$white: $white !default;
+$dark-primary: #39f !default;
+$dark-secondary: #39f !default;
+$dark-success: #39f !default;
+$dark-danger: #39f !default;
+$dark-warning: #39f !default;
+$dark-info: #39f !default;
 
 $theme-colors: (
   "primary": $primary,
@@ -74,7 +96,7 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  "white": $white,
+  "color-placeholder": $color-placeholder,
   "light-primary": $light-primary,
   "light-danger": $light-danger,
   "light-info": $light-info,
@@ -89,6 +111,7 @@ $theme-colors: (
   "dark-success": $dark-success,
   "dark-secondary": $dark-secondary
 );
+
 
 // Soft Colors
 $soft-alpha: 0.3;
@@ -108,15 +131,18 @@ $theme-soft-colors: map-merge(
   $theme-soft-colors
 );
 
+$min-contrast-ratio: 4.5 !default;
+
 // Body
 $body-bg: $gray-100;
-$body-color: $gray-700;
+$body-color: $gray-900;
 
 // Typography
 $font-family-sans-serif: "Founders Grotesk", Arial, sans-serif !default;
 $font-family-serif: "ArizonaText", Georgia, serif !default;
 $font-family-base: $font-family-sans-serif !default;
-$font-family-heading: $font-family-serif;
+$font-family-heading: $font-family-sans-serif !default;
+$display-font-family: $font-family-serif !default;
 $font-size-base: 0.938rem !default;
 $font-weight-thin: 100 !default;
 $font-weight-lighter: 200 !default;

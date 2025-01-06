@@ -171,6 +171,7 @@ $utilities: (
           "gray-1000": $gray-1000,
           "white": $white,
           "body": $body-color,
+          "color-placeholder": $color-placeholder,
           "black-50": rgba($black, 0.5),
           "white-50": rgba($white, 0.5),
           "reset": inherit
@@ -200,6 +201,7 @@ $utilities: (
             "gray-1000": $gray-1000,
             "body": $body-bg,
             "white": $white,
+            "color-placeholder": $color-placeholder,
             "transparent": transparent
           )
         )
@@ -244,7 +246,8 @@ $utilities: (
           "gray-700": $gray-700,
           "gray-800": $gray-800,
           "gray-900": $gray-900,
-          "gray-1000": $gray-1000
+          "gray-1000": $gray-1000,
+          "color-placeholder": $color-placeholder
         )
       )
   ),
