@@ -19,8 +19,7 @@ const uglify = require("gulp-uglify");
 const pngquant = require("imagemin-pngquant");
 const mozjpeg = require("imagemin-mozjpeg");
 
-// Paths to project folders
-
+// Paths to Project Folders
 const paths = {
   base: {
     base: "./",

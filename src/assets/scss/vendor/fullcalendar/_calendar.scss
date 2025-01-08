@@ -579,7 +579,7 @@
     }
 
     .fc-highlight {
-        background: var(--#{$prefix}light-info);
+        background: var(--#{$prefix}info-subtle);
     }
 
     .fc-cell-shaded,
@@ -918,7 +918,7 @@ a.fc-event {
     }
 
     .fc-daygrid-day.fc-day-today {
-        background-color: var(--#{$prefix}light-warning);
+        background-color: var(--#{$prefix}warning-subtle);
     }
 
     .fc-daygrid-day-frame {
@@ -1132,7 +1132,7 @@ a.fc-event {
     display: flex;
     align-items: center;
     padding: 2px 4px;
-    background-color: var(--#{$prefix}light-primary);
+    background-color: var(--#{$prefix}primary-subtle);
 
     .fc-event-title {
         flex-grow: 1;
@@ -1144,7 +1144,7 @@ a.fc-event {
 
     &:hover,
     &.fc-event-mirror {
-        background-color: var(--#{$prefix}light-primary);
+        background-color: var(--#{$prefix}primary-subtle);
     }
 
     &.fc-event-selected:before {
@@ -1160,7 +1160,7 @@ a.fc-event {
     box-sizing: content-box;
     width: 0;
     height: 0;
-    border: 4px solid var(--#{$prefix}dark-primary);
+    border: 4px solid var(--#{$prefix}primary);
     border-radius: 4px;
 }
 
@@ -1416,7 +1416,7 @@ a.fc-event {
 
 .fc {
     .fc-timegrid-col.fc-day-today {
-        background-color: var(--#{$prefix}light-warning);
+        background-color: var(--#{$prefix}warning-subtle);
     }
 
     .fc-timegrid-col-frame {

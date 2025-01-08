@@ -36,8 +36,8 @@ input::-webkit-inner-spin-button {
   }
 
   .form-check-input:checked {
-    background-color: var(--#{$prefix}dark-primary);
-    border-color: var(--#{$prefix}dark-primary);
+    background-color: var(--#{$prefix}primary);
+    border-color: var(--#{$prefix}primary);
   }
 }
 
