@@ -1,5 +1,33 @@
 // General Styles
 
+.bi.bi-bluesky::before {
+  content: "";
+  background-color: currentColor;
+  -webkit-mask: url("../images/icons/bluesky.svg") no-repeat 50% 50%;
+  mask: url("../images/icons/bluesky.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  height: 16px;
+  width: 16px;
+}
+
+a {
+  -webkit-transition: all 0.5s ease !important;
+  -moz-transition: all 0.5s ease !important;
+  -ms-transition: all 0.5s ease !important;
+  -o-transition: all 0.5s ease !important;
+  transition: all 0.5s ease !important;
+
+  &.text-decoration-fade {
+    text-decoration: underline solid transparent;
+    transition: text-decoration 0.5s ease;
+
+    &:hover, &:focus {
+      text-decoration: underline solid currentcolor;
+    }
+  }
+}
+
 .invert {
   filter: invert(100%);
 }

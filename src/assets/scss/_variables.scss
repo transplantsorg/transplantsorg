@@ -95,7 +95,11 @@ $font-family-serif: "ArizonaText", Georgia, serif;
 $font-family-base: $font-family-sans-serif;
 $font-family-heading: $font-family-sans-serif;
 $display-font-family: $font-family-serif;
-$font-size-base: 0.938rem;
+
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * .925 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
 $font-weight-thin: 100;
 $font-weight-lighter: 200;
 $font-weight-light: 300;
@@ -105,6 +109,7 @@ $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 $font-weight-bolder: 800;
 $font-weight-base: $font-weight-normal;
+
 $h1-font-size: 2rem;
 $h2-font-size: 1.5rem;
 $h3-font-size: 1.25rem;
@@ -120,7 +125,7 @@ $link-decoration: none;
 $line-height-base: 1.6;
 $line-height-1: 1;
 $line-height-2: 2;
-$line-height-sm: 1.2;
+$line-height-sm: 1.25;
 $line-height-md: 1.6;
 $line-height-lg: 1.8;
 
@@ -446,6 +451,9 @@ $modal-header-padding-x: 1.5rem;
 $modal-content-bg: $card-bg;
 $modal-content-border-color: var(--#{$prefix}border-color);
 $modal-inner-padding: 1.5rem;
+
+// Navs
+$nav-link-font-weight: $font-weight-normal;
 
 // Navbar
 $navbar-brand-margin-end: 1rem;
