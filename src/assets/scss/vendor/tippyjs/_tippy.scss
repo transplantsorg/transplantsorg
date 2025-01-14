@@ -62,10 +62,10 @@
 }
 
 .tippy-box[data-theme~="lightPurple"] {
-  background-color: var(--#{$prefix}light-primary);
-  color: var(--#{$prefix}dark-primary);
+  background-color: var(--#{$prefix}primary-subtle);
+  color: var(--#{$prefix}primary);
 }
 
 .tippy-box[data-theme~="lightPurple"][data-placement^="right"] > .tippy-arrow::before {
-  border-right-color: var(--#{$prefix}light-primary);
+  border-right-color: var(--#{$prefix}primary-subtle);
 }

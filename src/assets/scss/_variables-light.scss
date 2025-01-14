@@ -2,15 +2,19 @@
 
 :root,
 [data-bs-theme="light"] {
+
   // Body
-  $body-bg: $gray-100;
-  $body-color: $gray-200;
-  --#{$prefix}body-bg: #{map-get($grays, "100")};
-  --#{$prefix}body-color: #{$gray-1000};
-  .bg-dark { background-color: $gray-1000; }
+/*  $body-bg: $gray-100;*/
+  --#{$prefix}body-bg: #{$gray-100};
+
+/*  $body-color: $gray-900;*/
+  --#{$prefix}body-color: #{$gray-900};
+  
+/*  .bg-dark { background-color: $gray-900; }*/
+
   ::selection {
-    background-color: $primary;
-    color: $gray-100;
+    background-color: $gray-300;
+    color: $gray-900;
   }
   
   // Accordion

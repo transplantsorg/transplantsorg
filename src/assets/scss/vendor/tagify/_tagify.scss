@@ -6,8 +6,8 @@
   line-height: 1.5;
   border-radius: 0.25rem;
   --tag-bg: var(--#{$prefix}gray-300) !important;
-  --tag-hover: var(--#{$prefix}light-primary) !important;
-  --tag-invalid-color: var(--#{$prefix}light-danger) !important;
+  --tag-hover: var(--#{$prefix}primary-subtle) !important;
+  --tag-invalid-color: var(--#{$prefix}danger-subtle) !important;
   --tag-text-color: var(--#{$prefix}dark) !important;
   --tags-focus-border-color: var(--#{$prefix}primary) !important;
   --tag-pad: 0.6em 0.5em;
@@ -36,7 +36,7 @@
 
 .tagify__tag__removeBtn:hover {
   color: var(--#{$prefix}danger) !important;
-  background: var(--#{$prefix}light-danger) !important;
+  background: var(--#{$prefix}danger-subtle) !important;
 }
 
 

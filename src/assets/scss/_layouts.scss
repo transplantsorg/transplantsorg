@@ -1,11 +1,10 @@
 // Layouts
 
-@import "layouts/_grid.scss";
-
-@import "layouts/_admin-navbar.scss";
-@import "layouts/_admin-structure.scss";
-@import "layouts/_chat-app.scss";
-@import "layouts/_course-layout.scss";
-@import "layouts/_docs.scss";
-@import "layouts/_mail.scss";
-@import "layouts/_task-kanban.scss";
+@import "layouts/grid";
+@import "layouts/admin-navbar";
+@import "layouts/admin-structure";
+@import "layouts/chat-app";
+@import "layouts/course-layout";
+@import "layouts/docs";
+@import "layouts/mail";
+@import "layouts/task-kanban";

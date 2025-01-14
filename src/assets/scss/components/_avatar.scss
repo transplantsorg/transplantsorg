@@ -129,42 +129,42 @@
   color: var(--#{$prefix}white);
 }
 
-.avatar-primary-soft .avatar-initials {
-  background-color: $light-primary;
+.avatar-primary-subtle .avatar-initials {
+  background-color: $primary-bg-subtle;
   color: var(--#{$prefix}primary);
 }
 
-.avatar-secondary-soft .avatar-initials {
+.avatar-secondary-subtle .avatar-initials {
   background-color: var(--#{$prefix}secondary);
   color: var(--#{$prefix}white);
 }
 
-.avatar-success-soft .avatar-initials {
-  background-color: var(--#{$prefix}light-success);
+.avatar-success-subtle .avatar-initials {
+  background-color: var(--#{$prefix}success-subtle);
   color: var(--#{$prefix}success);
 }
 
-.avatar-warning-soft .avatar-initials {
-  background-color: var(--#{$prefix}light-warning);
+.avatar-warning-subtle .avatar-initials {
+  background-color: var(--#{$prefix}warning-subtle);
   color: var(--#{$prefix}warning);
 }
 
-.avatar-info-soft .avatar-initials {
-  background-color: var(--#{$prefix}light-info);
+.avatar-info-subtle .avatar-initials {
+  background-color: var(--#{$prefix}info-subtle);
   color: var(--#{$prefix}info);
 }
 
-.avatar-danger-soft .avatar-initials {
-  background-color: var(--#{$prefix}light-danger);
+.avatar-danger-subtle .avatar-initials {
+  background-color: var(--#{$prefix}danger-subtle);
   color: var(--#{$prefix}danger);
 }
 
-.avatar-dark-soft .avatar-initials {
+.avatar-dark-subtle .avatar-initials {
   background-color: var(--#{$prefix}light-dark);
   color: var(--#{$prefix}white);
 }
 
-.avatar-light-soft .avatar-initials {
+.avatar-light-subtle .avatar-initials {
   background-color: var(--#{$prefix}light);
   color: var(--#{$prefix}dark);
 }

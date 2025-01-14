@@ -1,4 +1,4 @@
-<div role="alert" class="alert py-3 px-0 m-0 bg-primary border-0 rounded-0 fade show overflow-hidden">
+<div role="alert" class="alert py-3 px-0 m-0 bg-info border-0 rounded-0 fade show overflow-hidden">
   <div class="position-relative">
     <div class="container">
       <div class="d-flex row">
@@ -34,12 +34,12 @@
 </div>
 
 <div class="sticky-top">
-  <nav class="navbar navbar-main navbar-light navbar-expand-lg">
+  <nav class="navbar navbar-main navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand align-self-center" href="#">
         <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" />
       </a>
-      <div class="nav flex-nowrap align-items-center">
+      <div class="nav flex-nowrap align-items-center ">
         <div class="nav-item dropdown dropdown-toggle-icon-none dropdown-click-required nav-search">
           <a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-search fs-4"> </i>
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="nav-item">
-          <a href="#" class="btn btn-sm rounded-2 btn-primary mb-0 mx-2">Give Today</a>
+          <a href="#" class="btn rounded-pill btn-primary mb-0 mx-2">Give Today</a>
         </div>
         <button
           class="navbar-toggler collapsed ms-2 ms-lg-0"
@@ -73,12 +73,44 @@
             <a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Patient Care &amp; Support">Patient Care &amp; Support</a>
             <div class="dropdown-menu megamenu" aria-labelledby="megaMenu">
               <div class="container">
-                <div class="row">
+                <div class="row py-3">
                   <div class="col-12 col-xl-6">
                     <h5>Solid Organ</h5>
-                    <ul class="list-unstyled">
-                      <li><a href="#">Heart</a></li>
-                    </ul>
+                    <div class="list-group">
+              <a class="list-group-item list-group-item-action border-0" href="./docs/index.html">
+                <div class="d-flex align-items-center">
+                  <i class="fe fe-heart fs-3 text-primary"></i>
+                  <div class="ms-3">
+                    <h5 class="mb-0">Heart</h5>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action border-0" href="./docs/bootstrap-5-snippets.html">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-heart fs-3 text-primary"></i>
+                  <div class="ms-3">
+                    <h5 class="mb-0">Intestine</h5>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action border-0" href="./docs/changelog.html">
+                <div class="d-flex align-items-center">
+                  <i class="fe fe-heart fs-3 text-primary"></i>
+                  <div class="ms-3">
+                    <h5 class="mb-0">Liver</h5>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action border-0" href="https://geeksui.codescandy.com/geeks-rtl/" target="_blank">
+                <div class="d-flex align-items-center">
+                  <i class="fe fe-heart fs-3 text-primary"></i>
+                  <div class="ms-3">
+                    <h5 class="mb-0">Lung</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
                   </div>
                   <div class="col-12 col-xl-4">
                     <h5>Stem Cell (Bone Marrow)</h5>
@@ -98,7 +130,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="megaMenu3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find a Center</a>
             <div class="dropdown-menu megamenu" aria-labelledby="megaMenu3">
               <div class="container">
-                <div class="row">
+                <div class="row py-3">
                   <div class="col">
                     Test
                   </div>
@@ -110,7 +142,6 @@
             <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
             <ul class="dropdown-menu" aria-labelledby="pagesMenu">
               <li> <a class="dropdown-item" href="about-us.html">About Us</a></li>
-              <!-- Dropdown submenu -->
               <li class="dropdown-submenu dropend">
                 <a class="dropdown-item dropdown-toggle" href="javascript:void(0);">About Us</a>
                 <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">

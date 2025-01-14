@@ -25,13 +25,13 @@
     "900": $gray-900,
     "1000": $gray-1000
   );
-  $light-primary: #312b4d;
-  $light-secondary: #312b4d;
+  $primary-subtle: #312b4d;
+  $secondary-subtle: #312b4d;
   $light-tertiary: #312b4d;
-  $light-success: #25483e;
-  $light-info: #184457;
-  $light-warning: #5a4327;
-  $light-danger: #442626;
+  $success-subtle: #25483e;
+  $info-subtle: #184457;
+  $warning-subtle: #5a4327;
+  $danger-subtle: #442626;
   $theme-colors: () !default;
   $theme-colors: (
     "primary": $primary,
@@ -44,13 +44,13 @@
     "dark": $white,
     "white": $gray-100,
     "black": $white,
-    "light-primary": $light-primary,
-    "light-secondary": $light-secondary,
+    "primary-subtle": $primary-subtle,
+    "secondary-subtle": $secondary-subtle,
     "light-tertiary": $light-tertiary,
-    "light-success": $light-success,
-    "light-info": $light-info,
-    "light-warning": $light-warning,
-    "light-danger": $light-danger
+    "success-subtle": $success-subtle,
+    "info-subtle": $info-subtle,
+    "warning-subtle": $warning-subtle,
+    "danger-subtle": $danger-subtle
   );
   
   @each $color, $value in $grays {
