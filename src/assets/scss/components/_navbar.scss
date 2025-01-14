@@ -319,7 +319,7 @@
     .dropdown-fullwidth {
       position: static;
 
-      .dropdown-menu {
+      > .dropdown-menu {
         z-index: 1000000;
         position: absolute;
         top: 100%;

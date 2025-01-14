@@ -58,8 +58,8 @@
           class="navbar-toggler collapsed ms-2 ms-lg-0"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbar-default"
-          aria-controls="navbar-default"
+          data-bs-target="#navbarMain"
+          aria-controls="navbarMain"
           aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="icon-bar top-bar rounded-pill mt-0"></span>
@@ -67,88 +67,73 @@
           <span class="icon-bar bottom-bar rounded-pill"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse" id="navbar-default">
-        <ul class="navbar-nav navbar-nav-scroll me-auto">
-          <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
-            <a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Patient Care &amp; Support">Patient Care &amp; Support</a>
-            <div class="dropdown-menu megamenu" aria-labelledby="megaMenu">
-              <div class="container">
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown dropdown-fullwidth">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarCare" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Guidance</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarCare">
+              <div class="container d-none d-lg-block">
                 <div class="row py-3">
                   <div class="col-12 col-xl-6">
-                    <h5>Solid Organ</h5>
-                    <div class="list-group">
-              <a class="list-group-item list-group-item-action border-0" href="./docs/index.html">
-                <div class="d-flex align-items-center">
-                  <i class="fe fe-heart fs-3 text-primary"></i>
-                  <div class="ms-3">
-                    <h5 class="mb-0">Heart</h5>
+                    Test
                   </div>
                 </div>
-              </a>
-              <a class="list-group-item list-group-item-action border-0" href="./docs/bootstrap-5-snippets.html">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-heart fs-3 text-primary"></i>
-                  <div class="ms-3">
-                    <h5 class="mb-0">Intestine</h5>
-                  </div>
-                </div>
-              </a>
-              <a class="list-group-item list-group-item-action border-0" href="./docs/changelog.html">
-                <div class="d-flex align-items-center">
-                  <i class="fe fe-heart fs-3 text-primary"></i>
-                  <div class="ms-3">
-                    <h5 class="mb-0">Liver</h5>
-                  </div>
-                </div>
-              </a>
-              <a class="list-group-item list-group-item-action border-0" href="https://geeksui.codescandy.com/geeks-rtl/" target="_blank">
-                <div class="d-flex align-items-center">
-                  <i class="fe fe-heart fs-3 text-primary"></i>
-                  <div class="ms-3">
-                    <h5 class="mb-0">Lung</h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-                  </div>
-                  <div class="col-12 col-xl-4">
-                    <h5>Stem Cell (Bone Marrow)</h5>
-                    <ul class="list-unstyled">
-                      <li><a href="#">Autologous</a></li>
+              </div>
+              <ul class="d-block d-lg-none">
+                <li class="dropdown-submenu dropend">
+                <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Organ Transplant</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu dropend">
+                    <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Heart Transplant</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Heart Pre-Waitlist</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Heart Waitlist</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Heart Post-Transplant</a>
+                      </li>
                     </ul>
-                  </div>
-                  <div class="col-12 col-xl-2">
-                    <h5>Patient Story</h5>
-                    Test
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
-            <a class="nav-link dropdown-toggle" href="#" id="megaMenu3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find a Center</a>
-            <div class="dropdown-menu megamenu" aria-labelledby="megaMenu3">
-              <div class="container">
-                <div class="row py-3">
-                  <div class="col">
-                    Test
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown dropdown-click-required">
-            <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-            <ul class="dropdown-menu" aria-labelledby="pagesMenu">
-              <li> <a class="dropdown-item" href="about-us.html">About Us</a></li>
+                  </li>
+                  <li class="dropdown-submenu dropend">
+                    <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Lung Transplant</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Lung Pre-Waitlist</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Lung Waitlist</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Lung Post-Transplant</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-item" href="#">Organ Transplant Basics</a>
+                  </li>
+                </ul>
+              </li>
               <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="javascript:void(0);">About Us</a>
-                <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                  <li> <a class="dropdown-item" href="shop-grid.html">Founding Story</a> </li>
+                <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Stem Cell Transplant</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu dropend">
+                    <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Dropdown 2</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Option</a>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
             </ul>
+            </div>
+
           </li>
         </ul>
       </div>
