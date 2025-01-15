@@ -120,7 +120,7 @@ $link-color: $primary;
 $link-decoration: none;
 
 // Line Height
-$line-height-base: 1.6;
+$line-height-base: 1.5;
 $line-height-1: 1;
 $line-height-2: 2;
 $line-height-sm: 1.25;
@@ -449,6 +449,7 @@ $modal-content-border-color: var(--#{$prefix}border-color);
 $modal-inner-padding: 1.5rem;
 
 // Navs
+$nav-link-font-size: $font-size-base;
 $nav-link-font-weight: $font-weight-normal;
 
 // Navbar
