@@ -7,7 +7,7 @@
   -o-transition: all 0.25s ease !important;
   transition: all 0.25s ease !important;
   background-color: var(--#{$prefix}navbar-bg);
-  padding: 0.625rem 1rem;
+  padding: 0.625rem 0;
   box-shadow: $box-shadow-sm;
 
   &.navbar-transparent {
@@ -35,7 +35,7 @@
       transition: all 0.2s;
       background-color: $black;
       display: block;
-      width: 20px;
+      width: 24px;
       height: 2px;
       margin-top: 0.25rem;
     }
@@ -51,7 +51,7 @@
 
     .bottom-bar {
       transform: rotate(-45deg);
-      transform-origin: 10% -80%;
+      transform-origin: 20% -80%;
     }
 
     &.collapsed {
@@ -78,9 +78,18 @@
       color: $black;
     }
 
+    .bi {
+      font-size: 24px;
+
+      &.bi-search::before {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
     .btn {
-      padding: 0.5rem 1.25rem;
-      font-size: 1rem;
+      padding: 0.4rem 1rem;
+      font-size: 0.85rem;
       font-weight: $font-weight-medium;
       letter-spacing: 0.01em;
     }
@@ -93,7 +102,7 @@
         padding: 0.75rem 0;
         border-bottom: 1px solid var(--#{$prefix}gray-200);
         color: $black;
-        font-size: $font-size-base;
+        font-size: 1.15rem;
 
         &:hover {
           color: var(--#{$prefix}primary);
@@ -196,7 +205,7 @@
       padding-bottom: 1rem;
 
       img {
-        width: 160px;
+        width: 180px;
         height: auto;
       }
     }
@@ -224,6 +233,8 @@
   }
 
   .navbar {
+    padding: 0.75rem 1rem;
+
     &.navbar-transparent {
       position: absolute;
       right: 0;
@@ -236,12 +247,13 @@
 
     .navbar-nav {
       gap: 0.25rem;
-      margin-top: 0.25rem;
+/*      margin-top: 0.25rem;*/
 
       .nav-item {
         .nav-link {
           padding: 0.3125rem 0.3125rem 0.3125rem 0.5rem;
-          border-bottom: 0;
+          border-bottom-color: transparent;
+          font-size: 1.05rem;
         }
       }
     }
@@ -331,7 +343,7 @@
         border-top: 1px solid $navbar-border-color;
         border-bottom: 1px solid $navbar-border-color;
         border-radius: 0;
-        box-shadow: $navbar-dropdown-fullwidth-box-shadow;
+        box-shadow: $navbar-main-box-shadow;
         clip-path: inset(0 -5px -5px -5px);
       }
     }
@@ -360,7 +372,7 @@
     }
 
     &.navbar-main {
-      box-shadow: $navbar-dropdown-fullwidth-box-shadow;    
+      box-shadow: $navbar-main-box-shadow;    
 
       .navbar-brand {
         margin-right: calc(var(--to-navbar-brand-margin-end) * 1.5);
@@ -420,10 +432,17 @@
 }
 
 @include media-breakpoint-down(sm) {
+  .navbar-main {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/*@include media-breakpoint-down(sm) {
   .navbar {
     > .container {
       padding-right: 0;
       padding-left: 0;
     }
   }
-}
+}*/

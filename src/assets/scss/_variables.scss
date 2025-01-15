@@ -221,8 +221,8 @@ $badge-padding-x: 0.5rem;
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
+  sm: 100%,
+  md: 100%,
   lg: 960px,
   xl: 1140px,
   xxl: 1320px
@@ -270,6 +270,10 @@ $spacers: (
   // 48px
   8: $spacer * 3.5,
   // 56px
+  9: $spacer * 4,
+  // 64px
+  10: $spacer * 5,
+  // 80px
 );
 
 // Position
@@ -460,7 +464,7 @@ $nav-link-font-weight: $font-weight-normal;
 $navbar-brand-margin-end: 1rem;
 $navbar-border-color: #dee2e6;
 $navbar-box-shadow: none;
-$navbar-dropdown-fullwidth-box-shadow: 0 2px 5px rgba(102, 83, 255, .05);
+$navbar-main-box-shadow: 0 2px 5px rgba(0, 29, 56, .05);
 $navbar-light-color: var(--#{$prefix}gray-1000);
 $navbar-light-hover-color: var(--#{$prefix}gray-600);
 $navbar-light-active-color: var(--#{$prefix}primary);
