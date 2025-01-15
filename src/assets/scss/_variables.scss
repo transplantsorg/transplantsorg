@@ -38,7 +38,9 @@ $grays: map-merge(
 $primary: #2163e8;
 $secondary: #02CD94;
 $success: #03a765;
-$info: #001D38;
+$info: $primary;
+/*$info: #0065c3;*/
+/*$info: #001D38;*/
 /*$info: #15374d;*/
 $warning: #f25d27;
 $danger: #dc2f44;
@@ -90,14 +92,16 @@ $min-contrast-ratio: 4.5;
 $body-bg: $gray-100;
 $body-color: $gray-900;
 
+// Responsive Font Size
+$enable-rfs: true;
+
 // Typography
 $font-family-sans-serif: "Founders Grotesk", Arial, sans-serif;
 $font-family-serif: "ArizonaText", Georgia, serif;
 $font-family-base: $font-family-sans-serif;
-$font-family-heading: $font-family-sans-serif;
 $display-font-family: $font-family-serif;
 
-$font-size-base: 1rem;
+$font-size-base: 1.05rem;
 $font-size-sm: $font-size-base * .925 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
@@ -111,13 +115,6 @@ $font-weight-bold: 700;
 $font-weight-bolder: 800;
 $font-weight-base: $font-weight-normal;
 
-$h1-font-size: 2rem;
-$h2-font-size: 1.5rem;
-$h3-font-size: 1.25rem;
-$h4-font-size: 1rem;
-$h5-font-size: 0.875rem;
-$h6-font-size: 0.75rem;
-
 // Links
 $link-color: $primary;
 $link-decoration: none;
@@ -130,29 +127,23 @@ $line-height-sm: 1.25;
 $line-height-md: 1.6;
 $line-height-lg: 1.8;
 
-// Responsive Font Size
-$enable-rfs: true;
-$font-sizes: (
-  1: 3rem,
-  2: 2.5rem,
-  3: 1.25rem,
-  4: 1rem,
-  5: 0.875rem,
-  6: 0.75rem
-);
-
 // Headings
-$headings-font-family: $font-family-heading;
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1rem;
+$h5-font-size: 0.875rem;
+$h6-font-size: 0.75rem;
 $headings-font-weight: 600;
 $headings-line-height: 1.5;
 $headings-color: var(--#{$prefix}gray-800);
 $display-font-sizes: (
-  1: 4.5rem,
-  2: 3.5rem,
-  3: 3rem,
-  4: 2.5rem,
-  5: 2rem,
-  6: 1.5rem
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
 );
 $display-font-weight: 600;
 $display-line-height: 1.2;

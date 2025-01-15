@@ -22,8 +22,13 @@
   width: 16px;
 }
 
+/*h1 {
+  @include font-size(4rem);
+}*/
 
-
+body {
+  line-height: $line-height-1;
+}
 
 
 a {
