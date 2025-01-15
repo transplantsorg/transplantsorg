@@ -102,7 +102,7 @@
         padding: 0.75rem 0;
         border-bottom: 1px solid var(--#{$prefix}gray-200);
         color: $black;
-        font-size: 1.15rem;
+        font-size: 1.25rem;
 
         &:hover {
           color: var(--#{$prefix}primary);
@@ -205,7 +205,7 @@
       padding-bottom: 1rem;
 
       img {
-        width: 180px;
+        width: 200px;
         height: auto;
       }
     }

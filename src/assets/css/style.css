@@ -20537,7 +20537,7 @@ input::-webkit-inner-spin-button {
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--to-gray-200);
   color: #050505;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: var(--to-primary);
@@ -20611,7 +20611,7 @@ input::-webkit-inner-spin-button {
   padding-bottom: 1rem;
 }
 .navbar.navbar-main .navbar-brand img {
-  width: 180px;
+  width: 200px;
   height: auto;
 }
 .navbar.navbar-main .navbar-toggler {
