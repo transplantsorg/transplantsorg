@@ -233,6 +233,7 @@
     .dropdown-header {
       padding: 0;
       color: var(--#{$prefix}gray-600);
+      font-size: 0.8rem;
       font-weight: 600;
       letter-spacing: 0.25em;
     }
@@ -262,32 +263,19 @@
           padding: 1rem 1.5rem;
           border-radius: 0.5rem;
 
+          .dropdown-header {
+            padding: 1rem 0 0;
+          }
+
           hr {
             margin-top: 0.75rem;
             margin-bottom: 0.75rem;
             color: var(--#{$prefix}gray-400);
           }
 
-          .dropdown-header {
-            padding: 1rem 0 0;
-          }
-
           .nav-item {
             .nav-link {
               padding: 1rem 0;
-
-              /*&:first-child {
-                padding-top: 0.5rem;
-              }
-
-              &:last-child {
-                padding-bottom: 0.5rem;
-              }*/
-            }
-          }
-
-          .nav-item {
-            .nav-link {  
             }
 
             .dropdown-menu {
@@ -315,36 +303,11 @@
       &.show {
         border-top: 1px solid var(--#{$prefix}primary);
 
-        .nav-link.show {
-        }
-
-        .nav-link.show {
-/*          background-color: var(--#{$prefix}primary);*/
-/*          color: $white;*/
-        }
-
         .dropdown-menu {
           border-top: 0 !important;
         }
       }
     }
-
-    .dropdown-menu-2 {
-      top: 0;
-      background-color: transparent;
-      min-width: auto;
-      padding: 0;
-      border: 1px solid var(--#{$prefix}gray-300);
-      box-shadow: none;
-      color: var(--#{$prefix}gray-800);
-      line-height: 1.2rem;
-    }
-  }
-}
-
-@include media-breakpoint-up(sm) {
-  .navbar-main {
-    padding: 0.625rem 0;
   }
 }
 
@@ -427,6 +390,17 @@
       margin: 1.125rem 0;
       box-shadow: var(--#{$prefix}dropdown-shadow);
     }
+
+    /*.dropdown-menu-2 {
+      top: 0;
+      background-color: transparent;
+      min-width: auto;
+      padding: 0;
+      border: 1px solid var(--#{$prefix}gray-300);
+      box-shadow: none;
+      color: var(--#{$prefix}gray-800);
+      line-height: 1.2rem;
+    }*/
 
     .dropdown {
       &:hover {

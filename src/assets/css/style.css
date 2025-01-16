@@ -20676,6 +20676,7 @@ input::-webkit-inner-spin-button {
 .navbar.navbar-main .dropdown-header {
   padding: 0;
   color: var(--to-gray-600);
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.25em;
 }
@@ -20703,23 +20704,16 @@ input::-webkit-inner-spin-button {
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
 }
+.navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .dropdown-header {
+  padding: 1rem 0 0;
+}
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu hr {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   color: var(--to-gray-400);
 }
-.navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .dropdown-header {
-  padding: 1rem 0 0;
-}
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link {
   padding: 1rem 0;
-  /*&:first-child {
-    padding-top: 0.5rem;
-  }
-
-  &:last-child {
-    padding-bottom: 0.5rem;
-  }*/
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu {
   background-color: #fff;
@@ -20737,29 +20731,10 @@ input::-webkit-inner-spin-button {
 .navbar.navbar-main .dropdown-menu.show {
   border-top: 1px solid var(--to-primary);
 }
-.navbar.navbar-main .dropdown-menu.show .nav-link.show {
-  /*          background-color: var(--to-primary);*/
-  /*          color: $white;*/
-}
 .navbar.navbar-main .dropdown-menu.show .dropdown-menu {
   border-top: 0 !important;
 }
-.navbar.navbar-main .dropdown-menu-2 {
-  top: 0;
-  background-color: transparent;
-  min-width: auto;
-  padding: 0;
-  border: 1px solid var(--to-gray-300);
-  box-shadow: none;
-  color: var(--to-gray-800);
-  line-height: 1.2rem;
-}
 
-@media (min-width: 576px) {
-  .navbar-main {
-    padding: 0.625rem 0;
-  }
-}
 @media (min-width: 992px) {
   .headroom--unpinned .navbar-main {
     transform: translateY(-100%) !important;
@@ -20770,6 +20745,16 @@ input::-webkit-inner-spin-button {
   }
   .navbar {
     padding: 0.75rem 1rem;
+    /*.dropdown-menu-2 {
+      top: 0;
+      background-color: transparent;
+      min-width: auto;
+      padding: 0;
+      border: 1px solid var(--to-gray-300);
+      box-shadow: none;
+      color: var(--to-gray-800);
+      line-height: 1.2rem;
+    }*/
   }
   .navbar.navbar-transparent {
     position: absolute;
