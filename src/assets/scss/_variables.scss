@@ -39,6 +39,7 @@ $primary: #2163e8;
 $secondary: #02CD94;
 $success: #03a765;
 $info: $primary;
+/*$info: #053fb4;*/
 /*$info: #0065c3;*/
 /*$info: #001D38;*/
 /*$info: #15374d;*/
@@ -457,11 +458,11 @@ $navbar-brand-margin-end: 1rem;
 $navbar-border-color: #dee2e6;
 $navbar-box-shadow: none;
 $navbar-main-box-shadow: 0 2px 5px rgba(0, 29, 56, .05);
-$navbar-light-color: var(--#{$prefix}gray-1000);
-$navbar-light-hover-color: var(--#{$prefix}gray-600);
-$navbar-light-active-color: var(--#{$prefix}primary);
-$navbar-light-disabled-color: var(--#{$prefix}gray-400);
-$navbar-light-icon-color: $primary;
+$navbar-color: var(--#{$prefix}dark);
+$navbar-hover-color: var(--#{$prefix}gray-600);
+$navbar-active-color: var(--#{$prefix}primary);
+$navbar-disabled-color: var(--#{$prefix}gray-400);
+$navbar-icon-color: var(--#{$prefix}gray-1000);
 
 // Nav & Tabs
 $nav-tabs-border-color: var(--#{$prefix}gray-300);
