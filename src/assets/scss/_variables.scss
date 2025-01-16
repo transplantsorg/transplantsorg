@@ -456,7 +456,7 @@ $nav-link-font-weight: $font-weight-normal;
 // Navbar
 $navbar-brand-margin-end: 1rem;
 $navbar-border-color: #dee2e6;
-$navbar-box-shadow: none;
+$navbar-box-shadow: 0 2px 5px rgba(0, 29, 56, .05);
 $navbar-main-box-shadow: 0 2px 5px rgba(0, 29, 56, .05);
 $navbar-color: var(--#{$prefix}dark);
 $navbar-hover-color: var(--#{$prefix}gray-600);

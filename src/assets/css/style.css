@@ -20611,7 +20611,7 @@ input::-webkit-inner-spin-button {
 }
 .navbar.navbar-main {
   border-bottom: 1px solid #dee2e6;
-  box-shadow: none;
+  box-shadow: 0 2px 5px rgba(0, 29, 56, 0.05);
 }
 .navbar.navbar-main .navbar-brand {
   order: 1;
