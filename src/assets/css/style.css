@@ -20573,6 +20573,7 @@ input::-webkit-inner-spin-button {
   box-shadow: none !important;
 }
 .navbar .dropdown-toggle:after {
+  transition: all 0.3s ease-in-out 0s;
   content: "\e92e";
   background-size: 0.625rem 0.625rem;
   background-repeat: no-repeat;
@@ -20586,10 +20587,9 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   font-family: "Feather" !important;
 }
-.navbar .nav-link.show.dropdown-toggle:after {
+.navbar .dropdown-toggle[aria-expanded=true]:after {
   cursor: default;
   transform: rotate(-180deg);
-  transition: all 0.3s ease-in-out 0s;
 }
 .navbar .dropdown-toggle-icon-none .dropdown-toggle:after {
   display: none;
@@ -20655,22 +20655,19 @@ input::-webkit-inner-spin-button {
   margin-top: calc(0.5rem - 1px);
   border-top: 1px solid var(--to-gray-600);
 }
-.navbar.navbar-main .navbar-nav .nav-item {
-  border-bottom: 1px solid var(--to-gray-300);
-}
 .navbar.navbar-main .navbar-nav .nav-item .nav-link {
   padding: 1.3125rem 0;
-  border-bottom: 0;
+  border-bottom: 1px solid var(--to-gray-300);
   font-size: 1.25rem;
 }
 .navbar.navbar-main .navbar-nav .nav-item .nav-link:hover {
   color: #2163e8;
 }
 .navbar.navbar-main .navbar-nav .nav-item .nav-link.show {
-  border-bottom-color: var(--to-primary);
+  border-bottom: 1px solid var(--to-primary);
   color: #2163e8;
 }
-.navbar.navbar-main .navbar-nav .nav-item:last-child {
+.navbar.navbar-main .navbar-nav .nav-item:last-child .nav-link {
   border-bottom: 0;
 }
 .navbar.navbar-main .dropdown-header {
@@ -20694,8 +20691,12 @@ input::-webkit-inner-spin-button {
 }
 .navbar.navbar-main .dropdown-menu .nav-item .nav-link {
   padding: 0.75rem 0;
+  border-bottom: 0;
   border-radius: 0.5rem;
   font-size: 1.15rem;
+}
+.navbar.navbar-main .dropdown-menu .nav-item .nav-link.show {
+  border-bottom: 0;
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu {
   background-color: #f1f3f5;
@@ -20727,12 +20728,6 @@ input::-webkit-inner-spin-button {
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link:last-child {
   padding-bottom: 0.5rem;
-}
-.navbar.navbar-main .dropdown-menu.show {
-  border-top: 1px solid var(--to-primary);
-}
-.navbar.navbar-main .dropdown-menu.show .dropdown-menu {
-  border-top: 0 !important;
 }
 
 @media (min-width: 992px) {
