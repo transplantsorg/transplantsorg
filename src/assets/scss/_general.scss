@@ -41,6 +41,13 @@ body {
   line-height: $line-height-1;
 }
 
+@include media-breakpoint-down(lg) {
+  body {
+/*    padding-top: 70px;*/
+  }  
+}
+
+
 a {
   -webkit-transition: all 0.5s ease !important;
   -moz-transition: all 0.5s ease !important;

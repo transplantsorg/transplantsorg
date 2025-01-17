@@ -1,4 +1,4 @@
-<a class="navbar-main-mobile-only-overlay collapsed" data-bs-toggle="collapse" data-bs-target="#navbarMainMobile" aria-controls="navbarMainMobile" aria-expanded="false"></a>
+<a onclick="document.body.classList.toggle('overflow-hidden')" class="navbar-main-mobile-only-overlay collapsed" data-bs-toggle="collapse" data-bs-target="#navbarMainMobile" aria-controls="navbarMainMobile" aria-expanded="false"></a>
 
 <div role="alert" class="alert alert-main py-3 px-0 m-0 bg-info border-0 rounded-0 fade show overflow-hidden d-none d-lg-block">
   <div class="position-relative">
@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<nav class="navbar navbar-main navbar-expand-lg sticky-top" role="navigation" tabindex="-1">
+<nav class="navbar navbar-main navbar-expand-lg fixed-top sticky-lg-top" role="navigation" tabindex="-1">
   <div class="container">
     <a class="navbar-brand align-self-center" href="#">
       <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" />
@@ -56,6 +56,7 @@
         <a href="#" class="btn rounded-pill btn-primary mb-0 mx-2 d-none d-lg-block">Give Today</a>
       </div>
       <button
+        onclick="document.body.classList.toggle('overflow-hidden')" 
         class="navbar-toggler collapsed ms-1 ms-lg-0 d-block d-lg-none"
         type="button"
         data-bs-toggle="collapse"
@@ -349,7 +350,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown d-none">
           <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileNews" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">News, Research &amp; Innovation</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileNews">
             <li class="nav-item">
@@ -365,7 +366,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown d-none">
           <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileAbout" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">What We Do</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileAbout">
             <li class="nav-item">
@@ -479,3 +480,5 @@
     </div>
   </div>
 </nav>
+
+<div class="navbar-protect"></div>
