@@ -151,7 +151,7 @@
 
   &.navbar-main {
     border-bottom: 1px solid $navbar-border-color;
-    box-shadow: $navbar-box-shadow;
+    box-shadow: none;
 
     .navbar-brand {
       order: 1;
@@ -199,12 +199,16 @@
 
     .navbar-collapse {
       order: 3;
+      margin-top: 0.5rem;
       margin-bottom: -0.5rem;
+      border-top: 1px solid var(--#{$prefix}gray-600);
     }
 
     .navbar-nav {
-      margin-top: calc(0.5rem - 1px);
-      border-top: 1px solid var(--#{$prefix}gray-600);
+      margin-right: calc(var(--to-gutter-x) * -1);
+      margin-left: calc(var(--to-gutter-x) * -1);
+      padding-right: calc(var(--to-gutter-x) * 1);
+      padding-left: calc(var(--to-gutter-x) * 1);
 
       .nav-item {
         .nav-link {
@@ -264,7 +268,7 @@
         .dropdown-menu {
           background-color: mix($gray-100, $gray-200);
           margin-top: 0.25rem;
-          margin-bottom: 0.75rem;
+          margin-bottom: 0.25rem;
           padding: 1rem 1.5rem;
           border-radius: 0.5rem;
 
@@ -498,12 +502,18 @@
 
       .navbar-collapse {
         order: 2;
+        margin-top: 0;
         margin-bottom: 0;
+        border-top: 0;
       }
 
       .navbar-nav {
         flex-wrap: wrap;
         margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
         border: 0;
 
         .nav-item {
@@ -517,6 +527,7 @@
 
             &.show {
               background: rgba(33, 99, 232, .1);
+              border-bottom: 0;
               color: var(--#{$prefix}primary);
             }
           }
