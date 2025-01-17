@@ -20591,6 +20591,9 @@ body.overflow-hidden {
 .navbar .nav .nav-link {
   color: #050505;
 }
+.navbar .navbar-nav {
+  position: relative;
+}
 .navbar .navbar-nav .nav-item .nav-link {
   transition: all 0.3s ease-in-out 0s;
   color: #050505;
@@ -20989,7 +20992,7 @@ body.overflow-hidden {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
   }
   .navbar-main-mobile-only-overlay.collapsed {
     z-index: -1;
