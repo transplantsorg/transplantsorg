@@ -199,29 +199,16 @@
 
     .navbar-collapse {
       order: 3;
-      margin-right: calc(var(--to-gutter-x) * -1);
-      margin-left: calc(var(--to-gutter-x) * -1);
+      margin-top: 0.5rem;
       margin-bottom: -0.5rem;
+      border-top: 1px solid var(--#{$prefix}gray-600);
     }
 
     .navbar-nav {
-      margin-top: calc(0.5rem);
+      margin-right: calc(var(--to-gutter-x) * -1);
+      margin-left: calc(var(--to-gutter-x) * -1);
       padding-right: calc(var(--to-gutter-x) * 1);
       padding-left: calc(var(--to-gutter-x) * 1);
-      
-      &::before {
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        content: "";
-        background-color: var(--#{$prefix}gray-600);
-        height: 1px;
-        display: block;
-        position: fixed;
-        right: calc(var(--to-gutter-x) * 1);
-        left: calc(var(--to-gutter-x) * 1);
-        margin-top: -1px;
-      }
 
       .nav-item {
         .nav-link {
@@ -515,17 +502,19 @@
 
       .navbar-collapse {
         order: 2;
+        margin-top: 0;
         margin-bottom: 0;
+        border-top: 0;
       }
 
       .navbar-nav {
         flex-wrap: wrap;
         margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
         border: 0;
-
-        &::before {
-          display: none;
-        }
 
         .nav-item {
           border-bottom: 0;
@@ -538,6 +527,7 @@
 
             &.show {
               background: rgba(33, 99, 232, .1);
+              border-bottom: 0;
               color: var(--#{$prefix}primary);
             }
           }
