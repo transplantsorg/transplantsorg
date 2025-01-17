@@ -16,33 +16,33 @@
   headroom.init();
 
   // Multi level menu dropdown
-  const dropdownLinks = document.querySelectorAll(".dropdown-menu a.dropdown-toggle");
-  dropdownLinks.forEach(function (dropdownLink) {
-    dropdownLink.addEventListener("click", function (e) {
-      if (!this.nextElementSibling.classList.contains("show")) {
-        const parentDropdownMenu = this.closest(".dropdown-menu");
-        const currentlyOpenSubMenus = parentDropdownMenu.querySelectorAll(".show");
-        currentlyOpenSubMenus.forEach(function (openSubMenu) {
-          openSubMenu.classList.remove("show");
-        });
-      }
+  // const dropdownLinks = document.querySelectorAll(".dropdown-menu a.dropdown-toggle");
+  // dropdownLinks.forEach(function (dropdownLink) {
+  //   dropdownLink.addEventListener("click", function (e) {
+  //     if (!this.nextElementSibling.classList.contains("show")) {
+  //       const parentDropdownMenu = this.closest(".dropdown-menu");
+  //       const currentlyOpenSubMenus = parentDropdownMenu.querySelectorAll(".show");
+  //       currentlyOpenSubMenus.forEach(function (openSubMenu) {
+  //         openSubMenu.classList.remove("show");
+  //       });
+  //     }
 
-      const subMenu = this.nextElementSibling;
-      subMenu.classList.toggle("show");
+  //     const subMenu = this.nextElementSibling;
+  //     subMenu.classList.toggle("show");
 
-      const parentDropdown = this.closest("li.nav-item.dropdown.show");
-      if (parentDropdown) {
-        parentDropdown.addEventListener("hidden.bs.dropdown", function (e) {
-          const dropdownSubMenus = document.querySelectorAll(".dropdown-submenu .show");
-          dropdownSubMenus.forEach(function (dropdownSubMenu) {
-            dropdownSubMenu.classList.remove("show");
-          });
-        });
-      }
+  //     const parentDropdown = this.closest("li.nav-item.dropdown.show");
+  //     if (parentDropdown) {
+  //       parentDropdown.addEventListener("hidden.bs.dropdown", function (e) {
+  //         const dropdownSubMenus = document.querySelectorAll(".dropdown-submenu .show");
+  //         dropdownSubMenus.forEach(function (dropdownSubMenu) {
+  //           dropdownSubMenu.classList.remove("show");
+  //         });
+  //       });
+  //     }
 
-      e.stopPropagation();
-    });
-  });
+  //     e.stopPropagation();
+  //   });
+  // });
 
   // Default Tooltip
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');

@@ -79,6 +79,10 @@
   }
 }
 
+.btn-white {
+  background-color: var(--#{$prefix}white);
+}
+
 .btn-dashed {
   border-style: dashed !important;
 

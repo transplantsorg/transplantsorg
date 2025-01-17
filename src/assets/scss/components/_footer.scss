@@ -2,7 +2,8 @@
 
 .footer {
   img {
-    width: 200px;
+    width: 50%;
+    max-width: 300px;
   }
 
   p {
@@ -12,7 +13,7 @@
   .nav-footer {
     .nav-link {
       padding: 0.2rem 1rem;
-      color: var(--#{$prefix}gray-400);
+      color: var(--#{$prefix}gray-300);
       line-height: 1.5rem;
 
       &:hover, &:focus {
@@ -22,11 +23,11 @@
   }
 
   .social-links a {
-    padding: 0.625rem;  
+    padding: 0.9rem;  
     border: 1.5px solid rgba($gray-400, 0.3);
     border-radius: 100rem;
     line-height: 1em;
-    color: var(--#{$prefix}gray-400);
+    color: var(--#{$prefix}gray-300);
 
     &:hover {
       border: 1.5px solid $white;
@@ -65,3 +66,16 @@
   }
 }
 
+@include media-breakpoint-up(md) {
+  .footer {
+/*    font-size: rfs-fluid-value(5rem);*/
+
+    img {
+      width: 240px;
+    }
+
+    .social-links a {
+      padding: 0.6875rem;
+    }
+  }
+}
