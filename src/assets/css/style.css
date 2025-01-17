@@ -20709,7 +20709,7 @@ input::-webkit-inner-spin-button {
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu {
   background-color: #f1f3f5;
   margin-top: 0.25rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
 }
