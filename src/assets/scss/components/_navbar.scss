@@ -151,7 +151,7 @@
 
   &.navbar-main {
     border-bottom: 1px solid $navbar-border-color;
-    box-shadow: $navbar-box-shadow;
+    box-shadow: none;
 
     .navbar-brand {
       order: 1;
@@ -199,12 +199,29 @@
 
     .navbar-collapse {
       order: 3;
+      margin-right: calc(var(--to-gutter-x) * -1);
+      margin-left: calc(var(--to-gutter-x) * -1);
       margin-bottom: -0.5rem;
     }
 
     .navbar-nav {
-      margin-top: calc(0.5rem - 1px);
-      border-top: 1px solid var(--#{$prefix}gray-600);
+      margin-top: calc(0.5rem);
+      padding-right: calc(var(--to-gutter-x) * 1);
+      padding-left: calc(var(--to-gutter-x) * 1);
+      
+      &::before {
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        content: "";
+        background-color: var(--#{$prefix}gray-600);
+        height: 1px;
+        display: block;
+        position: fixed;
+        right: calc(var(--to-gutter-x) * 1);
+        left: calc(var(--to-gutter-x) * 1);
+        margin-top: -1px;
+      }
 
       .nav-item {
         .nav-link {
@@ -505,6 +522,10 @@
         flex-wrap: wrap;
         margin-top: 0;
         border: 0;
+
+        &::before {
+          display: none;
+        }
 
         .nav-item {
           border-bottom: 0;
