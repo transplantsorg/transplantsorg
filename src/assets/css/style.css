@@ -45,6 +45,9 @@
 /*$info: #0065c3;*/
 /*$info: #001D38;*/
 /*$info: #15374d;*/
+/*$primary: #6653FF;
+$gray-100: #F6F4FA;
+$info: #100022;*/
 @media (max-width: 1200px) {
   .bg-auto {
     background-size: auto !important;
@@ -20707,6 +20710,7 @@ input::-webkit-inner-spin-button {
   border-bottom: 0;
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu {
+  /*          background-color: #eff7ff;*/
   background-color: #f1f3f5;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
