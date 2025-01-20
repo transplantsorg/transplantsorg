@@ -448,13 +448,28 @@
         padding-bottom: 1.5rem;
 
         img {
-          width: 185px;
+          width: 160px;
+          
+          @include media-breakpoint-up(xl) {
+            width: 180px;
+          }
         }
       }
 
       .nav {
         order: 3;
         flex-shrink: 0;
+        
+        .nav-link {
+          i.bi, i[class^="bi-"] {
+            font-size: 20px;
+
+            &::before {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
       }
 
       .navbar-collapse {

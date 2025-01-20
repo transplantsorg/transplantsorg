@@ -41,7 +41,10 @@
   font-style: italic;
   font-family: "ArizonaText";
 }
+/*$primary: #a13dff;*/
 /*$secondary: #0db284;*/
+/*$secondary: #15374d;*/
+/*$info: #240642;*/
 /*$info: #053fb4;*/
 /*$info: #0065c3;*/
 /*$info: #001D38;*/
@@ -19589,6 +19592,10 @@ textarea.form-control-lg {
   line-height: 1;
 }
 
+.btn i.bi, i[class^=bi-] {
+  font-size: 80%;
+}
+
 .btn-play {
   transition: 0.2s ease;
   background-color: var(--to-white);
@@ -20852,11 +20859,25 @@ input::-webkit-inner-spin-button {
     padding-bottom: 1.5rem;
   }
   .navbar.navbar-main .navbar-brand img {
-    width: 185px;
+    width: 160px;
   }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .navbar.navbar-main .navbar-brand img {
+    width: 180px;
+  }
+}
+@media (min-width: 992px) {
   .navbar.navbar-main .nav {
     order: 3;
     flex-shrink: 0;
+  }
+  .navbar.navbar-main .nav .nav-link i.bi, .navbar.navbar-main .nav .nav-link i[class^=bi-] {
+    font-size: 20px;
+  }
+  .navbar.navbar-main .nav .nav-link i.bi::before, .navbar.navbar-main .nav .nav-link i[class^=bi-]::before {
+    width: 20px;
+    height: 20px;
   }
   .navbar.navbar-main .navbar-collapse {
     order: 2;
@@ -26486,17 +26507,6 @@ a.fc-event:hover {
 }
 
 /* =====  End of Choices  ====== */
-.bi.bi-to-heart::before {
-  content: "";
-  background-color: currentColor;
-  -webkit-mask: url("../images/icons/icon-heart.svg") no-repeat 50% 50%;
-  mask: url("../images/icons/icon-heart.svg") no-repeat 50% 50%;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  height: 16px;
-  width: 16px;
-}
-
 .bi.bi-bluesky::before {
   content: "";
   background-color: currentColor;
