@@ -373,9 +373,15 @@
         opacity: 0;
         visibility: hidden;
         z-index: 1021;
+        top: 100%;
+        background-color: #FFF;
         display: block;
-        margin: 1.125rem 0;
-        box-shadow: var(--#{$prefix}dropdown-shadow);
+        min-width: 14rem;
+        margin: 1rem 0 0;
+        padding: 1rem;
+        border: 1px solid rgba(222,226,230,.4);
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 30px 0 rgba(31, 45, 61, .1);
       }
 
       &:hover {
@@ -388,7 +394,6 @@
         }
       }
     }
-
 
     .dropdown-fullwidth {
       position: static;
@@ -553,8 +558,7 @@ body.overflow-hidden {
     right: 0;
     bottom: 0;
     left: 0;
-    backdrop-filter: blur(5px);
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.5);
 
     &.collapsed {
       z-index: -1;
