@@ -347,6 +347,7 @@
     }
 
     .navbar-nav {
+      position: inherit;
       gap: 0.25rem;
 
       .nav-item {
@@ -357,6 +358,13 @@
       }
     }
 
+    .navbar-collapse {
+      order: 2;
+      margin-top: 0;
+      margin-bottom: 0;
+      border-top: 0;
+    }
+
     .dropdown {
       .dropdown-menu {
         -webkit-transition: all 0.3s ease-in-out;
@@ -364,6 +372,7 @@
         transition: all 0.3s ease-in-out;
         opacity: 0;
         visibility: hidden;
+        z-index: 1021;
         display: block;
         margin: 1.125rem 0;
         box-shadow: var(--#{$prefix}dropdown-shadow);
@@ -504,7 +513,6 @@
     }
   }
 }
-
 
 
 // Navbar Overlay and Overflow

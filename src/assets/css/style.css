@@ -20778,16 +20778,24 @@ input::-webkit-inner-spin-button {
     left: 0;
   }
   .navbar .navbar-nav {
+    position: inherit;
     gap: 0.25rem;
   }
   .navbar .navbar-nav .nav-item .nav-link {
     padding: 0.3125rem 0.3125rem 0.3125rem 0.5rem;
     font-size: 1.05rem;
   }
+  .navbar .navbar-collapse {
+    order: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 0;
+  }
   .navbar .dropdown .dropdown-menu {
     transition: all 0.3s ease-in-out;
     opacity: 0;
     visibility: hidden;
+    z-index: 1021;
     display: block;
     margin: 1.125rem 0;
     box-shadow: var(--to-dropdown-shadow);
