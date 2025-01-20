@@ -36,23 +36,23 @@ $grays: map-merge(
 );
 
 $primary: #2163e8;
-$secondary: #0db284;
-/*$secondary: #17a4a4;*/
+/*$secondary: #0db284;*/
+$secondary: #1ba855;
 $success: #03a765;
-/*$info: #011027;*/
-$info: #053fb4;
+$info: #011027;
 /*$info: #053fb4;*/
 /*$info: #0065c3;*/
 /*$info: #001D38;*/
 /*$info: #15374d;*/
+/*$info: #100022;*/
 $warning: #f25d27;
 $danger: #dc2f44;
 $light: $gray-100;
 $dark: #021324;
 $color-placeholder: #001D38;
-/*$primary: #6653FF;
-$gray-100: #F6F4FA;
-$info: #100022;*/
+/*$primary: #6653FF;*/
+/*$gray-100: #F6F4FA;*/
+
 
 $primary-bg-subtle:       tint-color($primary, 20%);
 $secondary-bg-subtle:     tint-color($secondary, 20%);
