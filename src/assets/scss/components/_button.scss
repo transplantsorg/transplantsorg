@@ -1,5 +1,9 @@
 // Button
 
+.btn i.bi, i[class^="bi-"] {
+  font-size: 80%;
+}
+
 .btn-play {
   transition: 0.2s ease;
   background-color: var(--#{$prefix}white);
