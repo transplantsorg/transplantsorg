@@ -36,6 +36,8 @@
 </div>
 
 <nav class="navbar navbar-main navbar-expand-lg fixed-top sticky-lg-top" role="navigation" tabindex="-1">
+  
+
   <div class="container">
     <a class="navbar-brand align-self-center" href="#">
       <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" />
@@ -45,15 +47,18 @@
         <a href="#" class="btn rounded-pill btn-primary mb-0 me-2 d-block d-md-none"><i class="bi bi-heart-fill me-1"></i>Give</a>
         <a href="#" class="btn rounded-pill btn-primary mb-0 me-2 d-none d-md-block d-lg-none"><i class="bi bi-heart-fill me-1"></i>Give Today</a>
       </div>
-      <div class="nav-item dropdown dropdown-click-required nav-search">
-        <a class="nav-link nav-link-none" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="nav-item dropdown dropdown-click-required">
+        <a class="nav-link nav-link-none" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
           <i class="bi bi-search"></i>
         </a>
-        <div class="dropdown-menu dropdown-menu-end shadow rounded p-2 d-none" aria-labelledby="navSearch">
-          <form class="input-group">
-            <input class="form-control border-success" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success m-0" type="submit">Search</button>
-          </form>
+        <div class="dropdown-menu dropdown-menu-search" aria-labelledby="navSearch">
+          <div class="container d-none d-lg-block">
+            <div class="row py-5">
+              <div class="col-12">
+                Search
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="nav-item">
@@ -142,7 +147,7 @@
         <li class="nav-item dropdown dropdown-click-required">
           <a class="nav-link dropdown-toggle d-none d-lg-block d-xl-none" href="#" id="navbarAbout" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
           <a class="nav-link dropdown-toggle d-none d-xl-block" href="#" id="navbarAbout" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-          <ul class="dropdown-menu d-none" aria-labelledby="navbarAbout">
+          <ul class="dropdown-menu" aria-labelledby="navbarAbout">
             <li>
               <a class="dropdown-item" href="#">About 1</a>
             </li>
@@ -160,6 +165,36 @@
       </ul>
     </div>
   </div>
+
+  <div class="collapse" id="collapseExample">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-11 col-10">
+          <div class="py-2">
+            <form class="d-flex align-items-center">
+              <span class="position-absolute ps-3">
+                <i class="bi bi-search"></i>
+              </span>
+              <input type="search" class="form-control ps-6 border-0 py-3 smooth-shadow-sm" placeholder="Enter a question, topic or keyword" />
+            </form>
+          </div>
+        </div>
+        <div>
+          <div>
+            <button
+            type="button"
+            class="btn-close"
+            aria-label="Close"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container d-flex d-lg-none">
     <div class="collapse navbar-collapse navbar-collapse-mobile-only" id="navbarMainMobile">
       <ul class="navbar-nav navbar-nav-scroll">
@@ -167,13 +202,19 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileCare" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Support</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCare">
             <li class="text-wrap">
-              <h5 class="dropdown-header text-gray-500">Organ</h5>
+              <h5 class="dropdown-header text-secondary">Organ</h5>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganHeart" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                 <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-heart.svg" alt="Heart Icon">Heart Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganHeart">
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
                 <li class="text-wrap">
                   <h5 class="pt-2 dropdown-header">Process</h5>
                 </li>
@@ -323,7 +364,7 @@
               <hr class="separator">
             </li>
             <li class="mt-5 text-wrap">
-              <h5 class="dropdown-header text-gray-500">Stem Cell (Bone Marrow)</h5>
+              <h5 class="dropdown-header text-secondary">Stem Cell (Bone Marrow)</h5>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStemAutologous" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -397,25 +438,25 @@
               <a class="nav-link nav-link-end" href="#">See All Transplant Centers</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-gray-500">Organ</h5>
+              <h5 class="dropdown-header text-secondary">Organ</h5>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-end" href="#">Top-Ranked Transplant Centers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Largest Transplant Centers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Best Performing Transplant Centers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">What to Look For</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-gray-500">Stem Cell (Bone Marrow)</h5>
+              <h5 class="dropdown-header text-secondary">Stem Cell (Bone Marrow)</h5>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-end" href="#">Top-Ranked Transplant Centers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Largest Transplant Centers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Best Performing Transplant Centers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">What to Look For</a>
@@ -443,7 +484,7 @@
               <a class="nav-link nav-link-end" href="#">Register to be a Donor</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-gray-500">Organ</h5>
+              <h5 class="dropdown-header text-secondary">Organ</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Living Organ Donation</a>
@@ -452,7 +493,7 @@
               <a class="nav-link nav-link-end" href="#">Deceased Organ Donation</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-gray-500">Stem Cell</h5>
+              <h5 class="dropdown-header text-secondary">Stem Cell</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Blood & Bone Marrow Donation</a>
@@ -471,7 +512,7 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileAction" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Get Involved</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileAction">
             <li class="text-wrap">
-              <h5 class="dropdown-header text-gray-500">Giving</h5>
+              <h5 class="dropdown-header text-secondary">Giving</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Give to Transplants.org</a>
@@ -483,7 +524,7 @@
               <a class="nav-link nav-link-end" href="#">Frequently Asked Questions</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-gray-500">Volunteer</h5>
+              <h5 class="dropdown-header text-secondary">Volunteer</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Fundraise</a>

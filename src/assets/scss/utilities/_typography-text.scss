@@ -62,3 +62,9 @@ a {
     color: var(--#{$prefix}primary) !important;
   }
 }
+
+.text-gradient {
+  background: -webkit-linear-gradient(right, $primary, darken($primary, 20%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -179,8 +179,12 @@
       padding-bottom: 1rem;
 
       img {
-        width: 180px;
+        width: 160px;
         height: auto;
+
+        @include media-breakpoint-up(sm) {
+          width: 180px;
+        }
       }
     }
 
@@ -212,14 +216,17 @@
       }
 
       .btn {
-        padding: 0.35rem 0.7rem;
+        padding: 0.25rem 0.7rem;
         font-size: 0.9rem;
         font-weight: $font-weight-medium;
-        letter-spacing: 0.01em;
+        letter-spacing: 0.02em;
 
         @include media-breakpoint-up(sm) {
+          padding-top: 0.35rem;
           padding-right: 1rem;
+          padding-bottom: 0.35rem;
           padding-left: 1rem;
+          letter-spacing: 0.01em;
         }
       }      
     }
@@ -338,8 +345,31 @@
           }
         }
       }
+
+      &.dropdown-menu-search {
+      }
     }
   }
+}
+
+#collapseExample {
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+.offcanvas.offcanvas-top.nav-search {
+  height: 100vh;
+  transition: none;
 }
 
 @include media-breakpoint-up(lg) {
