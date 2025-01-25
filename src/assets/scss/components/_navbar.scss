@@ -367,6 +367,10 @@
   }
 }
 
+.navbar-expand-lg #collapseExample .navbar-toggler {
+  display: block !important;
+}
+
 .offcanvas.offcanvas-top.nav-search {
   height: 100vh;
   transition: none;
