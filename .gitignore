@@ -1,17 +1,11 @@
 
 .DS_Store
 .temp
-src/assets/scss/.DS_Store
 src/.DS_Store
 src/assets/.DS_Store
-.DS_Store
-src/.DS_Store
-src/assets/.DS_Store
-.DS_Store
-node_modules/.DS_Store
-src/assets/.DS_Store
+src/assets/css/.DS_Store
 src/assets/fonts/.DS_Store
+src/assets/images/.DS_Store
 src/assets/scss/.DS_Store
-src/assets/.DS_Store
-.DS_Store
-.DS_Store
+src/assets/scss/components/.DS_Store
+node_modules/.DS_Store
