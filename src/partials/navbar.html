@@ -36,8 +36,6 @@
 </div>
 
 <nav class="navbar navbar-main navbar-expand-lg fixed-top sticky-lg-top" role="navigation" tabindex="-1">
-  
-
   <div class="container">
     <a class="navbar-brand align-self-center" href="#">
       <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" />
@@ -51,15 +49,6 @@
         <a class="nav-link nav-link-none" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
           <i class="bi bi-search"></i>
         </a>
-        <div class="dropdown-menu dropdown-menu-search" aria-labelledby="navSearch">
-          <div class="container d-none d-lg-block">
-            <div class="row py-5">
-              <div class="col-12">
-                Search
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="nav-item">
         <a href="#" class="btn rounded-pill btn-primary mb-0 mx-2 d-none d-xl-block"><i class="bi bi-heart-fill me-1"></i>Give Today</a>
@@ -167,33 +156,29 @@
   </div>
 
   <div class="collapse" id="collapseExample">
-    <div class="container">
+    <div class="container align-self-center">
       <div class="row align-items-center">
-        <div class="col-md-11 col-10">
-          <div class="py-2">
-            <form class="d-flex align-items-center">
-              <span class="position-absolute ps-3">
-                <i class="bi bi-search"></i>
-              </span>
-              <input type="search" class="form-control ps-6 border-0 py-3 smooth-shadow-sm" placeholder="Enter a question, topic or keyword" />
-            </form>
-          </div>
+        <div class="col me-0 pe-0">
+          <form class="d-flex align-items-center">
+            <span class="position-absolute ms-3">
+              <i class="bi bi-search"></i>
+            </span>
+            <input type="search" class="form-control rounded-pill ps-7" placeholder="Search a topic or keyword" />
+          </form>
         </div>
-        <div class="col-md-1 col-2">
-          <div>
-            <button 
-            type="button"
-            class="navbar-toggler"
-            aria-label="Close"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample">
-              <span class="icon-bar top-bar rounded-pill mt-0"></span>
-              <span class="icon-bar middle-bar rounded-pill"></span>
-              <span class="icon-bar bottom-bar rounded-pill"></span>
-            </button>
-          </div>
+        <div class="col-auto ps-0 ms-0">
+          <button 
+          type="button"
+          class="navbar-toggler"
+          aria-label="Close"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample">
+            <span class="icon-bar top-bar rounded-pill mt-0"></span>
+            <span class="icon-bar middle-bar rounded-pill"></span>
+            <span class="icon-bar bottom-bar rounded-pill"></span>
+          </button>
         </div>
       </div>
     </div>
@@ -206,7 +191,44 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileCare" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Support</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCare">
             <li class="text-wrap">
-              <h5 class="dropdown-header text-secondary">Organ</h5>
+              <h5 class="dropdown-header text-gray-600">Organ Transplant</h5>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganAll" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                Introduction &amp; Basics
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganAll">
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">The Process</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Choosing a Center</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Waiting for a Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Finding a Living Donor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Rejection &amp; Immunosuppressants</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Life After Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Data Statistics &amp; Outcomes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant for Kids &amp; Teens</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Insurance &amp; Financial Support</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Caregiver Resources</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganHeart" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -263,7 +285,46 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganIntestine">
                 <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Lorem 1</a>
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Listing &amp; Waiting for an Intestine</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; Rejection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
                 </li>
               </ul>
             </li>
@@ -273,7 +334,49 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganKidney">
                 <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Lorem 1</a>
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Listing &amp; Waiting for a Kidney</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Finding a Living Donor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; Rejection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
                 </li>
               </ul>
             </li>
@@ -283,7 +386,49 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganLiver">
                 <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Lorem 1</a>
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Listing &amp; Waiting for a Liver</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Finding a Living Donor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; Rejection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
                 </li>
               </ul>
             </li>
@@ -293,7 +438,49 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganLung">
                 <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Lorem 1</a>
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Listing &amp; Waiting for a Lung</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Finding a Living Donor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; Rejection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
                 </li>
               </ul>
             </li>
@@ -303,7 +490,46 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganPancreas">
                 <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Lorem 1</a>
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Listing &amp; Waiting for a Pancreas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; Rejection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
                 </li>
               </ul>
             </li>
@@ -313,93 +539,109 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganVCA">
                 <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Lorem 1</a>
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Listing &amp; Waiting for a VCA Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; Rejection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganAll" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-rare-organ.svg" alt="Rare Icon" />All Organs
+                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-rare-organ.svg" alt="Rare Icon" />All Organ Transplants
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganAll">
                 <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Lorem 1</a>
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Listing &amp; Waiting for an Organ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; Rejection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganAll" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                About Organ Transplant
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganAll">
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">The Process</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Choosing a Center</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Waiting for a Transplant</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Finding a Living Donor</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Rejection &amp; Immunosuppressants</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Life After Transplant</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Data Statistics &amp; Outcomes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Transplant for Kids &amp; Teens</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Insurance &amp; Financial Support</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Caregiver Resources</a>
-                </li>
-              </ul>
-            </li>
+            
             <li>
               <hr class="separator">
             </li>
             <li class="mt-5 text-wrap">
-              <h5 class="dropdown-header text-secondary">Stem Cell (Bone Marrow)</h5>
+              <h5 class="dropdown-header text-gray-600">Stem Cell (Bone Marrow) Transplant</h5>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStemAutologous" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-autologous.svg" alt="Autologous Icon" />Autologous Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStem" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                Introduction &amp; Basics
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStemAutologous">
-                <li class="nav-item">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStemTest" data-bs-toggle="dropdown" data-bs-auto-close="outside">Test
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStemTest">
-                      <li class="nav-item">
-                        <a class="nav-link nav-link-end" href="#">Lorem 1</a>
-                      </li>
-                    </ul>
-                  </li>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStemAllogenic" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-allogenic.svg" alt="Allogenic Icon" />Allogenic Transplant
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStemAllogenic">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Lorem 1</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStem" data-bs-toggle="dropdown" data-bs-auto-close="outside">About Stem Cell Transplant</a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStem">
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Conditions Treated</a>
@@ -430,6 +672,107 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStemAutologous" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-autologous.svg" alt="Autologous Icon" />Autologous Transplant
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStemAutologous">
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Waiting for a Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; GVHD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStemAllogenic" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-allogenic.svg" alt="Allogenic Icon" />Allogenic Transplant
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStemAllogenic">
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Overview</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="pt-2 dropdown-header">Process</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Referral to a Center &amp; Evaluation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Waiting for a Transplant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Surgery & Recovery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Post-Transplant Care</a>
+                </li>
+                <li>
+                  <hr class="separator">
+                </li>
+                <li class="text-wrap">
+                  <h5 class="dropdown-header">Basics</h5>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Transplant Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Matching to a Donor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; GVHD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Complications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-end" href="#">Statistics</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -442,7 +785,7 @@
               <a class="nav-link nav-link-end" href="#">See All Transplant Centers</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-secondary">Organ</h5>
+              <h5 class="dropdown-header text-gray-600">Organ</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Top-Ranked Transplant Centers</a>
@@ -454,7 +797,7 @@
               <a class="nav-link nav-link-end" href="#">What to Look For</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-secondary">Stem Cell (Bone Marrow)</h5>
+              <h5 class="dropdown-header text-gray-600">Stem Cell (Bone Marrow)</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Top-Ranked Transplant Centers</a>
@@ -488,7 +831,7 @@
               <a class="nav-link nav-link-end" href="#">Register to be a Donor</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-secondary">Organ</h5>
+              <h5 class="dropdown-header text-gray-600">Organ</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Living Organ Donation</a>
@@ -497,7 +840,7 @@
               <a class="nav-link nav-link-end" href="#">Deceased Organ Donation</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-secondary">Stem Cell</h5>
+              <h5 class="dropdown-header text-gray-600">Stem Cell</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Blood & Bone Marrow Donation</a>
@@ -516,7 +859,7 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileAction" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Get Involved</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileAction">
             <li class="text-wrap">
-              <h5 class="dropdown-header text-secondary">Giving</h5>
+              <h5 class="dropdown-header text-gray-600">Giving</h5>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Give to Transplants.org</a>
@@ -528,22 +871,22 @@
               <a class="nav-link nav-link-end" href="#">Frequently Asked Questions</a>
             </li>
             <li class="mt-4 text-wrap">
-              <h5 class="dropdown-header text-secondary">Volunteer</h5>
+              <h5 class="dropdown-header text-gray-600">Volunteer</h5>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Fundraise</a>
+              <a class="nav-link nav-link-end" href="#">Register to be a Donor</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Advocate</a>
+              <a class="nav-link nav-link-end" href="#">Public Advocacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-end" href="#">Raise Awareness</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Host an Event</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Myths &amp; Facts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Register to be a Donor</a>
+              <a class="nav-link nav-link-end" href="#">Fundraise</a>
             </li>
           </ul>
         </li>
@@ -554,7 +897,10 @@
               <a class="nav-link nav-link-end" href="#">What We Do</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Leadership</a>
+              <a class="nav-link nav-link-end" href="#">Leadership &amp; Governance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-end" href="#">Scientific Advisory Committee</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Impact &amp; Annual Report</a>
@@ -563,7 +909,7 @@
               <a class="nav-link nav-link-end" href="#">Frequently Asked Questions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Partnerships</a>
+              <a class="nav-link nav-link-end" href="#">Sponsorships</a>
             </li>
           </ul>
         </li>
