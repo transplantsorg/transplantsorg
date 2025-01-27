@@ -180,3 +180,17 @@
     position: static !important;
   }
 }
+
+.dropdown-img-left {
+  position: relative;
+  display: flex;
+  min-height: 200px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.625rem 1.75rem;
+  background: no-repeat center center / cover;
+  border-top-left-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+}
