@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<nav class="navbar navbar-main navbar-expand-lg fixed-top sticky-lg-top" role="navigation" tabindex="-1">
+<nav class="navbar navbar-main navbar-expand-lg fixed-top sticky-lg-top" role="navigation" tabindex="-1" id="myNavbar">
   <div class="container">
     <a class="navbar-brand align-self-center" href="#">
       <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" />
@@ -46,7 +46,7 @@
         <a href="#" class="btn rounded-pill btn-primary mb-0 me-2 d-none d-md-block d-lg-none"><i class="bi bi-heart-fill me-1"></i>Give Today</a>
       </div>
       <div class="nav-item dropdown dropdown-click-required">
-        <a class="nav-link nav-link-none" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <a onclick="document.body.classList.toggle('overflow-hidden')" class="nav-link nav-link-none" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" data-bs-parent="#myNavbar">
           <i class="bi bi-search"></i>
         </a>
       </div>
@@ -60,6 +60,7 @@
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarMainMobile"
+        data-bs-parent="#myNavbar" 
         aria-controls="navbarMainMobile"
         aria-expanded="false"
         aria-label="Toggle navigation">
@@ -155,7 +156,7 @@
     </div>
   </div>
 
-  <div class="collapse" id="collapseExample">
+  <div class="collapse" id="collapseExample" data-bs-parent="#myNavbar">
     <div class="container align-self-center">
       <div class="row align-items-center">
         <div class="col me-0 pe-0">
@@ -163,7 +164,7 @@
             <span class="position-absolute ms-3">
               <i class="bi bi-search"></i>
             </span>
-            <input type="search" class="form-control rounded-pill ps-7" placeholder="Search a topic or keyword" />
+            <input type="search" class="form-control rounded-pill ps-7" placeholder="Search a topic or keyword" autofocus />
           </form>
         </div>
         <div class="col-auto ps-0 ms-0">
@@ -173,6 +174,7 @@
           aria-label="Close"
           data-bs-toggle="collapse"
           data-bs-target="#collapseExample"
+          data-bs-parent="#myNavbar"
           aria-expanded="false"
           aria-controls="collapseExample">
             <span class="icon-bar top-bar rounded-pill mt-0"></span>
@@ -185,7 +187,7 @@
   </div>
 
   <div class="container d-flex d-lg-none">
-    <div class="collapse navbar-collapse navbar-collapse-mobile-only" id="navbarMainMobile">
+    <div class="collapse navbar-collapse navbar-collapse-mobile-only" id="navbarMainMobile" data-bs-parent="myTest">
       <ul class="navbar-nav navbar-nav-scroll">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileCare" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Support</a>
