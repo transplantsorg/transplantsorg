@@ -26634,6 +26634,20 @@ a.fc-event:hover {
   width: 16px;
 }
 
+.timeline-activity {
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-activity .list-group-item:not(:last-child):before {
+  border-left: 1px solid var(--to-gray-200);
+  bottom: 0;
+  content: "";
+  left: 0.3rem;
+  position: absolute;
+  top: 0;
+}
+
 /*h1 {
   @include font-size(4rem);
 }*/
