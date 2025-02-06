@@ -1,6 +1,7 @@
 // Footer
 
 .footer {
+  color: $white;
   font-size: rfs-fluid-value(1.05rem);
 
   svg.logo {
@@ -62,6 +63,7 @@
   }
 
   p {
+    font-size: rfs-fluid-value(1rem);
     line-height: $line-height-sm;
 
     &:last-child {
