@@ -11,6 +11,36 @@
   width: 16px;
 }
 
+.colored-diagonal:before {
+  content: "";
+  position: absolute;
+  transition: all 0.5s linear;
+  background: linear-gradient(15deg, #29c7c1 0%, #7eeac3 14%, #7eeac3 14%, #97f3bf 25%, #b3f7b5 36%, #defab7 50%, #f0f9c6 62%, #defab7 73%, #d4fdab 86%, #cbfdab 100%); 
+}
+
+.colored-linear:before {
+    content: "";
+    position: absolute;
+    transition: all 0.5s linear;
+    background: linear-gradient(to right, #29c7c1 0%, #7eeac3 14%, #7eeac3 14%, #97f3bf 25%, #b3f7b5 36%, #defab7 50%, #f0f9c6 62%, #defab7 73%, #d4fdab 86%, #cbfdab 100%);
+  }
+
+
+.border-color-glow-top:before {
+  content: "";
+  filter: blur(5px);
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin-top: -5px;
+}
+
+.border-colored-glow:before {
+  content: "";
+  inset: 10px;
+  filter: blur(5px);
+}
+
 .bi.bi-search::before {
   content: "";
   background-color: currentColor;

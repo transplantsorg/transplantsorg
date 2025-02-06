@@ -1,26 +1,28 @@
 // Footer
 
 .footer {
+  font-size: rfs-fluid-value(1.05rem);
+
   svg.logo {
     width: 50%;
     max-width: 225px;
-  }
 
-  @include media-breakpoint-down(sm) {
-    svg.logo {
+    @include media-breakpoint-down(sm) { 
       max-width: 185px;
     }
   }
 
   p {
-    color: rgba(var(--#{$prefix}white-rgb),.5);
+    font-size: rfs-fluid-value(1.05rem);
+    color: rgba(var(--#{$prefix}white-rgb),.7);
+    line-height: $line-height-base;
   }
 
   .nav-footer {
     .nav-link {
       padding: 0.2rem 1rem;
       color: var(--#{$prefix}gray-300);
-      line-height: 1.5rem;
+      line-height: $line-height-base;
 
       &:hover, &:focus {
         color: var(--#{$prefix}white);
@@ -30,13 +32,13 @@
 
   .social-links a {
     padding: 0.9rem;  
-    border: 1.5px solid rgba($gray-400, 0.3);
+    border: 0.125rem solid rgba($gray-400, 0.3);
     border-radius: 100rem;
-    line-height: 1em;
     color: var(--#{$prefix}gray-300);
-
+    line-height: $line-height-1;
+    
     &:hover {
-      border: 1.5px solid $white;
+      border-color: $white;
       color: var(--#{$prefix}white);
     }
   }
@@ -74,7 +76,7 @@
 
 @include media-breakpoint-up(md) {
   .footer {
-/*    font-size: rfs-fluid-value(5rem);*/
+    font-size: rfs-fluid-value(1.1rem);
 
     .social-links a {
       padding: 0.6875rem;
