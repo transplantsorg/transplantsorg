@@ -21040,7 +21040,7 @@ input::-webkit-inner-spin-button {
   }
   .navbar.navbar-main .navbar-nav .nav-item .nav-link.show {
     background: rgba(33, 99, 232, 0.1);
-    border-radius: 0.25rem;
+    border-radius: 0.3125rem;
     border-bottom: 0;
     color: var(--to-primary);
   }
