@@ -20773,7 +20773,7 @@ input::-webkit-inner-spin-button {
   background-color: transparent;
   min-width: auto;
   margin: 0;
-  padding: 2rem 1rem;
+  padding: 2rem 1.25rem;
   border-bottom: 1px solid var(--to-gray-300);
   border-radius: 0;
   box-shadow: none;
@@ -21098,7 +21098,7 @@ body.overflow-hidden {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(3, 11, 25, 0.9);
   }
   .navbar-main-overlay.collapsed {
     z-index: -1;
