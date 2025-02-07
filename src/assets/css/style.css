@@ -20962,7 +20962,7 @@ input::-webkit-inner-spin-button {
     display: block;
   }
   .navbar.navbar-main {
-    box-shadow: none;
+    box-shadow: 0 2px 5px rgba(0, 29, 56, 0.05);
   }
   .navbar.navbar-main .navbar-brand {
     margin-right: 1.5rem;
