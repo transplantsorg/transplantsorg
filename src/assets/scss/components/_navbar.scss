@@ -24,11 +24,6 @@
   .navbar-toggler {
     padding: 0.75rem 0.563rem;
     border: 1px solid var(--#{$prefix}gray-600);
-    
-    &:focus {
-      box-shadow: none;
-      outline: 0;
-    }
 
     .icon-bar {
       -webkit-transition: all 0.2s;
@@ -52,6 +47,17 @@
     .bottom-bar {
       transform: rotate(-45deg);
       transform-origin: 20% -80%;
+    }
+
+    &:focus {
+      box-shadow: none;
+      outline: 0;
+    }
+
+    &:hover {
+      .icon-bar {
+        background-color: $primary;
+      }
     }
 
     &.collapsed {

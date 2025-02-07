@@ -20567,10 +20567,6 @@ input::-webkit-inner-spin-button {
   padding: 0.75rem 0.563rem;
   border: 1px solid var(--to-gray-600);
 }
-.navbar .navbar-toggler:focus {
-  box-shadow: none;
-  outline: 0;
-}
 .navbar .navbar-toggler .icon-bar {
   transition: all 0.2s;
   background-color: #050505;
@@ -20589,6 +20585,13 @@ input::-webkit-inner-spin-button {
 .navbar .navbar-toggler .bottom-bar {
   transform: rotate(-45deg);
   transform-origin: 20% -80%;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+  outline: 0;
+}
+.navbar .navbar-toggler:hover .icon-bar {
+  background-color: #206ef4;
 }
 .navbar .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
