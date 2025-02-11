@@ -20974,7 +20974,7 @@ input::-webkit-inner-spin-button {
     display: block;
   }
   .navbar.navbar-main {
-    box-shadow: 0 2px 5px rgba(0, 29, 56, 0.05);
+    box-shadow: none;
   }
   .navbar.navbar-main .navbar-brand {
     margin-right: 1.5rem;
@@ -21064,6 +21064,9 @@ input::-webkit-inner-spin-button {
   }
   .navbar.navbar-main .navbar-nav .nav-item .nav-link.show:hover::before {
     background-color: transparent;
+  }
+  .headroom--pinned.headroom--not-top .navbar.navbar-main {
+    box-shadow: 0 2px 5px rgba(0, 29, 56, 0.05);
   }
 }
 @media (max-width: 991.98px) {

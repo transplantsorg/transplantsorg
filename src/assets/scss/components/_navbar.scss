@@ -548,7 +548,7 @@
     }
 
     &.navbar-main {
-      box-shadow: 0 2px 5px rgba(0, 29, 56, 0.05); 
+      box-shadow: none;
 
       .navbar-brand {
         margin-right: 1.5rem;
@@ -659,7 +659,15 @@
       }
     }
   }
+
+  .headroom--pinned.headroom--not-top .navbar.navbar-main {
+    box-shadow: 0 2px 5px rgba(0, 29, 56, 0.05); 
+  }
 }
+
+
+
+
 
 @include media-breakpoint-down(lg) {
   .navbar {
