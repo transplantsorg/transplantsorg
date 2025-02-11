@@ -20564,8 +20564,12 @@ input::-webkit-inner-spin-button {
   line-height: 1;
 }
 .navbar .navbar-toggler {
-  padding: 0.75rem 0.563rem;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  padding: 0.75rem;
   border: 1px solid var(--to-gray-600);
+  border-radius: 100rem;
 }
 .navbar .navbar-toggler .icon-bar {
   transition: all 0.2s;
@@ -20574,6 +20578,8 @@ input::-webkit-inner-spin-button {
   width: 24px;
   height: 2px;
   margin-top: 0.25rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 .navbar .navbar-toggler .top-bar {
   transform: rotate(45deg);
@@ -20590,8 +20596,8 @@ input::-webkit-inner-spin-button {
   box-shadow: none;
   outline: 0;
 }
-.navbar .navbar-toggler:hover .icon-bar {
-  background-color: #206ef4;
+.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {
+  background-color: #f8f9fa;
 }
 .navbar .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
@@ -20706,6 +20712,9 @@ input::-webkit-inner-spin-button {
   order: 2;
 }
 .navbar.navbar-main .nav .nav-link {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
   padding: 0.5rem 0.4rem;
 }
 @media (min-width: 576px) {
@@ -20720,6 +20729,11 @@ input::-webkit-inner-spin-button {
 .navbar.navbar-main .nav .nav-link i.bi::before, .navbar.navbar-main .nav .nav-link i[class^=bi-]::before {
   width: 24px;
   height: 24px;
+}
+.navbar.navbar-main .nav .nav-link:hover, .navbar.navbar-main .nav .nav-link:focus {
+  background-color: #f8f9fa;
+  border-radius: 100rem;
+  color: #050505;
 }
 .navbar.navbar-main .nav .btn {
   padding: 0.25rem 0.7rem;
@@ -20942,8 +20956,6 @@ input::-webkit-inner-spin-button {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    /*        background-color: rgba(255,255,255,.95);*/
-    /*        backdrop-filter: blur(10px);*/
     border-top: 1px solid #dee2e6;
     border-bottom: 1px solid #dee2e6;
     border-radius: 0;
@@ -20979,6 +20991,9 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (min-width: 992px) {
+  .navbar.navbar-main .navbar-toggler:hover .icon-bar, .navbar.navbar-main .navbar-toggler:focus .icon-bar {
+    background-color: #206ef4;
+  }
   .navbar.navbar-main .nav {
     order: 3;
     flex-shrink: 0;
@@ -20989,6 +21004,9 @@ input::-webkit-inner-spin-button {
   .navbar.navbar-main .nav .nav-link i.bi::before, .navbar.navbar-main .nav .nav-link i[class^=bi-]::before {
     width: 20px;
     height: 20px;
+  }
+  .navbar.navbar-main .nav .nav-link:hover, .navbar.navbar-main .nav .nav-link:focus {
+    color: #206ef4;
   }
   .navbar.navbar-main .navbar-collapse {
     order: 2;
