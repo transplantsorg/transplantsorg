@@ -474,6 +474,16 @@
       border-top: 0;
     }
 
+    .nav-item {
+      .nav-link {
+        &.dropdown-toggle {
+          &::after {
+            float: right;
+          }
+        }
+      }
+    }
+
     .dropdown {
       .dropdown-menu {
         -webkit-transition: all 0.3s ease-in-out;
