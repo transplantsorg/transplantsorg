@@ -20201,6 +20201,11 @@ textarea.form-control-lg {
   color: #fff;
   font-size: 1.05rem;
 }
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1.1rem;
+  }
+}
 .footer svg.logo {
   width: 50%;
   max-width: 225px;
@@ -20211,8 +20216,8 @@ textarea.form-control-lg {
   }
 }
 .footer p {
-  font-size: 1.05rem;
   color: rgba(var(--to-white-rgb), 0.7);
+  font-size: 1.05rem;
   line-height: 1.5;
 }
 .footer .nav-footer .nav-link {
@@ -20230,7 +20235,12 @@ textarea.form-control-lg {
   color: var(--to-gray-300);
   line-height: 1;
 }
-.footer .social-links a:hover {
+@media (min-width: 768px) {
+  .footer .social-links a {
+    padding: 0.6875rem;
+  }
+}
+.footer .social-links a:hover, .footer .social-links a:focus {
   border-color: #fff;
   color: var(--to-white);
 }
@@ -20244,7 +20254,7 @@ textarea.form-control-lg {
 .copyright .nav-footer .nav-link:last-child {
   margin-right: 0;
 }
-.copyright .nav-footer .nav-link:hover {
+.copyright .nav-footer .nav-link:hover, .copyright .nav-footer .nav-link:focus {
   color: var(--to-primary);
 }
 .copyright p {
@@ -20257,15 +20267,10 @@ textarea.form-control-lg {
 .copyright p a {
   color: var(--to-gray-700);
 }
-
-@media (min-width: 768px) {
-  .footer {
-    font-size: 1.1rem;
-  }
-  .footer .social-links a {
-    padding: 0.6875rem;
-  }
+.copyright p a:hover, .copyright p a:focus {
+  color: var(--to-primary);
 }
+
 .no-resize {
   resize: none;
 }

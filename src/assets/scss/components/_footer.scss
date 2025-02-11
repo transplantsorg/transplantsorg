@@ -3,19 +3,17 @@
 .footer {
   color: $white;
   font-size: rfs-fluid-value(1.05rem);
+  @include media-breakpoint-up(md) { font-size: rfs-fluid-value(1.1rem); }
 
   svg.logo {
     width: 50%;
     max-width: 225px;
-
-    @include media-breakpoint-down(sm) { 
-      max-width: 185px;
-    }
+    @include media-breakpoint-down(sm) { max-width: 185px; }
   }
 
   p {
-    font-size: rfs-fluid-value(1.05rem);
     color: rgba(var(--#{$prefix}white-rgb),.7);
+    font-size: rfs-fluid-value(1.05rem);
     line-height: $line-height-base;
   }
 
@@ -32,13 +30,14 @@
   }
 
   .social-links a {
-    padding: 0.9rem;  
+    padding: 0.9rem;
+    @include media-breakpoint-up(md) { padding: 0.6875rem; }
     border: 0.125rem solid rgba($gray-400, 0.3);
     border-radius: 100rem;
     color: var(--#{$prefix}gray-300);
     line-height: $line-height-1;
     
-    &:hover {
+    &:hover, &:focus {
       border-color: $white;
       color: var(--#{$prefix}white);
     }
@@ -56,7 +55,7 @@
         margin-right: 0;
       }
 
-      &:hover {
+      &:hover, &:focus {
         color: var(--#{$prefix}primary);
       }
     }
@@ -72,16 +71,10 @@
 
     a {
       color: var(--#{$prefix}gray-700);
-    }
-  }
-}
 
-@include media-breakpoint-up(md) {
-  .footer {
-    font-size: rfs-fluid-value(1.1rem);
-
-    .social-links a {
-      padding: 0.6875rem;
+      &:hover, &:focus {
+        color: var(--#{$prefix}primary);
+      }
     }
   }
 }
