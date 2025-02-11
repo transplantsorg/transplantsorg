@@ -20636,7 +20636,7 @@ input::-webkit-inner-spin-button {
   content: "\e930";
   background-size: 0.625rem 0.625rem;
   background-repeat: no-repeat;
-  float: right;
+  float: none;
   margin-top: 0.125rem;
   margin-left: auto;
   border: 0;
@@ -20652,7 +20652,7 @@ input::-webkit-inner-spin-button {
   content: "\e92e";
   background-size: 0.625rem 0.625rem;
   background-repeat: no-repeat;
-  float: right;
+  float: none;
   margin-top: 0.125rem;
   margin-left: auto;
   border: 0;
@@ -20827,6 +20827,7 @@ input::-webkit-inner-spin-button {
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link {
   padding: 1rem 0;
+  display: inline-block;
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu {
   background-color: #fff;
