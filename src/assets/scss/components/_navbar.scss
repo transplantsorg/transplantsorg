@@ -107,7 +107,7 @@
         content: "\e930";
         background-size: 0.625rem 0.625rem;
         background-repeat: no-repeat;
-        float: right;
+        float: none;
         margin-top: 0.125rem;
         margin-left: auto;
         border: 0;
@@ -126,7 +126,7 @@
           content: "\e92e";
           background-size: 0.625rem 0.625rem;
           background-repeat: no-repeat;
-          float: right;
+          float: none;
           margin-top: 0.125rem;
           margin-left: auto;
           border: 0;
@@ -341,6 +341,7 @@
           .nav-item {
             .nav-link {
               padding: 1rem 0;
+              display: inline-block;
             }
 
             .dropdown-menu {
@@ -471,6 +472,16 @@
       margin-top: 0;
       margin-bottom: 0;
       border-top: 0;
+    }
+
+    .nav-item {
+      .nav-link {
+        &.dropdown-toggle {
+          &::after {
+            float: right;
+          }
+        }
+      }
     }
 
     .dropdown {
