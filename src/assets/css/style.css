@@ -20602,7 +20602,7 @@ input::-webkit-inner-spin-button {
   outline: 0;
 }
 .navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {
-  background-color: #f8f9fa;
+  background-color: #f1f3f5;
 }
 .navbar .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
@@ -20615,6 +20615,9 @@ input::-webkit-inner-spin-button {
 }
 .navbar .navbar-nav {
   position: relative;
+}
+.navbar .nav .nav-item .nav-link::after {
+  display: none;
 }
 .navbar .nav-item .nav-link {
   display: flex;
@@ -20666,9 +20669,6 @@ input::-webkit-inner-spin-button {
 .navbar .nav-item .nav-link.nav-link-end::after, .navbar .nav-item .nav-link.dropdown-toggle-end::after {
   margin-left: 0.125rem;
 }
-.navbar .nav-item .nav-link.nav-link-none::after {
-  display: none;
-}
 .navbar .dropdown-menu {
   padding: 1rem 0.75rem;
   border: 0;
@@ -20695,18 +20695,20 @@ input::-webkit-inner-spin-button {
 }
 .navbar.navbar-main .navbar-brand {
   order: 1;
+  width: 160px;
   margin-right: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.navbar.navbar-main .navbar-brand img {
-  width: 160px;
-  height: auto;
-}
-@media (min-width: 576px) {
-  .navbar.navbar-main .navbar-brand img {
-    width: 180px;
+@media (min-width: 1200px) {
+  .navbar.navbar-main .navbar-brand {
+    width: 160px;
+    margin-right: 1.5rem;
   }
+}
+.navbar.navbar-main .navbar-brand img {
+  width: 100%;
+  height: auto;
 }
 .navbar.navbar-main .navbar-toggler {
   margin-right: -0.75rem;
@@ -20714,6 +20716,7 @@ input::-webkit-inner-spin-button {
   border: transparent;
 }
 .navbar.navbar-main .nav {
+  display: flex;
   order: 2;
 }
 .navbar.navbar-main .nav .nav-link {
@@ -20736,12 +20739,12 @@ input::-webkit-inner-spin-button {
   height: 24px;
 }
 .navbar.navbar-main .nav .nav-link:hover, .navbar.navbar-main .nav .nav-link:focus {
-  background-color: #f8f9fa;
+  background-color: #f1f3f5;
   border-radius: 100rem;
   color: #050505;
 }
 .navbar.navbar-main .nav .btn {
-  padding: 0.25rem 0.7rem;
+  padding: 0.35rem 0.7rem;
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -20842,27 +20845,26 @@ input::-webkit-inner-spin-button {
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link:last-child {
   padding-bottom: 0.5rem;
 }
-#collapseExample {
+#navbarSearch {
   transition: all 0.15s ease;
   opacity: 0;
   z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fff;
   display: flex;
   height: 100%;
   width: 100%;
 }
-#collapseExample.show {
+#navbarSearch.show {
   z-index: 1021;
   opacity: 1;
 }
-#collapseExample .bi.bi-search::before {
+#navbarSearch .bi.bi-search::before {
   width: 22px;
   height: 22px;
 }
-#collapseExample .form-control {
+#navbarSearch .form-control {
   background-color: #f8f9fa;
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
@@ -20874,28 +20876,28 @@ input::-webkit-inner-spin-button {
   line-height: 1em;
   letter-spacing: 0;
 }
-#collapseExample .form-control::-moz-placeholder {
+#navbarSearch .form-control::-moz-placeholder {
   color: #6c757d;
 }
-#collapseExample .form-control::placeholder {
+#navbarSearch .form-control::placeholder {
   color: #6c757d;
 }
-#collapseExample .form-control:hover {
+#navbarSearch .form-control:hover {
   background-color: #fff;
   box-shadow: 0px 0px 0px 2px rgba(33, 99, 232, 0.2);
   border: 2px solid rgb(33, 99, 232);
 }
-#collapseExample .form-control:focus {
+#navbarSearch .form-control:focus {
   background-color: #fff;
   box-shadow: 0px 0px 0px 2px rgba(33, 99, 232, 0.2);
   border: 2px solid rgb(33, 99, 232);
 }
-#collapseExample .form-control::-webkit-search-cancel-button {
+#navbarSearch .form-control::-webkit-search-cancel-button {
   -webkit-appearance: none;
   display: none;
 }
 
-.navbar #collapseExample .navbar-toggler {
+.navbar #navbarSearch .navbar-toggler {
   display: block !important;
 }
 
@@ -20986,17 +20988,15 @@ input::-webkit-inner-spin-button {
     box-shadow: none;
   }
   .navbar.navbar-main .navbar-brand {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
-  .navbar.navbar-main .navbar-brand img {
-    width: 160px;
-  }
 }
 @media (min-width: 992px) and (min-width: 1200px) {
-  .navbar.navbar-main .navbar-brand img {
+  .navbar.navbar-main .navbar-brand {
     width: 180px;
+    margin-right: 1.5rem;
   }
 }
 @media (min-width: 992px) {

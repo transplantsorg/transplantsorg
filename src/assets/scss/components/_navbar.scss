@@ -61,7 +61,7 @@
     }
 
     &:hover, &:focus {
-      background-color: $gray-100;
+      background-color: mix($gray-100, $gray-200, 50%);
     }
 
     &.collapsed {
@@ -81,6 +81,16 @@
 
   .navbar-nav {
     position: relative;
+  }
+
+  .nav {
+    .nav-item {
+      .nav-link {
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
 
   .nav-item {
@@ -145,12 +155,6 @@
           margin-left: 0.125rem;
         }
       }
-
-      &.nav-link-none {
-        &::after {
-          display: none;
-        }
-      }
     }
   }
 
@@ -184,17 +188,19 @@
 
     .navbar-brand {
       order: 1;
+      width: 160px;
       margin-right: 0;
       padding-top: 1rem;
       padding-bottom: 1rem;
 
-      img {
+      @include media-breakpoint-up(xl) {
         width: 160px;
-        height: auto;
+        margin-right: 1.5rem;
+      }
 
-        @include media-breakpoint-up(sm) {
-          width: 180px;
-        }
+      img {
+        width: 100%;
+        height: auto;
       }
     }
 
@@ -205,6 +211,7 @@
     }
 
     .nav {
+      display: flex;
       order: 2;
 
       .nav-link {
@@ -228,14 +235,14 @@
         }
 
         &:hover, &:focus {
-          background-color: $gray-100;
+          background-color: mix($gray-100, $gray-200, 50%);
           border-radius: 100rem;
           color: $black;
         }
       }
 
       .btn {
-        padding: 0.25rem 0.7rem;
+        padding: 0.35rem 0.7rem;
         font-size: 0.9rem;
         font-weight: $font-weight-medium;
         letter-spacing: 0.02em;
@@ -372,7 +379,7 @@
   }
 }
 
-#collapseExample {
+#navbarSearch {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
   opacity: 0;
@@ -380,7 +387,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: $white;
   display: flex;
   height: 100%;
   width: 100%;
@@ -430,11 +436,9 @@
   }
 }
 
-.navbar #collapseExample .navbar-toggler {
+.navbar #navbarSearch .navbar-toggler {
   display: block !important;
 }
-
-
 
 @include media-breakpoint-up(lg) {
   .headroom--unpinned .navbar.navbar-main {
@@ -562,16 +566,13 @@
       box-shadow: none;
 
       .navbar-brand {
-        margin-right: 1.5rem;
+        margin-right: 1rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
 
-        img {
-          width: 160px;
-          
-          @include media-breakpoint-up(xl) {
-            width: 180px;
-          }
+        @include media-breakpoint-up(xl) {
+          width: 180px;
+          margin-right: 1.5rem;
         }
       }
 

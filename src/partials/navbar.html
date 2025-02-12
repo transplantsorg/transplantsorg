@@ -1,40 +1,34 @@
-<a onclick="document.body.classList.toggle('overflow-hidden')" class="navbar-main-overlay collapsed" data-bs-toggle="collapse" data-bs-target="#navbarMainMobile" aria-controls="navbarMainMobile" aria-expanded="false"></a>
-
-<nav class="navbar navbar-main navbar-expand-lg fixed-top sticky-lg-top" role="navigation" tabindex="-1" id="myNavbar">
+<nav class="navbar navbar-main navbar-expand-lg fixed-top sticky-lg-top" role="navigation" tabindex="-1" id="Navbar">
   <div class="container">
-    <a class="navbar-brand align-self-center" href="#">
-      <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" />
+    <a href="#" class="navbar-brand align-self-center">
+      <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org" />
     </a>
     <div class="nav flex-nowrap align-items-center">
-      <div class="nav-item">
-        <a href="#" class="btn rounded-pill btn-primary mb-0 me-2 d-block d-md-none"><i class="bi bi-heart-fill me-1"></i>Give</a>
-        <a href="#" class="btn rounded-pill btn-primary mb-0 me-2 d-none d-md-block d-lg-none"><i class="bi bi-heart-fill me-1"></i>Give Today</a>
+      <div class="nav-item order-1 order-lg-3">
+        <a href="#" class="btn btn-primary rounded-pill me-2 mb-0 ms-lg-2">
+          <i class="bi bi-heart-fill me-1"></i>Give <span class="d-none d-md-inline-block d-lg-none d-xl-inline-block">Today</span>
+        </a>
       </div>
-      <div class="nav-item dropdown dropdown-click-required">
-        <a onclick="document.body.classList.toggle('overflow-hidden')" class="nav-link nav-link-none align-items-center" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" data-bs-parent="#myNavbar">
+      <div class="nav-item dropdown dropdown-click-required order-2 order-lg-2">
+        <a onclick="document.body.classList.toggle('overflow-hidden')" class="nav-link align-items-center" role="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-expanded="false" aria-controls="navbarSearch" data-bs-parent="#Navbar">
           <i class="bi bi-search mx-auto"></i>
         </a>
       </div>
-      <div class="nav-item">
-        <a href="#" class="btn rounded-pill btn-primary mb-0 mx-2 d-none d-xl-block"><i class="bi bi-heart-fill me-1"></i>Give Today</a>
-        <a href="#" class="btn rounded-pill btn-primary mb-0 mx-2 d-none d-lg-block d-xl-none"><i class="bi bi-heart-fill me-1"></i>Give</a>
-      </div>
       <button
         onclick="document.body.classList.toggle('overflow-hidden')" 
-        class="navbar-toggler collapsed ms-0 ms-lg-0 d-block d-lg-none"
+        class="navbar-toggler collapsed d-block d-lg-none ms-0 order-3 order-lg-1"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarMainMobile"
-        data-bs-parent="#myNavbar" 
+        data-bs-parent="#Navbar" 
         aria-controls="navbarMainMobile"
         aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="Toggle Navigation">
         <span class="icon-bar top-bar rounded-pill mt-0"></span>
         <span class="icon-bar middle-bar rounded-pill"></span>
         <span class="icon-bar bottom-bar rounded-pill"></span>
       </button>
     </div>
-  
     <div class="navbar-collapse d-none d-lg-block">
       <ul class="navbar-nav">
         <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
@@ -191,43 +185,6 @@
       </ul>
     </div>
   </div>
-
-  <div class="collapse" id="collapseExample" data-bs-parent="#myNavbar">
-    <div class="container align-self-center">
-      <div class="row align-items-center">
-        <div class="col d-none d-lg-flex flex-shrink-0 flex-grow-0 me-0 pe-0">
-          <a class="navbar-brand align-self-center" href="#">
-            <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" />
-          </a>
-        </div>
-        <div class="col me-2 pe-0">
-          <form class="d-flex align-items-center">
-            <span class="position-absolute ms-3">
-              <i class="bi bi-search"></i>
-            </span>
-            <input type="search" class="form-control rounded-pill ps-7" placeholder="Search topic or keyword" />
-          </form>
-        </div>
-        <div class="col-auto ps-0 ms-0">
-          <button 
-          onclick="document.body.classList.toggle('overflow-hidden')" 
-          type="button"
-          class="navbar-toggler"
-          aria-label="Close"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseExample"
-          data-bs-parent="#myNavbar"
-          aria-expanded="false"
-          aria-controls="collapseExample">
-            <span class="icon-bar top-bar rounded-pill mt-0"></span>
-            <span class="icon-bar middle-bar rounded-pill"></span>
-            <span class="icon-bar bottom-bar rounded-pill"></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="container d-flex d-lg-none">
     <div class="collapse navbar-collapse navbar-collapse-mobile-only" id="navbarMainMobile" data-bs-parent="myTest">
       <ul class="navbar-nav navbar-nav-scroll">
@@ -1092,5 +1049,43 @@
       </ul>
     </div>
   </div>
+  <div class="collapse" id="navbarSearch" data-bs-parent="#Navbar">
+    <div class="container align-self-center">
+      <div class="row align-items-center">
+        <div class="col d-none d-lg-flex flex-shrink-0 flex-grow-0 me-0 pe-0">
+          <a class="navbar-brand align-self-center" href="#">
+            <!-- <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" /> -->
+          </a>
+        </div>
+        <div class="col pe-2 pe-0" style="background-color: #FFF;">
+          <form class="d-flex align-items-center">
+            <span class="position-absolute ms-3">
+              <i class="bi bi-search"></i>
+            </span>
+            <input type="search" class="form-control rounded-pill ps-7" placeholder="Search topic or keyword" />
+          </form>
+        </div>
+        <div class="col-auto ps-0 ms-0" style="background-color: #FFF;">
+          <button 
+            onclick="document.body.classList.toggle('overflow-hidden')" 
+            type="button"
+            class="navbar-toggler"
+            aria-label="Close"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSearch"
+            data-bs-parent="#myNavbar"
+            aria-expanded="false"
+            aria-controls="navbarSearch">
+            <span class="icon-bar top-bar rounded-pill mt-0"></span>
+            <span class="icon-bar middle-bar rounded-pill"></span>
+            <span class="icon-bar bottom-bar rounded-pill"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
+
+<!-- Navbar Helpers -->
 <div class="navbar-overflow"></div>
+<a onclick="document.body.classList.toggle('overflow-hidden')" class="navbar-main-overlay collapsed" data-bs-toggle="collapse" data-bs-target="#navbarMainMobile" aria-controls="navbarMainMobile" aria-expanded="false"></a>
