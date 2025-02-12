@@ -350,7 +350,7 @@
           hr {
             margin-top: 0.75rem;
             margin-bottom: 0.75rem;
-            color: var(--#{$prefix}gray-300);
+            color: mix($gray-300, $gray-400, 50%);
           }
 
           .nav-item {
@@ -395,17 +395,17 @@
     width: 100%;
     display: flex;
 
-    > .col-*:nth-child(2), > .col-*:nth-child(3) {
+    > .col-*:not(:first-child) {
       transition: visibility 0s 0.25s, opacity 0.25s linear;
     }
     
     &.show {
-      transition: opacity 0.35s linear;
+      transition: opacity 0.25s linear;
       z-index: 1021;
       opacity: 1;
       visibility: visible;
 
-      > .col-*:nth-child(2), > .col-*:nth-child(3) {
+      > .col-*:not(:first-child) {
         transition: visibility 0s 0.25s, opacity 0.25s linear;
       }
 
