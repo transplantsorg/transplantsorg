@@ -395,7 +395,7 @@
     width: 100%;
     display: flex;
 
-    > .col-*:nth-child(2), > .col-*:nth-child(3) {
+    > .col-*:not(:first-child) {
       transition: visibility 0s 0.25s, opacity 0.25s linear;
     }
     
@@ -405,7 +405,7 @@
       opacity: 1;
       visibility: visible;
 
-      > .col-*:nth-child(2), > .col-*:nth-child(3) {
+      > .col-*:not(:first-child) {
         transition: visibility 0s 0.25s, opacity 0.25s linear;
       }
 

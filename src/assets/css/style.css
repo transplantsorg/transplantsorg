@@ -20850,7 +20850,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   display: flex;
 }
-.navbar .navbar-search > .col-*:nth-child(2), .navbar .navbar-search > .col-*:nth-child(3) {
+.navbar .navbar-search > .col-*:not(:first-child) {
   transition: visibility 0s 0.25s, opacity 0.25s linear;
 }
 .navbar .navbar-search.show {
@@ -20859,7 +20859,7 @@ input::-webkit-inner-spin-button {
   opacity: 1;
   visibility: visible;
 }
-.navbar .navbar-search.show > .col-*:nth-child(2), .navbar .navbar-search.show > .col-*:nth-child(3) {
+.navbar .navbar-search.show > .col-*:not(:first-child) {
   transition: visibility 0s 0.25s, opacity 0.25s linear;
 }
 .navbar .navbar-search.show .navbar-toggler {
