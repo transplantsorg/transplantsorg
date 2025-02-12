@@ -20839,7 +20839,6 @@ input::-webkit-inner-spin-button {
   padding-bottom: 0.5rem;
 }
 .navbar .navbar-search {
-  transition: visibility 0s 0.35s, opacity 0.35s linear;
   opacity: 0;
   visibility: hidden;
   z-index: -1;
@@ -20851,11 +20850,17 @@ input::-webkit-inner-spin-button {
   width: 100%;
   display: flex;
 }
+.navbar .navbar-search > .col-*:nth-child(2), .navbar .navbar-search > .col-*:nth-child(3) {
+  transition: visibility 0s 0.25s, opacity 0.25s linear;
+}
 .navbar .navbar-search.show {
   transition: opacity 0.35s linear;
   z-index: 1021;
   opacity: 1;
   visibility: visible;
+}
+.navbar .navbar-search.show > .col-*:nth-child(2), .navbar .navbar-search.show > .col-*:nth-child(3) {
+  transition: visibility 0s 0.25s, opacity 0.25s linear;
 }
 .navbar .navbar-search.show .navbar-toggler {
   display: block !important;
