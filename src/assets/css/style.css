@@ -20839,7 +20839,7 @@ input::-webkit-inner-spin-button {
   padding-bottom: 0.5rem;
 }
 .navbar .navbar-search {
-  transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
+  transition: visibility 0s 0.35s, opacity 0.35s linear;
   opacity: 0;
   visibility: hidden;
   z-index: -1;
@@ -20852,7 +20852,7 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 .navbar .navbar-search.show {
-  transition: opacity 250ms ease-in, visibility 0ms ease-in 0ms;
+  transition: opacity 0.35s linear;
   z-index: 1021;
   opacity: 1;
   visibility: visible;
