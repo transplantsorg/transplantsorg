@@ -1,16 +1,16 @@
 <nav class="navbar navbar-main navbar-expand-lg fixed-top sticky-lg-top" role="navigation" tabindex="-1" id="Navbar">
   <div class="container">
-    <a href="#" class="navbar-brand align-self-center">
+    <a class="navbar-brand align-self-center" href="#">
       <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org" />
     </a>
     <div class="nav flex-nowrap align-items-center">
       <div class="nav-item order-1 order-lg-3">
-        <a href="#" class="btn btn-primary rounded-pill me-2 mb-0 ms-lg-2">
+        <a class="btn btn-primary rounded-pill me-2 mb-0 ms-lg-2" href="#">
           <i class="bi bi-heart-fill me-1"></i>Give <span class="d-none d-md-inline-block d-lg-none d-xl-inline-block">Today</span>
         </a>
       </div>
       <div class="nav-item dropdown dropdown-click-required order-2 order-lg-2">
-        <a onclick="document.body.classList.toggle('overflow-hidden')" class="nav-link align-items-center" role="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-expanded="false" aria-controls="navbarSearch" data-bs-parent="#Navbar">
+        <a onclick="document.body.classList.toggle('overflow-hidden')" class="nav-link align-items-center" role="button" data-bs-parent="#navbarMain" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-expanded="false" aria-controls="navbarSearch">
           <i class="bi bi-search mx-auto"></i>
         </a>
       </div>
@@ -18,9 +18,9 @@
         onclick="document.body.classList.toggle('overflow-hidden')" 
         class="navbar-toggler collapsed d-block d-lg-none ms-0 order-3 order-lg-1"
         type="button"
+        data-bs-parent="#navbarMain" 
         data-bs-toggle="collapse"
         data-bs-target="#navbarMainMobile"
-        data-bs-parent="#Navbar" 
         aria-controls="navbarMainMobile"
         aria-expanded="false"
         aria-label="Toggle Navigation">
@@ -32,9 +32,9 @@
     <div class="navbar-nav-desktop">
       <ul class="navbar-nav">
         <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
-          <a class="nav-link dropdown-toggle d-lg-block d-xxl-none" href="#" id="navbarDesktopCare" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Patient Care</a>
-          <a class="nav-link dropdown-toggle d-lg-none d-xxl-block" href="#" id="navbarDesktopCare" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Support</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDesktopCare">
+          <a class="nav-link dropdown-toggle d-lg-block d-xxl-none" href="#" data-bs-toggle="dropdown" id="navbarMainDesktopCare" aria-haspopup="true" aria-expanded="false">Patient Care</a>
+          <a class="nav-link dropdown-toggle d-lg-none d-xxl-block" href="#" data-bs-toggle="dropdown" id="navbarMainDesktopCare" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Support</a>
+          <div class="dropdown-menu" aria-labelledby="navbarMainDesktopCare">
             <div class="container">
               <div class="row py-5">
                 <div class="col">
@@ -45,9 +45,9 @@
           </div>
         </li>
         <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
-          <a class="nav-link dropdown-toggle d-lg-block d-xxl-none" href="#" id="navbarDesktopCenters" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Centers</a>
-          <a class="nav-link dropdown-toggle d-lg-none d-xxl-block" href="#" id="navbarDesktopCenters" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find a Center</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDesktopCenters">
+          <a class="nav-link dropdown-toggle d-lg-block d-xxl-none" href="#" data-bs-toggle="dropdown" id="navbarMainDesktopCenters" aria-haspopup="true" aria-expanded="false">Centers</a>
+          <a class="nav-link dropdown-toggle d-lg-none d-xxl-block" href="#"  data-bs-toggle="dropdown" id="navbarMainDesktopCenters" aria-haspopup="true" aria-expanded="false">Find a Center</a>
+          <div class="dropdown-menu" aria-labelledby="navbarMainDesktopCenters">
             <div class="container">
               <div class="row py-5">
                 <div class="col">
@@ -58,8 +58,8 @@
           </div>
         </li>
         <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDesktopDonation" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Donation</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDesktopDonation">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarMainDesktopDonation" aria-haspopup="true" aria-expanded="false">Donation</a>
+          <div class="dropdown-menu" aria-labelledby="navbarMainDesktopDonation">
             <div class="container">
               <div class="row py-5">
                 <div class="col">
@@ -70,8 +70,8 @@
           </div>
         </li>
         <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDesktopStories" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stories</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDesktopStories">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarMainDesktopStories" aria-haspopup="true" aria-expanded="false">Stories</a>
+          <div class="dropdown-menu" aria-labelledby="navbarMainDesktopStories">
             <div class="container">
               <div class="row py-5">
                 <div class="col">
@@ -82,8 +82,8 @@
           </div>
         </li>
         <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDesktopInvolved" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDesktopInvolved">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarMainDesktopInvolved" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+          <div class="dropdown-menu" aria-labelledby="navbarMainDesktopInvolved">
             <div class="container">
               <div class="row py-5">
                 <div class="col">
@@ -94,9 +94,9 @@
           </div>
         </li>
         <li class="nav-item dropdown dropdown-fullwidth dropdown-click-required">
-          <a class="nav-link dropdown-toggle d-lg-block d-xl-none" href="#" id="navbarDesktopAbout" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-          <a class="nav-link dropdown-toggle d-lg-none d-xl-block" href="#" id="navbarDesktopAbout" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDesktopAbout">
+          <a class="nav-link dropdown-toggle d-lg-block d-xl-none" href="#" data-bs-toggle="dropdown" id="navbarMainDesktopAbout" aria-haspopup="true" aria-expanded="false">About</a>
+          <a class="nav-link dropdown-toggle d-lg-none d-xl-block" href="#" data-bs-toggle="dropdown" id="navbarMainDesktopAbout" aria-haspopup="true" aria-expanded="false">About Us</a>
+          <div class="dropdown-menu" aria-labelledby="navbarMainDesktopAbout">
             <div class="container">
               <div class="row py-5">
                 <div class="col">
@@ -110,16 +110,16 @@
     </div>
   </div>
   <div class="container d-flex d-lg-none">
-    <div class="collapse navbar-collapse navbar-collapse-mobile-only" id="navbarMainMobile" data-bs-parent="Navbar">
+    <div class="navbar-mobile navbar-collapse navbar-collapse-mobile-only collapse" id="navbarMainMobile" data-bs-parent="#navbarMain">
       <ul class="navbar-nav navbar-nav-scroll">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileCare" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Support</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCare" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Support</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCare">
             <li class="text-wrap">
               <h5 class="dropdown-header text-secondary">Organ</h5>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganAll" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareOrganAll" aria-haspopup="true" aria-expanded="false">
                 Introduction &amp; Basics
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganAll">
@@ -159,8 +159,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganHeart" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-heart.svg" alt="Heart Icon">Heart Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"  id="navbarMainMobileCareOrganHeart">
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-heart.svg" alt="Heart">Heart Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganHeart">
                 <li class="nav-item">
@@ -169,8 +169,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -190,7 +190,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -208,8 +208,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganIntestine" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-intestine.svg" alt="Kidney Icon" />Intestine Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareOrganIntestine">
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-intestine.svg" alt="Intestine" />Intestine Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganIntestine">
                 <li class="nav-item">
@@ -218,8 +218,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -239,7 +239,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -257,8 +257,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganKidney" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-kidney.svg" alt="Kidney Icon" />Kidney Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareOrganKidney">
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-kidney.svg" alt="Kidney" />Kidney Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganKidney">
                 <li class="nav-item">
@@ -267,8 +267,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -288,7 +288,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -309,8 +309,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganLiver" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-liver.svg" alt="Liver Icon" />Liver Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareOrganLiver">
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-liver.svg" alt="Liver" />Liver Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganLiver">
                 <li class="nav-item">
@@ -319,8 +319,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -340,7 +340,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -361,8 +361,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganLung" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-lung.svg" alt="Lung Icon" />Lung Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareOrganLung">
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-lung.svg" alt="Lung" />Lung Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganLung">
                 <li class="nav-item">
@@ -371,8 +371,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -392,7 +392,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -413,8 +413,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganPancreas" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-pancreas.svg" alt="Pancreas Icon" />Pancreas Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareOrganPancreas">
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-pancreas.svg" alt="Pancreas" />Pancreas Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganPancreas">
                 <li class="nav-item">
@@ -423,8 +423,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -444,7 +444,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -462,8 +462,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganVCA" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-vca.svg" alt="VCA Icon" />VCA Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareOrganVCA" >
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-vca.svg" alt="VCA" />VCA Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganVCA">
                 <li class="nav-item">
@@ -472,8 +472,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -493,7 +493,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -511,8 +511,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareOrganAll" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-rare-organ.svg" alt="Rare Icon" />All Organ Transplants
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareOrganAll">
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-rare-organ.svg" alt="All" />All Organ Transplants
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareOrganAll">
                 <li class="nav-item">
@@ -521,8 +521,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -542,7 +542,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -559,15 +559,14 @@
                 </li>
               </ul>
             </li>
-            
             <li>
               <hr class="separator">
             </li>
-            <li class="mt-5 text-wrap">
+            <li class="mt-5">
               <h5 class="dropdown-header text-secondary">Stem Cell (Bone Marrow)</h5>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStem" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareStem">
                 Introduction &amp; Basics
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStem">
@@ -604,8 +603,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStemAutologous" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-autologous.svg" alt="Autologous Icon" />Autologous Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareStemAutologous">
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-autologous.svg" alt="Autologous" />Autologous Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStemAutologous">
                 <li class="nav-item">
@@ -614,8 +613,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -635,14 +634,11 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Find a Center</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-end" href="#">Immunosuppressants &amp; GVHD</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Complications</a>
@@ -653,8 +649,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileCareStemAllogenic" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img class="img-fluid me-2" style="width: 36px;" src="@@webRoot/assets/images/icons/icon-allogenic.svg" alt="Allogenic Icon" />Allogenic Transplant
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCareStemAllogenic" >
+                <img class="img-fluid me-2" src="@@webRoot/assets/images/icons/icon-allogenic.svg" alt="Allogenic" />Allogenic Transplant
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCareStemAllogenic">
                 <li class="nav-item">
@@ -663,8 +659,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Transplant</a>
@@ -684,7 +680,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -707,12 +703,12 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileCenters" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Find a Center</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCenters" aria-haspopup="true" aria-expanded="false">Find a Center</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileCenters">
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Search All Centers</a>
             </li>
-            <li class="mt-4 text-wrap">
+            <li class="mt-4">
               <h5 class="dropdown-header text-secondary">Organ</h5>
             </li>
             <li class="nav-item">
@@ -724,7 +720,7 @@
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Centers of Excellence</a>
             </li>
-            <li class="mt-4 text-wrap">
+            <li class="mt-4">
               <h5 class="dropdown-header text-secondary">Stem Cell (Bone Marrow)</h5>
             </li>
             <li class="nav-item">
@@ -739,19 +735,16 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileDonation" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Donation</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileDonation"  aria-haspopup="true" aria-expanded="false">Donation</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileDonation">
-            <li class="d-none">
-              <a class="btn btn-primary py-3 w-100 text-start" href="#">Register to be a Donor<i class="bi bi-chevron-right ms-2"></i></a>
-            </li>
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Register to be a Donor</a>
             </li>
-            <li class="mt-4 text-wrap">
+            <li class="mt-4">
               <h5 class="dropdown-header text-secondary">Organ</h5>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileDonationOrganLiving" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileDonationOrganLiving">
                 Living Donation
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileDonationOrganLiving">
@@ -761,8 +754,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Donation</a>
@@ -776,7 +769,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -794,7 +787,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileDonationOrganLiving" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileDonationOrganLiving" >
                 Deceased Donation
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileDonationOrganDeceased">
@@ -804,8 +797,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Coping with Loss</a>
@@ -825,7 +818,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -839,11 +832,11 @@
                 </li>
               </ul>
             </li>
-            <li class="mt-4 text-wrap">
+            <li class="mt-4">
               <h5 class="dropdown-header text-secondary">Stem Cell (Bone Marrow)</h5>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" id="navbarMainMobileDonationLiving" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+              <a class="nav-link dropdown-toggle dropdown-toggle-end" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileDonationLiving">
                 Living Donation
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarMainMobileDonationStem">
@@ -853,8 +846,8 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
-                  <h5 class="pt-2 dropdown-header">Patient Journey</h5>
+                <li>
+                  <h5 class="dropdown-header pt-2">Patient Journey</h5>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-end" href="#">Considering Donation</a>
@@ -868,7 +861,7 @@
                 <li>
                   <hr class="separator">
                 </li>
-                <li class="text-wrap">
+                <li>
                   <h5 class="dropdown-header">Basics</h5>
                 </li>
                 <li class="nav-item">
@@ -888,7 +881,7 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileStories" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Stories</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileStories" aria-haspopup="true" aria-expanded="false">Stories</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileStories">
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Transplant Stories</a>
@@ -898,18 +891,10 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown d-none">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileNews" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">News, Research &amp; Innovation</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarMainMobileNews">
-            <li class="nav-item">
-              <a class="nav-link nav-link-end" href="#">Lorem</a>
-            </li>
-          </ul>
-        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileAction" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Get Involved</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarMainMobileAction">
-            <li class="text-wrap">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileInvolved" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarMainMobileInvolved">
+            <li>
               <h5 class="dropdown-header text-secondary">Giving</h5>
             </li>
             <li class="nav-item">
@@ -921,7 +906,7 @@
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">Frequently Asked Questions</a>
             </li>
-            <li class="mt-4 text-wrap">
+            <li class="mt-4">
               <h5 class="dropdown-header text-secondary">Volunteer</h5>
             </li>
             <li class="nav-item">
@@ -942,7 +927,7 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarMainMobileAbout" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">About Us</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileAbout" aria-haspopup="true" aria-expanded="false">About Us</a>
           <ul class="dropdown-menu" aria-labelledby="navbarMainMobileAbout">
             <li class="nav-item">
               <a class="nav-link nav-link-end" href="#">What We Do</a>
@@ -973,7 +958,8 @@
       </ul>
     </div>
   </div>
-  <div class="collapse" id="navbarSearch" data-bs-parent="#Navbar">
+
+  <div class="collapse" id="navbarSearch" data-bs-parent="#navbarMain">
     <div class="container align-self-center">
       <div class="row align-items-center">
         <div class="col d-none d-lg-flex flex-shrink-0 flex-grow-0 me-0 pe-0">
@@ -997,7 +983,7 @@
             aria-label="Close"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSearch"
-            data-bs-parent="#myNavbar"
+            data-bs-parent="#navbarMain"
             aria-expanded="false"
             aria-controls="navbarSearch">
             <span class="icon-bar top-bar rounded-pill mt-0"></span>

@@ -20785,6 +20785,9 @@ input::-webkit-inner-spin-button {
 .navbar.navbar-main .navbar-nav .nav-item:last-child .nav-link.show {
   border-bottom-color: var(--to-primary);
 }
+.navbar.navbar-main .navbar-mobile .navbar-nav .nav-item .nav-link img {
+  width: 36px;
+}
 .navbar.navbar-main .dropdown-menu .dropdown-list-group-item {
   min-width: 100%;
 }
