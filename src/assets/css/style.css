@@ -20854,7 +20854,7 @@ input::-webkit-inner-spin-button {
   transition: visibility 0s 0.25s, opacity 0.25s linear;
 }
 .navbar .navbar-search.show {
-  transition: opacity 0.35s linear;
+  transition: opacity 0.25s linear;
   z-index: 1021;
   opacity: 1;
   visibility: visible;
