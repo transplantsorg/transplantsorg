@@ -20616,6 +20616,9 @@ input::-webkit-inner-spin-button {
 .navbar .navbar-nav {
   position: relative;
 }
+.navbar .navbar-nav-desktop {
+  display: none;
+}
 .navbar .nav .nav-item .nav-link::after {
   display: none;
 }
@@ -20757,12 +20760,6 @@ input::-webkit-inner-spin-button {
     padding-left: 1rem;
     letter-spacing: 0.01em;
   }
-}
-.navbar.navbar-main .navbar-collapse {
-  order: 3;
-  margin-top: 0;
-  margin-bottom: 0;
-  border-top: 1px solid var(--to-gray-600);
 }
 .navbar.navbar-main .navbar-nav {
   margin-right: calc(var(--to-gutter-x) * -1);
@@ -20925,11 +20922,15 @@ input::-webkit-inner-spin-button {
     padding: 0.3125rem 0.3125rem 0.3125rem 0.5rem;
     font-size: 1.05rem;
   }
-  .navbar .navbar-collapse {
+  .navbar .navbar-nav-desktop {
+    display: flex;
     order: 2;
     margin-top: 0;
     margin-bottom: 0;
     border-top: 0;
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
   }
   .navbar .nav-item .nav-link.dropdown-toggle::after {
     float: right;
