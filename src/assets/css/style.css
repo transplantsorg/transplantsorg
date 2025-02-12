@@ -20619,6 +20619,9 @@ input::-webkit-inner-spin-button {
 .navbar .navbar-nav-desktop {
   display: none;
 }
+.navbar .navbar-mobile.navbar-collapse {
+  border-top: 1px solid #495057;
+}
 .navbar .nav .nav-item .nav-link::after {
   display: none;
 }

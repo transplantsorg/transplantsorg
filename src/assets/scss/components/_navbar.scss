@@ -87,6 +87,10 @@
     display: none;
   }
 
+  .navbar-mobile.navbar-collapse {
+    border-top: 1px solid $gray-700;
+  }
+
   .nav {
     .nav-item {
       .nav-link {
