@@ -724,32 +724,37 @@
   }
 }
 
-// Navbar Overlay and Overflow
+
+
+
+
+
+// Navbar Overflow and Overlay
 body.overflow-hidden {
   overflow: hidden !important;
-}
 
-@media (min-width: 992px) {
-  body.overflow-hidden {
+  @media (min-width: 992px) {
     overflow: auto !important;
   }
 }
 
-.navbar-overflow {
-  background-color: $white;
+.navbar-mobile-offset {
+  opacity: 0;
+  visibility: visible;
+  background-color: transparent;
   width: 100%;
   height: 70px;
   display: block;
-}
 
-@media (min-width: 992px) {
-  .navbar-overflow {
+  @include media-breakpoint-up(lg) {
+    opacity: 0;
+    visibility: hidden;
     display: none;
   }
 }
 
 @include media-breakpoint-down(lg) {
-  .navbar-main-overlay {
+  .navbar-main-mobile-overlay {
     -webkit-transition: all 0.5s ease !important;
     -moz-transition: all 0.5s ease !important;
     -ms-transition: all 0.5s ease !important;
@@ -762,7 +767,7 @@ body.overflow-hidden {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(3,11,25,.9);
+    background: rgba(0,13,26,.9);
 
     &.collapsed {
       z-index: -1;

@@ -21108,26 +21108,30 @@ input::-webkit-inner-spin-button {
 body.overflow-hidden {
   overflow: hidden !important;
 }
-
 @media (min-width: 992px) {
   body.overflow-hidden {
     overflow: auto !important;
   }
 }
-.navbar-overflow {
-  background-color: #fff;
+
+.navbar-mobile-offset {
+  opacity: 0;
+  visibility: visible;
+  background-color: transparent;
   width: 100%;
   height: 70px;
   display: block;
 }
-
 @media (min-width: 992px) {
-  .navbar-overflow {
+  .navbar-mobile-offset {
+    opacity: 0;
+    visibility: hidden;
     display: none;
   }
 }
+
 @media (max-width: 991.98px) {
-  .navbar-main-overlay {
+  .navbar-main-mobile-overlay {
     transition: all 0.5s ease !important;
     cursor: pointer;
     z-index: 2;
@@ -21136,9 +21140,9 @@ body.overflow-hidden {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(3, 11, 25, 0.9);
+    background: rgba(0, 13, 26, 0.9);
   }
-  .navbar-main-overlay.collapsed {
+  .navbar-main-mobile-overlay.collapsed {
     z-index: -1;
   }
 }
