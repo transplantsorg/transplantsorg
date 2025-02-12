@@ -110,7 +110,7 @@
     </div>
   </div>
   <div class="container d-flex d-lg-none">
-    <div class="navbar-mobile navbar-collapse navbar-collapse-mobile-only collapse" id="navbarMainMobile" data-bs-parent="#navbarMain">
+    <div class="navbar-mobile navbar-collapse collapse" id="navbarMainMobile" data-bs-parent="#navbarMain">
       <ul class="navbar-nav navbar-nav-scroll">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="navbarMainMobileCare" aria-haspopup="true" aria-expanded="false">Patient Care &amp; Support</a>
@@ -958,16 +958,15 @@
       </ul>
     </div>
   </div>
-
-  <div class="collapse" id="navbarSearch" data-bs-parent="#navbarMain">
+  <div class="navbar-search collapse" id="navbarSearch" data-bs-parent="#navbarMain">
     <div class="container align-self-center">
       <div class="row align-items-center">
-        <div class="col d-none d-lg-flex flex-shrink-0 flex-grow-0 me-0 pe-0">
+        <div class="col flex-shrink-0 flex-grow-0 d-none d-lg-flex me-0 pe-0">
           <a class="navbar-brand align-self-center" href="#">
-            <!-- <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org logo" /> -->
+            <img src="@@webRoot/assets/images/transplantsorg-logo.svg" alt="Transplants.org" />
           </a>
         </div>
-        <div class="col pe-2 pe-0" style="background-color: #FFF;">
+        <div class="col pe-2">
           <form class="d-flex align-items-center">
             <span class="position-absolute ms-3">
               <i class="bi bi-search"></i>
@@ -975,16 +974,16 @@
             <input type="search" class="form-control rounded-pill ps-7" placeholder="Search topic or keyword" />
           </form>
         </div>
-        <div class="col-auto ps-0 ms-0" style="background-color: #FFF;">
-          <button 
-            onclick="document.body.classList.toggle('overflow-hidden')" 
-            type="button"
+        <div class="col-auto ps-0 ms-0">
+          <button
+            onclick="document.body.classList.toggle('overflow-hidden')"
             class="navbar-toggler"
-            aria-label="Close"
+            type="button"
+            data-bs-parent="#navbarMain"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSearch"
-            data-bs-parent="#navbarMain"
             aria-expanded="false"
+            aria-label="Close"
             aria-controls="navbarSearch">
             <span class="icon-bar top-bar rounded-pill mt-0"></span>
             <span class="icon-bar middle-bar rounded-pill"></span>

@@ -20852,6 +20852,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #fff;
   display: flex;
   height: 100%;
   width: 100%;
@@ -20906,7 +20907,7 @@ input::-webkit-inner-spin-button {
     transform: translateY(-100%) !important;
     opacity: 0 !important;
   }
-  .navbar-collapse.navbar-collapse-mobile-only {
+  .navbar-mobile {
     display: none !important;
   }
   .navbar {

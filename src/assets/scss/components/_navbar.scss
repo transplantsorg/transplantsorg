@@ -396,6 +396,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  background-color: $white;
   display: flex;
   height: 100%;
   width: 100%;
@@ -455,7 +456,7 @@
     opacity: 0 !important; 
   }
 
-  .navbar-collapse.navbar-collapse-mobile-only {
+  .navbar-mobile {
     display: none !important;
   }
 
