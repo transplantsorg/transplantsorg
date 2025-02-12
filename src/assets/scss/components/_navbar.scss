@@ -61,7 +61,7 @@
     }
 
     &:hover, &:focus {
-      background-color: $gray-100;
+      background-color: mix($gray-100, $gray-200, 50%);
     }
 
     &.collapsed {
@@ -81,6 +81,24 @@
 
   .navbar-nav {
     position: relative;
+  }
+
+  .navbar-nav-desktop {
+    display: none;
+  }
+
+  .navbar-mobile.navbar-collapse {
+    border-top: 1px solid $gray-700;
+  }
+
+  .nav {
+    .nav-item {
+      .nav-link {
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
 
   .nav-item {
@@ -145,12 +163,6 @@
           margin-left: 0.125rem;
         }
       }
-
-      &.nav-link-none {
-        &::after {
-          display: none;
-        }
-      }
     }
   }
 
@@ -184,17 +196,19 @@
 
     .navbar-brand {
       order: 1;
+      width: 160px;
       margin-right: 0;
       padding-top: 1rem;
       padding-bottom: 1rem;
 
-      img {
+      @include media-breakpoint-up(xl) {
         width: 160px;
-        height: auto;
+        margin-right: 1.5rem;
+      }
 
-        @include media-breakpoint-up(sm) {
-          width: 180px;
-        }
+      img {
+        width: 100%;
+        height: auto;
       }
     }
 
@@ -205,6 +219,7 @@
     }
 
     .nav {
+      display: flex;
       order: 2;
 
       .nav-link {
@@ -228,14 +243,14 @@
         }
 
         &:hover, &:focus {
-          background-color: $gray-100;
+          background-color: mix($gray-100, $gray-200, 50%);
           border-radius: 100rem;
           color: $black;
         }
       }
 
       .btn {
-        padding: 0.25rem 0.7rem;
+        padding: 0.35rem 0.7rem;
         font-size: 0.9rem;
         font-weight: $font-weight-medium;
         letter-spacing: 0.02em;
@@ -248,13 +263,6 @@
           letter-spacing: 0.01em;
         }
       }      
-    }
-
-    .navbar-collapse {
-      order: 3;
-      margin-top: 0;
-      margin-bottom: 0;
-      border-top: 1px solid var(--#{$prefix}gray-600);
     }
 
     .navbar-nav {
@@ -285,6 +293,18 @@
 
             &.show {
               border-bottom-color: var(--#{$prefix}primary);
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-mobile {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            img {
+              width: 36px;
             }
           }
         }
@@ -372,7 +392,7 @@
   }
 }
 
-#collapseExample {
+#navbarSearch {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
   opacity: 0;
@@ -430,11 +450,9 @@
   }
 }
 
-.navbar #collapseExample .navbar-toggler {
+.navbar #navbarSearch .navbar-toggler {
   display: block !important;
 }
-
-
 
 @include media-breakpoint-up(lg) {
   .headroom--unpinned .navbar.navbar-main {
@@ -442,7 +460,7 @@
     opacity: 0 !important; 
   }
 
-  .navbar-collapse.navbar-collapse-mobile-only {
+  .navbar-mobile {
     display: none !important;
   }
 
@@ -467,11 +485,15 @@
       }
     }
 
-    .navbar-collapse {
+    .navbar-nav-desktop {
+      display: flex;
       order: 2;
       margin-top: 0;
       margin-bottom: 0;
       border-top: 0;
+      flex-basis: auto;
+      flex-shrink: 0;
+      flex-grow: 1;
     }
 
     .nav-item {
@@ -562,16 +584,13 @@
       box-shadow: none;
 
       .navbar-brand {
-        margin-right: 1.5rem;
+        margin-right: 1rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
 
-        img {
-          width: 160px;
-          
-          @include media-breakpoint-up(xl) {
-            width: 180px;
-          }
+        @include media-breakpoint-up(xl) {
+          width: 180px;
+          margin-right: 1.5rem;
         }
       }
 
@@ -705,32 +724,37 @@
   }
 }
 
-// Navbar Overlay and Overflow
+
+
+
+
+
+// Navbar Overflow and Overlay
 body.overflow-hidden {
   overflow: hidden !important;
-}
 
-@media (min-width: 992px) {
-  body.overflow-hidden {
+  @media (min-width: 992px) {
     overflow: auto !important;
   }
 }
 
-.navbar-overflow {
-  background-color: $white;
+.navbar-mobile-offset {
+  opacity: 0;
+  visibility: visible;
+  background-color: transparent;
   width: 100%;
   height: 70px;
   display: block;
-}
 
-@media (min-width: 992px) {
-  .navbar-overflow {
+  @include media-breakpoint-up(lg) {
+    opacity: 0;
+    visibility: hidden;
     display: none;
   }
 }
 
 @include media-breakpoint-down(lg) {
-  .navbar-main-overlay {
+  .navbar-main-mobile-overlay {
     -webkit-transition: all 0.5s ease !important;
     -moz-transition: all 0.5s ease !important;
     -ms-transition: all 0.5s ease !important;
@@ -743,7 +767,7 @@ body.overflow-hidden {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(3,11,25,.9);
+    background: rgba(0,13,26,.9);
 
     &.collapsed {
       z-index: -1;
