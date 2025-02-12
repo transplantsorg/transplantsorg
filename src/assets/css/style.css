@@ -20839,8 +20839,9 @@ input::-webkit-inner-spin-button {
   padding-bottom: 0.5rem;
 }
 .navbar .navbar-search {
-  transition: all 0.35s ease !important;
+  transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
   opacity: 0;
+  visibility: hidden;
   z-index: -1;
   position: absolute;
   top: 0;
@@ -20851,8 +20852,10 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 .navbar .navbar-search.show {
+  transition: opacity 250ms ease-in, visibility 0ms ease-in 0ms;
   z-index: 1021;
   opacity: 1;
+  visibility: visible;
 }
 .navbar .navbar-search.show .navbar-toggler {
   display: block !important;

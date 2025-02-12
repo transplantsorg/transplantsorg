@@ -384,12 +384,9 @@
   }
 
   .navbar-search {
-    -webkit-transition: all 0.35s ease !important;
-    -moz-transition: all 0.35s ease !important;
-    -ms-transition: all 0.35s ease !important;
-    -o-transition: all 0.35s ease !important;
-    transition: all 0.35s ease !important;
+    transition: opacity 250ms ease-in, visibility 0ms ease-in 250ms;
     opacity: 0;
+    visibility: hidden;
     z-index: -1;
     position: absolute;
     top: 0;
@@ -400,8 +397,10 @@
     display: flex;
     
     &.show {
+      transition: opacity 250ms ease-in, visibility 0ms ease-in 0ms;
       z-index: 1021;
       opacity: 1;
+      visibility: visible;
 
       .navbar-toggler {
         display: block !important;
