@@ -350,7 +350,7 @@
           hr {
             margin-top: 0.75rem;
             margin-bottom: 0.75rem;
-            color: var(--#{$prefix}gray-300);
+            color: mix($gray-300, $gray-400, 50%);
           }
 
           .nav-item {

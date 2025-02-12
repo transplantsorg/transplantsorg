@@ -20819,7 +20819,7 @@ input::-webkit-inner-spin-button {
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu hr {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-  color: var(--to-gray-300);
+  color: #d6dbe0;
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link {
   padding: 1rem 0;
