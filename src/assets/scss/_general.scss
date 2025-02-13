@@ -10,11 +10,21 @@ body {
 
 svg.logo {
   .icon { 
-    fill: #FFFFFF;
+    fill: #050505;
   }
 
   .letters { 
+    fill: #050505;
+  }
+
+  &.logo-invert {
+    .icon { 
     fill: #FFFFFF;
+    }
+
+    .letters { 
+      fill: #FFFFFF;
+    }
   }
 }
 
@@ -25,8 +35,8 @@ svg.logo {
   mask: url("../images/icons/bluesky.svg") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
-  height: 16px;
   width: 16px;
+  height: 16px;
 }
 
 .bi.bi-search::before {
@@ -36,15 +46,15 @@ svg.logo {
   mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' focusable='false' aria-hidden='true'><path d='M10,2a8,8,0,1,0,8,8A8.00917,8.00917,0,0,0,10,2ZM4,10a6,6,0,1,1,6,6A6.00657,6.00657,0,0,1,4,10Z'></path><path d='M21.707,20.293,17.73816,16.3241a10.08573,10.08573,0,0,1-1.41406,1.41406L20.293,21.707A.99989.99989,0,0,0,21.707,20.293Z'></path></svg>") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
-  height: 16px;
   width: 16px;
+  height: 16px;
 }
 
 
 
+// Timeline
 
-
-.timeline {
+ul.timeline {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -55,54 +65,57 @@ svg.logo {
     position: absolute;
     top: .5rem;
     bottom: 0;
-    background: var(--#{$prefix}gray-200);
     left: 0;
+    background-color: var(--#{$prefix}gray-200);
     width: 0.125rem;
   }
 
-  & > section {
+  > li {
     position: relative;
-    padding-left: 10px;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--#{$prefix}black);
+    font-weight: 500;
 
     &:after {
       content: '';
-      width: 10px;
-      height: 10px;
-      background: var(--#{$prefix}primary);
-      @include border-radius(50%);
-      position: absolute;
-      left: -0.25rem;
-      top: 0.125rem;
       z-index: 2;
+      position: absolute;
+      top: 0.25rem;
+      left: -0.25rem;
+      background-color: var(--#{$prefix}gray-500);
+      width: 0.625rem;
+      height: 0.625rem;
+      border-radius: 100rem;
     }
 
-    &:first-child section {
-      margin-top: 0;
-      padding-bottom: 0;
-    }
+    &.timeline-active {
+      color: $primary;
 
-    & > section {
-      position: relative;
-      
-      ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0 0 1em;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        li {
-          padding-top: 3px;
-          padding-bottom: 3px;
-          list-style-type: none;
-          margin-left: 0;
-        }
+      &:after {
+        background-color: var(--#{$prefix}primary);
       }
+    }
+
+    ul {
+      li {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        color: var(--#{$prefix}black);
+        font-weight: 400;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
     }
   }
 }
+
+
+
+
+
 
 
 
