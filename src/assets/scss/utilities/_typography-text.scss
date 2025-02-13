@@ -32,6 +32,23 @@ h3,
 }
 
 a {
+  -webkit-transition: all 0.5s ease !important;
+  -moz-transition: all 0.5s ease !important;
+  -ms-transition: all 0.5s ease !important;
+  -o-transition: all 0.5s ease !important;
+  transition: all 0.5s ease !important;
+
+  &.text-decoration-fade {
+    text-decoration: underline solid transparent;
+    transition: text-decoration 0.5s ease;
+
+    &:hover, &:focus {
+      text-decoration: underline solid currentcolor;
+    }
+  }
+}
+
+a {
   &:hover .text-primary-hover {
     color: var(--#{$prefix}primary) !important;
   }

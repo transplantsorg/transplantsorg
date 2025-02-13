@@ -1,7 +1,7 @@
 // Border
 
 .border-dashed {
-  border: 2px dashed var(--#{$prefix}gray-300) !important;
+  border-style: dashed;
 }
 
 .small-divider {
