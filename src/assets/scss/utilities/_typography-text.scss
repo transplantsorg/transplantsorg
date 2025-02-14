@@ -7,6 +7,10 @@ h1, h2, h3, h4, h5, p, ul, li, blockquote, i, b, span {
   font-feature-settings:'kern';
 }
 
+h1, h2, h3, h4, h5 {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -17,7 +21,7 @@ h3,
 }
 
 h5 {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -50,6 +54,12 @@ a {
     &:hover, &:focus {
       text-decoration: underline solid currentcolor;
     }
+  }
+}
+
+a.text-black-hover {
+  &:hover, &:focus {
+    color: var(--#{$prefix}black) !important;
   }
 }
 

@@ -4,6 +4,24 @@
   border-style: dashed;
 }
 
+.border-dotted{
+  border-style: dotted;
+}
+
+hr.border-top {
+  border-top: var(--to-border-width) var(--to-border-style) var(--to-border-color) !important;
+
+  &.border-dashed {
+    border-top: var(--to-border-width) dashed var(--to-border-color) !important;
+  }
+
+  &.border-dotted{
+    border-top: var(--to-border-width) dotted var(--to-border-color) !important;
+  }
+}
+
+
+
 .small-divider {
   height: 0.125rem;
   width: 2.25rem;
