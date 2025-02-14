@@ -1,5 +1,33 @@
 // General Styles
 
+body {
+  line-height: $line-height-1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+svg.logo {
+  .icon { 
+    fill: #050505;
+  }
+
+  .letters { 
+    fill: #050505;
+  }
+
+  &.logo-invert {
+    .icon { 
+    fill: #FFFFFF;
+    }
+
+    .letters { 
+      fill: #FFFFFF;
+    }
+  }
+}
+
 .bi.bi-bluesky::before {
   content: "";
   background-color: currentColor;
@@ -7,38 +35,8 @@
   mask: url("../images/icons/bluesky.svg") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
-  height: 16px;
   width: 16px;
-}
-
-.colored-diagonal:before {
-  content: "";
-  position: absolute;
-  transition: all 0.5s linear;
-  background: linear-gradient(15deg, #29c7c1 0%, #7eeac3 14%, #7eeac3 14%, #97f3bf 25%, #b3f7b5 36%, #defab7 50%, #f0f9c6 62%, #defab7 73%, #d4fdab 86%, #cbfdab 100%); 
-}
-
-.colored-linear:before {
-    content: "";
-    position: absolute;
-    transition: all 0.5s linear;
-    background: linear-gradient(to right, #29c7c1 0%, #7eeac3 14%, #7eeac3 14%, #97f3bf 25%, #b3f7b5 36%, #defab7 50%, #f0f9c6 62%, #defab7 73%, #d4fdab 86%, #cbfdab 100%);
-  }
-
-
-.border-color-glow-top:before {
-  content: "";
-  filter: blur(5px);
-  width: 100%;
-  height: 40px;
-  display: block;
-  margin-top: -5px;
-}
-
-.border-colored-glow:before {
-  content: "";
-  inset: 10px;
-  filter: blur(5px);
+  height: 16px;
 }
 
 .bi.bi-search::before {
@@ -48,73 +46,116 @@
   mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' focusable='false' aria-hidden='true'><path d='M10,2a8,8,0,1,0,8,8A8.00917,8.00917,0,0,0,10,2ZM4,10a6,6,0,1,1,6,6A6.00657,6.00657,0,0,1,4,10Z'></path><path d='M21.707,20.293,17.73816,16.3241a10.08573,10.08573,0,0,1-1.41406,1.41406L20.293,21.707A.99989.99989,0,0,0,21.707,20.293Z'></path></svg>") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
-  height: 16px;
   width: 16px;
+  height: 16px;
 }
 
-.timeline-activity {
+
+
+// Timeline
+
+ul.timeline {
   position: relative;
-  z-index: 1;
-}
+  display: flex;
+  flex-direction: column;
 
-.timeline-activity .list-group-item:not(:last-child):before {
-  border-left: 1px solid var(--#{$prefix}gray-200);
-  bottom: 0;
-  content: "";
-  left: .3rem;
-  position: absolute;
-  top: 0;
-}
-
-/*h1 {
-  @include font-size(4rem);
-}*/
-
-body {
-  line-height: $line-height-1;
-}
-
-@include media-breakpoint-down(lg) {
-  body {
-/*    padding-top: 70px;*/
-  }  
-}
-
-svg.logo {
-  .icon { 
-    fill: #FFFFFF;
+  &:after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: .5rem;
+    bottom: 0;
+    left: 0.75rem;
+    background-color: var(--#{$prefix}gray-200);
+    width: 0.125rem;
   }
 
-  .letters { 
-    fill: #FFFFFF;
-  }
-}
+  > li {
+    position: relative;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--#{$prefix}black);
+    font-weight: 500;
 
+    &:after {
+      content: '';
+      z-index: 2;
+      position: absolute;
+      top: 0.25rem;
+      left: -0.25rem;
+      background-color: var(--#{$prefix}gray-500);
+      width: 0.625rem;
+      height: 0.625rem;
+      border-radius: 100rem;
+    }
 
-a {
-  -webkit-transition: all 0.5s ease !important;
-  -moz-transition: all 0.5s ease !important;
-  -ms-transition: all 0.5s ease !important;
-  -o-transition: all 0.5s ease !important;
-  transition: all 0.5s ease !important;
+    &.timeline-active {
+      color: $primary;
 
-  &.text-decoration-fade {
-    text-decoration: underline solid transparent;
-    transition: text-decoration 0.5s ease;
+      &:after {
+        background-color: var(--#{$prefix}primary);
+      }
+    }
 
-    &:hover, &:focus {
-      text-decoration: underline solid currentcolor;
+    ul {
+      li {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        color: var(--#{$prefix}black);
+        font-weight: 400;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
     }
   }
 }
 
-.invert {
-  filter: invert(100%);
-}
 
-.cursor-pointer {
-  cursor: pointer;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*::-webkit-scrollbar {
   background: transparent;

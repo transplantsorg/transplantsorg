@@ -7,6 +7,10 @@ h1, h2, h3, h4, h5, p, ul, li, blockquote, i, b, span {
   font-feature-settings:'kern';
 }
 
+h1, h2, h3, h4, h5 {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -14,6 +18,11 @@ h3,
 .h2,
 .h3 {
   letter-spacing: 0.01rem;
+}
+
+h5 {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .display-1,
@@ -30,6 +39,50 @@ h3,
 .blockquote-left {
   border-left: 4px solid var(--#{$prefix}gray-200);
 }
+
+a {
+  -webkit-transition: all 0.5s ease !important;
+  -moz-transition: all 0.5s ease !important;
+  -ms-transition: all 0.5s ease !important;
+  -o-transition: all 0.5s ease !important;
+  transition: all 0.5s ease !important;
+
+  &.text-decoration-fade {
+    text-decoration: underline solid transparent;
+    transition: text-decoration 0.5s ease;
+
+    &:hover, &:focus {
+      text-decoration: underline solid currentcolor;
+    }
+  }
+}
+
+a.text-black-hover {
+  &:hover, &:focus {
+    color: var(--#{$prefix}black) !important;
+  }
+}
+
+a.text-primary-hover {
+  &:hover {
+    color: var(--#{$prefix}primary) !important;
+  }
+
+  &:focus {
+    color: mix($primary, $black, 50%);
+  }
+}
+
+a.text-secondary-hover {
+  &:hover {
+    color: var(--#{$prefix}secondary) !important;
+  }
+
+  &:focus {
+    color: mix($secondary, $black, 50%);
+  }
+}
+
 
 a {
   &:hover .text-primary-hover {
