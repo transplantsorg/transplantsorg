@@ -10,12 +10,12 @@
         </a>
       </div>
       <div class="nav-item dropdown dropdown-click-required order-2 order-lg-2">
-        <a onclick="document.body.classList.toggle('overflow-hidden')" class="nav-link align-items-center" role="button" data-bs-parent="#navbarMain" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-expanded="false" aria-controls="navbarSearch">
+        <a onclick="window.setTimeout(function(){if(document.getElementById('navbarMainMobile').classList.contains('show') || document.getElementById('navbarSearch').classList.contains('show')){document.body.classList.add('overflow-hidden')}else{document.body.classList.remove('overflow-hidden')}},400)" class="nav-link align-items-center" role="button" data-bs-parent="#navbarMain" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-expanded="false" aria-controls="navbarSearch">
           <i class="bi bi-search mx-auto"></i>
         </a>
       </div>
       <button
-        onclick="document.body.classList.toggle('overflow-hidden')" 
+        onclick="window.setTimeout(function(){if(document.getElementById('navbarMainMobile').classList.contains('show') || document.getElementById('navbarSearch').classList.contains('show')){document.body.classList.add('overflow-hidden')}else{document.body.classList.remove('overflow-hidden')}},400)" 
         class="navbar-toggler collapsed d-block d-lg-none ms-0 order-3 order-lg-1"
         type="button"
         data-bs-parent="#navbarMain" 
@@ -108,12 +108,12 @@
                 </div>
                 <div class="d-none d-xxl-block col-xxl-3 pt-5 pb-5 border-start">
                   <h5 class="mb-5"><a class="text-secondary text-black-hover" href="#">Featured Story</a></h5>
-                  <div class="card border-0 shadow-none">
-                    <div class="blob blob-1 blob-gradient mb-3" style="background-image: url(@@webRoot/assets/images/people/calvin-henry.png)" /></div>
-                    <div class="card-body p-0">
-                      <a class="d-block fw-medium" href="#">Calvin Henry (Lung '12)</a>
-                      <p class="card-text">How a generous Donor helped him return to running half-marathons</p>
-                      <a class="stretched-link fw-medium" href="#">Read Calvin's Story <i class="bi bi-arrow-right-short"></i></a>
+                  <div class="card card-demphasize border-0 shadow-none">
+                    <div class="blob blob-1 blob-gradient-1 mb-3" style="background-image: url(@@webRoot/assets/images/people/calvin-henry.png)" /></div>
+                    <div class="card-body p-0" style="max-width: 90%;">
+                      <a class="d-block pb-1 fw-medium" href="#">Calvin Henry (Lung '12)</a>
+                      <div class="pb-2 text-gray-700">How a generous Donor helped him return to running half-marathons</div>
+                      <a class="stretched-link text-gray-800 text-primary-hover fw-medium text-decoration-fade" href="#">Read His Story <i class="bi bi-arrow-right-short"></i></a>
                     </div>
                   </div>
                 </div>
@@ -1169,4 +1169,6 @@
 </nav>
 
 <div class="navbar-main-mobile-offset"></div>
-<a onclick="document.body.classList.toggle('overflow-hidden')" class="navbar-main-mobile-overlay collapsed" data-bs-toggle="collapse" data-bs-target="#navbarMainMobile" aria-controls="navbarMainMobile" aria-expanded="false"></a>
+<a onclick="window.setTimeout(function(){if(document.getElementById('navbarMainMobile').classList.contains('show') || document.getElementById('navbarSearch').classList.contains('show')){document.body.classList.add('overflow-hidden')}else{document.body.classList.remove('overflow-hidden')}},10)" class="navbar-main-mobile-overlay collapsed" data-bs-toggle="collapse" data-bs-target="#navbarMainMobile" aria-controls="navbarMainMobile" aria-expanded="false"></a>
+  
+<a onclick="window.setTimeout(function(){if(document.getElementById('navbarMainMobile').classList.contains('show') || document.getElementById('navbarSearch').classList.contains('show')){document.body.classList.add('overflow-hidden')}else{document.body.classList.remove('overflow-hidden')}},10)" class="navbar-main-mobile-overlay collapsed" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false"></a>

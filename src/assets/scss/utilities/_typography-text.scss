@@ -63,6 +63,27 @@ a.text-black-hover {
   }
 }
 
+a.text-primary-hover {
+  &:hover {
+    color: var(--#{$prefix}primary) !important;
+  }
+
+  &:focus {
+    color: mix($primary, $black, 50%);
+  }
+}
+
+a.text-secondary-hover {
+  &:hover {
+    color: var(--#{$prefix}secondary) !important;
+  }
+
+  &:focus {
+    color: mix($secondary, $black, 50%);
+  }
+}
+
+
 a {
   &:hover .text-primary-hover {
     color: var(--#{$prefix}primary) !important;
