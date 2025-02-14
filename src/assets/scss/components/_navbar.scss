@@ -729,6 +729,10 @@
             .card-demphasize {
               font-size: 0.95rem;
             }
+
+            .blob {
+              max-width: 175px;
+            }
           }
         }
       }
@@ -760,53 +764,7 @@
 
 
 
-.blob-1 {
-  width: calc(129px * 1.25);
-  height: calc(103px * 1.25);
-  display: block;
-  background-position: center bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjQuNyA1MS4zIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuMi4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjAgQnVpbGQgMTE2KSAgLS0+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zdDAgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iLjYiIHkxPSI3NjguNiIgeDI9IjEuNiIgeTI9Ijc2OS42IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC00MiAzODY4Ni43KSBzY2FsZSg2My40IC01MC4zKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDAwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjIuMyw2LjFjNC4xLDYuNC0xLjcsMTkuNC04LjcsMjguOC03LjEsOS40LTE1LjUsMTUuMy0yNC40LDE1LjYtOC45LjMtMTguNC00LjktMjMuOS0xMy40Qy0uMiwyOC42LTEuNywxNi44LDMuMSwxMCw3LjgsMy4zLDE4LjgsMS42LDMxLjQuN2MxMi42LS45LDI2LjctMS4xLDMwLjksNS40WiIvPgogIDxtZXRhZGF0YT4KICAgIDxzZncgeG1sbnM9Imh0dHA6Ly9ucy5hZG9iZS5jb20vU2F2ZUZvcldlYi8xLjAvIj4KICAgICAgPHNsaWNlcy8+CiAgICAgIDxzbGljZVNvdXJjZUJvdW5kcyB4PSIwLjI1IiB5PSItNTAuNTEiIHdpZHRoPSI2My40NSIgaGVpZ2h0PSI1MC4yNyIgYm90dG9tTGVmdE9yaWdpbj0idHJ1ZSIvPgogICAgPC9zZnc+CiAgPC9tZXRhZGF0YT4KPC9zdmc+);
-}
 
-.card {
-  .blob {
-    -webkit-transition: all 1.5s ease !important;
-    -moz-transition: all 1.5s ease !important;
-    -ms-transition: all 1.5s ease !important;
-    -o-transition: all 1.5s ease !important;
-    transition: all 1.5s ease !important;
-
-    &.blob-gradient-1 {
-      background-color: #bdc3c7;
-      background-color: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
-      background-color: linear-gradient(to bottom, #2c3e50, #bdc3c7);
-    }
-
-    &.blob-gradient-2 {
-      background-color: #0F2027;  /* fallback for old browsers */
-      background-color: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-      background-color: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-
-    &.blob-gradient-3 {
-      background-color: #544a7d;  /* fallback for old browsers */
-      background-color: -webkit-linear-gradient(to top, #ffd452, #544a7d);  /* Chrome 10-25, Safari 5.1-6 */
-      background-color: linear-gradient(to top, #ffd452, #544a7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-  }
-
-  &:hover {
-    .blob {
-      &.blob-gradient-1 {
-        background-color: #544a7d;  /* fallback for old browsers */
-        background-color: -webkit-linear-gradient(to top, #ffd452, #544a7d);  /* Chrome 10-25, Safari 5.1-6 */
-        background-color: linear-gradient(to top, #ffd452, #544a7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
-    }
-  }
-}
 
 
 
