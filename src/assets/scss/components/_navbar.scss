@@ -667,16 +667,40 @@
             }
 
             &.show {
-              background: rgba(var(--#{$prefix}primary-rgb), .1);
+              background: mix($gray-100, $gray-200, 50%);
               border-radius: 0.3125rem;
               border-bottom: 0;
-              color: var(--#{$prefix}primary);
+              color: var(--#{$prefix}black);
 
               &:hover {
                 &::before {
                   background-color: transparent;
                 }
               }
+            }
+          }
+        }
+
+        .dropdown {
+          .dropdown-menu {
+            .vstack {
+              a {
+                margin: -0.5rem;
+                padding: 0.5rem;
+                color: var(--#{$prefix}black);
+
+                &:hover, &:focus {
+                  background-color: mix($gray-100, $gray-200, 50%);
+                  border-radius: 0.5rem;
+                  color: var(--#{$prefix}primary);
+                }
+              }
+            }
+            
+
+
+            .border-end {
+              border-color: #dee2e6 !important;
             }
           }
         }

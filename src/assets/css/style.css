@@ -311,6 +311,11 @@ h3,
   letter-spacing: 0.01rem;
 }
 
+h5, .h5 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .display-1,
 .display-2,
 .display-3,
@@ -18318,7 +18323,7 @@ textarea.form-control-lg {
   --to-body-color: #060708;
   /*  .bg-dark { background-color: $gray-900; }*/
   --to-accordion-bg: #fff;
-  --to-border-color: #e9ecef;
+  --to-border-color: #ced4da;
   --to-btn-ghost-bg: #dee2e6;
   --to-card-background: #fff;
   --to-input-check-border: var(--to-input-border);
@@ -21075,13 +21080,26 @@ input::-webkit-inner-spin-button {
     background-color: var(--to-primary);
   }
   .navbar.navbar-main .navbar-nav .nav-item .nav-link.show {
-    background: rgba(var(--to-primary-rgb), 0.1);
+    background: #f1f3f5;
     border-radius: 0.3125rem;
     border-bottom: 0;
-    color: var(--to-primary);
+    color: var(--to-black);
   }
   .navbar.navbar-main .navbar-nav .nav-item .nav-link.show:hover::before {
     background-color: transparent;
+  }
+  .navbar.navbar-main .navbar-nav .dropdown .dropdown-menu .vstack a {
+    margin: -0.5rem;
+    padding: 0.5rem;
+    color: var(--to-black);
+  }
+  .navbar.navbar-main .navbar-nav .dropdown .dropdown-menu .vstack a:hover, .navbar.navbar-main .navbar-nav .dropdown .dropdown-menu .vstack a:focus {
+    background-color: #f1f3f5;
+    border-radius: 0.5rem;
+    color: var(--to-primary);
+  }
+  .navbar.navbar-main .navbar-nav .dropdown .dropdown-menu .border-end {
+    border-color: #dee2e6 !important;
   }
   .headroom--pinned.headroom--not-top .navbar.navbar-main {
     box-shadow: 0 2px 5px rgba(0, 29, 56, 0.05);

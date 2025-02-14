@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 36 36">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        fill: #de5354;
+      }
+
+      .st1, .st2, .st3, .st4, .st5 {
+        fill-rule: evenodd;
+      }
+
+      .st2 {
+        fill: #ebb15e;
+      }
+
+      .st6 {
+        fill: #cddfd1;
+      }
+
+      .st3 {
+        fill: #d79d4a;
+      }
+
+      .st4 {
+        fill: #fec574;
+      }
+
+      .st5 {
+        fill: #f26768;
+      }
+
+      .st7 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" x=".9" y="13" width="34" height="9.2" transform="translate(-3.3 4.1) rotate(-12)"/>
+    </clipPath>
+  </defs>
+  <path class="st6" d="M17.9,2h0c8.8,0,16,7.2,16,16h0c0,8.8-7.2,16-16,16h0c-8.8,0-16-7.2-16-16h0C1.9,9.2,9.1,2,17.9,2Z"/>
+  <g class="st7">
+    <g>
+      <path class="st3" d="M17.7,18.2c.2,0,.4.2.4.4v3.4c0,.2-.3.4-.5.4-.2,0-.4-.2-.4-.4v-3.4c0-.2.3-.4.5-.4h0ZM18.3,18.1c-.2,0-.3.3-.2.5l1.5,3.1c0,.2.3.3.5.2.2,0,.3-.3.2-.5l-1.5-3.1c0-.2-.3-.3-.5-.2h0Z"/>
+      <path class="st5" d="M32.5,11.1l-11.1,2.4c-.2-.7-.9-1.1-1.6-1-.7.2-1.2.9-1,1.6l1,4.7c.2.7.9,1.2,1.6,1.1.7-.2,1.2-.9,1-1.6l11.1-2.4c.8-.2,1.2-.9,1.1-1.7l-.4-2c-.2-.8-.9-1.2-1.7-1.1h0ZM2,17.6l11.1-2.4c-.1-.7.3-1.4,1.1-1.6.7-.2,1.4.3,1.6,1l1,4.7c.2.7-.3,1.5-1,1.6-.7.2-1.4-.3-1.6-1l-11.1,2.4c-.8.2-1.5-.3-1.7-1.1l-.4-2c-.2-.8.3-1.5,1.1-1.7Z"/>
+      <path class="st1" d="M22.4,18.3l11.1-2.4c.8-.2,1.2-.9,1.1-1.7l-.2-.9-11.8,2.5c-.4,0-.7.5-.6.9l.3,1.5h0ZM1.1,20.4l11.8-2.5c.4,0,.8.2.9.6l.3,1.5-11.1,2.4c-.8.2-1.5-.3-1.7-1.1l-.2-.9Z"/>
+      <path class="st4" d="M16,14.2c.2,0,.4,0,.4.3l1,4.9c0,.2,0,.4-.3.5-.2,0-.4,0-.5-.3l-1-4.9c0-.2,0-.4.3-.5Z"/>
+      <path class="st2" d="M16.7,14c.2,0,.4,0,.5.3l1,4.9c0,.2,0,.4-.3.5-.2,0-.4,0-.5-.3l-1-4.9c0-.2,0-.4.3-.5Z"/>
+      <path class="st4" d="M17.5,13.9c.2,0,.4,0,.4.3l1,4.9c0,.2,0,.4-.3.5-.2,0-.4,0-.5-.3l-1-4.9c0-.2,0-.4.3-.5Z"/>
+      <path class="st2" d="M18.2,13.7c.2,0,.4,0,.5.3l1,4.9c0,.2,0,.4-.3.5-.2,0-.4,0-.5-.3l-1-4.9c0-.2,0-.4.3-.5Z"/>
+    </g>
+  </g>
+  <metadata>
+    <sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+      <slices/>
+      <sliceSourceBounds x="0.31" y="2.01" width="35.17" height="32" bottomLeftOrigin="true"/>
+    </sfw>
+  </metadata>
+</svg>
