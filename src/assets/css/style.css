@@ -133,13 +133,14 @@
 }
 
 hr.border-top {
-  border-top: var(--to-border-width) var(--to-border-style) var(--to-border-color) !important;
+  border-style: solid;
+  color: transparent;
 }
 hr.border-top.border-dashed {
-  border-top: var(--to-border-width) dashed var(--to-border-color) !important;
+  border-top-style: dashed !important;
 }
 hr.border-top.border-dotted {
-  border-top: var(--to-border-width) dotted var(--to-border-color) !important;
+  border-top-style: dotted !important;
 }
 
 .small-divider {
