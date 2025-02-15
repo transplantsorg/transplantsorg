@@ -26,6 +26,10 @@
       &:hover, &:focus {
         color: var(--#{$prefix}white);
       }
+
+      .icon-transplant-type {
+        width: 30px;
+      }
     }
   }
 

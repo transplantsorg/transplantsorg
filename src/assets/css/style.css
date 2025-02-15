@@ -20314,6 +20314,9 @@ textarea.form-control-lg {
 .footer .nav-footer .nav-link:hover, .footer .nav-footer .nav-link:focus {
   color: var(--to-white);
 }
+.footer .nav-footer .nav-link .icon-transplant-type {
+  width: 30px;
+}
 .footer .social-links a {
   padding: 0.9rem;
   border: 0.125rem solid rgba(206, 212, 218, 0.3);
