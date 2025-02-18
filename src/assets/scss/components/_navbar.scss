@@ -8,7 +8,8 @@
   transition: all 0.25s ease !important;
   background-color: var(--#{$prefix}navbar-bg);
   padding: 0.5rem 0;
-  box-shadow: $box-shadow-sm;
+  box-shadow: 0px 16px 16px -1px rgba(10,22,70,.1),0px 0px 1px 0px rgba(10,22,70,.06);
+/*  box-shadow: $box-shadow-sm;*/
 
   &.navbar-transparent {
     z-index: 1;
@@ -764,38 +765,6 @@
 
 
 
-
-
-
-
-
-// Side Navbar
-
-@include media-breakpoint-down(lg) {
-  .navbar {
-    .nav-top-wrap {
-      flex-direction: row;
-
-      .dropdown {
-        position: static;
-      }
-
-      .dropdown-menu {
-        position: absolute;
-        right: 0;
-        margin: 2.25rem 0.75rem !important;
-        
-        .dropdown-submenu .dropdown-menu {
-          position: relative;
-          right: 0;
-          top: -7px !important;
-          padding: 0 !important;
-        }
-      }
-    }
-  }
-}
-
 // Navbar Overflow and Overlay
 body.overflow-hidden {
   overflow: hidden !important;
@@ -838,6 +807,35 @@ body.overflow-hidden {
 
     &.collapsed {
       z-index: -1;
+    }
+  }
+}
+
+
+
+// Side Navbar
+
+@include media-breakpoint-down(lg) {
+  .navbar {
+    .nav-top-wrap {
+      flex-direction: row;
+
+      .dropdown {
+        position: static;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        right: 0;
+        margin: 2.25rem 0.75rem !important;
+        
+        .dropdown-submenu .dropdown-menu {
+          position: relative;
+          right: 0;
+          top: -7px !important;
+          padding: 0 !important;
+        }
+      }
     }
   }
 }
