@@ -643,7 +643,7 @@
           .nav-link {
             position: relative;
             overflow-y: hidden;
-            padding: 0.4375rem 0.4375rem 0.4375rem 0.625rem;
+            padding: 0.625rem 0.5rem 0.625rem 0.87rem;
             border-bottom: 0px solid transparent;
             border-radius: 0;
             font-size: 1.05rem;
@@ -677,7 +677,7 @@
 
             &.show {
               background: mix($gray-100, $gray-200, 50%);
-              border-radius: 0.3125rem;
+              border-radius: 100rem;
               border-bottom: 0;
               color: var(--#{$prefix}black);
 

@@ -21129,7 +21129,7 @@ input::-webkit-inner-spin-button {
   .navbar.navbar-main .navbar-nav .nav-item .nav-link {
     position: relative;
     overflow-y: hidden;
-    padding: 0.4375rem 0.4375rem 0.4375rem 0.625rem;
+    padding: 0.625rem 0.5rem 0.625rem 0.87rem;
     border-bottom: 0px solid transparent;
     border-radius: 0;
     font-size: 1.05rem;
@@ -21158,7 +21158,7 @@ input::-webkit-inner-spin-button {
   }
   .navbar.navbar-main .navbar-nav .nav-item .nav-link.show {
     background: #f1f3f5;
-    border-radius: 0.3125rem;
+    border-radius: 100rem;
     border-bottom: 0;
     color: var(--to-black);
   }
