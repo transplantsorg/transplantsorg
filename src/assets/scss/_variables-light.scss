@@ -4,14 +4,10 @@
 [data-bs-theme="light"] {
 
   // Body
-/*  $body-bg: $gray-100;*/
   --#{$prefix}body-bg: #{$white};
 
-/*  $body-color: $gray-900;*/
   --#{$prefix}body-color: #{$gray-1000};
   
-/*  .bg-dark { background-color: $gray-900; }*/
-
   ::selection {
     background-color: $gray-300;
     color: $gray-900;

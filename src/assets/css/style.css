@@ -18384,11 +18384,8 @@ textarea.form-control-lg {
 }
 :root,
 [data-bs-theme=light] {
-  /*  $body-bg: $gray-100;*/
   --to-body-bg: #fff;
-  /*  $body-color: $gray-900;*/
   --to-body-color: #060708;
-  /*  .bg-dark { background-color: $gray-900; }*/
   --to-accordion-bg: #fff;
   --to-border-color: #ced4da;
   --to-btn-ghost-bg: #dee2e6;
@@ -20670,9 +20667,9 @@ input::-webkit-inner-spin-button {
 .navbar .navbar-toggler .icon-bar {
   transition: all 0.25s ease !important;
   background-color: var(--to-black);
+  display: block;
   width: 24px;
   height: 2px;
-  display: block;
   margin-top: 0.25rem;
   margin-right: auto;
   margin-left: auto;
@@ -20919,8 +20916,8 @@ input::-webkit-inner-spin-button {
   color: #d6dbe0;
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link {
-  padding: 1rem 0;
   display: inline-block;
+  padding: 1rem 0;
 }
 .navbar.navbar-main .dropdown-menu .nav-item .dropdown-menu .nav-item .dropdown-menu {
   background-color: var(--to-white);
@@ -20943,9 +20940,9 @@ input::-webkit-inner-spin-button {
   top: 0;
   left: 0;
   background-color: var(--to-white);
-  height: 100%;
-  width: 100%;
   display: flex;
+  width: 100%;
+  height: 100%;
 }
 .navbar .navbar-search > .col-*:not(:first-child) {
   transition: visibility 0s 0.25s, opacity 0.25s linear;
@@ -21045,11 +21042,11 @@ input::-webkit-inner-spin-button {
     position: absolute;
     top: 100%;
     left: 0;
+    background-color: var(--to-navbar-bg);
     width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 0;
-    background-color: var(--to-navbar-bg);
     border-top: 1px solid #dee2e6;
     border-bottom: 1px solid #dee2e6;
     border-radius: 0;
@@ -21151,9 +21148,9 @@ input::-webkit-inner-spin-button {
     bottom: 0;
     left: 0.625rem;
     background-color: transparent;
+    display: block;
     width: calc(100% - 0.4375rem - 0.625rem);
     height: 0.125rem;
-    display: block;
   }
   .navbar.navbar-main .navbar-nav .nav-item .nav-link:hover::before {
     background-color: var(--to-primary);
@@ -21233,9 +21230,9 @@ body.overflow-hidden {
   opacity: 0;
   visibility: visible;
   background-color: transparent;
+  display: block;
   width: 100%;
   height: 70px;
-  display: block;
 }
 @media (min-width: 992px) {
   .navbar-mobile-offset {
@@ -26830,6 +26827,10 @@ body {
   cursor: pointer;
 }
 
+img {
+  pointer-events: none;
+}
+
 svg.logo .icon {
   fill: #050505;
 }
@@ -26914,6 +26915,7 @@ ul.timeline > li:last-child {
   padding-bottom: 0;
 }
 
+/* Geeks */
 /*::-webkit-scrollbar {
   background: transparent;
   background: $gray-100;

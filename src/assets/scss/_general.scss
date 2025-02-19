@@ -1,4 +1,4 @@
-// General Styles
+// General
 
 body {
   line-height: $line-height-1;
@@ -6,6 +6,10 @@ body {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+img {
+  pointer-events: none;
 }
 
 svg.logo {
@@ -155,7 +159,7 @@ ul.timeline {
 
 
 
-
+/* Geeks */
 
 /*::-webkit-scrollbar {
   background: transparent;
