@@ -21157,6 +21157,9 @@ input::-webkit-inner-spin-button {
   .navbar.navbar-main .navbar-nav .dropdown .dropdown-menu a:focus {
     color: #133a7d;
   }
+  .navbar.navbar-main .navbar-nav .dropdown .dropdown-menu .featured-transplant-types {
+    font-size: 1.05rem;
+  }
 }
 @media (min-width: 992px) and (min-width: 1200px) {
   .navbar.navbar-main .navbar-nav .dropdown .dropdown-menu .featured-transplant-types {

@@ -708,6 +708,8 @@
             }
 
             .featured-transplant-types {
+              font-size: 1.05rem;
+
               @include media-breakpoint-up(xl) {
                 font-size: rfs-fluid-value(1.15rem);
               }
