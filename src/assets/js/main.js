@@ -1,6 +1,4 @@
-//
-// Main js
-//
+// Main.js
 
 (function () {
 
@@ -15,35 +13,6 @@
   const headroom = new Headroom(element, options);
   headroom.init();
 
-  // Multi level menu dropdown
-  // const dropdownLinks = document.querySelectorAll(".dropdown-menu a.dropdown-toggle");
-  // dropdownLinks.forEach(function (dropdownLink) {
-  //   dropdownLink.addEventListener("click", function (e) {
-  //     if (!this.nextElementSibling.classList.contains("show")) {
-  //       const parentDropdownMenu = this.closest(".dropdown-menu");
-  //       const currentlyOpenSubMenus = parentDropdownMenu.querySelectorAll(".show");
-  //       currentlyOpenSubMenus.forEach(function (openSubMenu) {
-  //         openSubMenu.classList.remove("show");
-  //       });
-  //     }
-
-  //     const subMenu = this.nextElementSibling;
-  //     subMenu.classList.toggle("show");
-
-  //     const parentDropdown = this.closest("li.nav-item.dropdown.show");
-  //     if (parentDropdown) {
-  //       parentDropdown.addEventListener("hidden.bs.dropdown", function (e) {
-  //         const dropdownSubMenus = document.querySelectorAll(".dropdown-submenu .show");
-  //         dropdownSubMenus.forEach(function (dropdownSubMenu) {
-  //           dropdownSubMenu.classList.remove("show");
-  //         });
-  //       });
-  //     }
-
-  //     e.stopPropagation();
-  //   });
-  // });
-
   // Default Tooltip
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
   tooltipTriggerList.forEach(function (tooltipTriggerEl) {
@@ -56,17 +25,15 @@
     new bootstrap.Popover(popoverTriggerEl);
   });
 
-  // Radio button - payment method switch
-  // Get references to the radio buttons and payment elements
+  // Radio Button Payment Method Switch
   const cardRadioOne = document.querySelector("#cardRadioone");
   const cardRadioTwo = document.querySelector("#cardRadioTwo");
   const internetPayment = document.querySelector("#internetpayment");
   const cardPayment = document.querySelector("#cardpayment");
 
-  // Check if both radio buttons exist
+  // Check if Two Radio Buttons
   if (cardRadioOne && cardRadioTwo) {
     internetPayment.style.display = "none";
-
     // Add event listener to the first radio button
     cardRadioOne.addEventListener("change", function () {
       if (this.checked) {
@@ -74,7 +41,6 @@
         internetPayment.style.display = "none";
       }
     });
-
     // Add event listener to the second radio button
     cardRadioTwo.addEventListener("change", function () {
       if (this.checked) {
@@ -84,7 +50,7 @@
     });
   }
 
-  // Password field strength
+  // Password Field Strength
   const passwordFields = document.querySelectorAll(".password-field input");
   passwordFields.forEach(function (passwordField) {
     passwordField.addEventListener("keyup", function () {
@@ -95,29 +61,24 @@
       outputTarget.classList.add("password-field", "level" + strength);
     });
   });
-
   function checkPasswordStrength(password) {
     var strength = 0;
-
     // If password is 6 characters or longer
     if (password.length >= 6) {
       strength += 1;
     }
-
     // If password contains both lower and uppercase characters, increase strength value.
     if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
       strength += 1;
     }
-
     // If it has numbers and characters, increase strength value.
     if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) {
       strength += 1;
     }
-
     return strength;
   }
 
-  // Menu toggle for admin dashboard
+  // Menu Toggle for Admin Dashboard
   const navToggle = document.getElementById("nav-toggle");
   const dbWrapper = document.getElementById("db-wrapper");
   if (navToggle && dbWrapper) {
@@ -127,7 +88,7 @@
     });
   }
 
-  // Print for invoice
+  // Print for Invoice
   const invoice = document.getElementById("invoice");
   if (invoice) {
     const printLink = invoice.querySelector(".print-link");
@@ -136,7 +97,7 @@
     });
   }
 
-  // Sidenav fixed for docs
+  // Sidenav Fixed for Docs
   const sidebarNavLinks = document.querySelectorAll(".sidebar-nav-fixed a");
   sidebarNavLinks.forEach(function (link) {
     link.addEventListener("click", function (event) {
@@ -163,9 +124,8 @@
     });
   });
 
-  // Check all for checkbox
+  // Check All for Checkbox
   const checkAll = document.querySelector("#checkAll");
-
   if (checkAll) {
     checkAll.addEventListener("click", function () {
       var checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -177,7 +137,7 @@
     });
   }
 
-  // Btn icon for active
+  // Btn Icon for Active
   const btnIcons = document.querySelectorAll("#btn-icon .btn-icon");
   if (btnIcons) {
     btnIcons.forEach(function (btnIcon) {
@@ -190,7 +150,6 @@
       });
     });
   }
-
   function getSiblings(elem) {
     const siblings = [];
     let sibling = elem.parentNode.firstChild;
@@ -202,7 +161,7 @@
     return siblings;
   }
 
-  // Stopevent for dropdown
+  // Stopevent for Dropdown
   const stopEvents = document.querySelectorAll(".stopevent");
   stopEvents.forEach(function (stopEvent) {
     stopEvent.addEventListener("click", function (e) {
@@ -216,7 +175,7 @@
     new Tagify(tagsInput);
   }
 
-  // Validation js
+  // Validation JS
   const forms = document.querySelectorAll(".needs-validation");
   forms.forEach(function (form) {
     form.addEventListener(
@@ -226,7 +185,6 @@
           event.preventDefault();
           event.stopPropagation();
         }
-
         form.classList.add("was-validated");
       },
       false,
@@ -259,7 +217,6 @@
       alert("Nice, you triggered this alert message!", "success");
     });
   }
-
   function alert(message, type) {
     const wrapper = document.createElement("div");
     wrapper.innerHTML =
@@ -267,7 +224,7 @@
     liveAlertPlaceholder.appendChild(wrapper);
   }
 
-  // Slider using noUiSlider
+  // Slider Using noUiSlider
   const sliderElement = document.getElementById("slider");
   if (sliderElement) {
     noUiSlider.create(sliderElement, {
@@ -285,6 +242,7 @@
     });
   }
 
+  // Btn Scroll Top
   var progressWrap = document.querySelector(".btn-scroll-top");
   if (progressWrap != null) {
     var progressPath = document.querySelector(".btn-scroll-top path");
@@ -318,7 +276,6 @@
   }
   // Price Range Slider
   var priceRangeSlider = document.getElementById("priceRange");
-
   if (priceRangeSlider) {
     noUiSlider.create(priceRangeSlider, {
       connect: true,
@@ -335,18 +292,14 @@
         prefix: "$",
       }),
     });
-
     var priceRangeValueElement = document.getElementById("priceRange-value");
-
     priceRangeSlider.noUiSlider.on("update", function (values) {
       priceRangeValueElement.innerHTML = values.join(" - ");
     });
   }
 
   // Experienc Range Slider
-
   var expRangeSlider = document.getElementById("expRange");
-
   if (expRangeSlider) {
     noUiSlider.create(expRangeSlider, {
       connect: true,
@@ -359,9 +312,7 @@
       },
       format: wNumb({}),
     });
-
     var expRangeValueElement = document.getElementById("expRange-value");
-
     expRangeSlider.noUiSlider.on("update", function (values) {
       expRangeValueElement.innerHTML = values.join(" - ");
     });

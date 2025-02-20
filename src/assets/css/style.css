@@ -227,9 +227,9 @@ hr.border-top.border-dotted {
   display: block;
 }
 .blob.blob-shape-1 {
+  background-position: right bottom;
   -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjQuNyA1MS4zIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuMi4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjAgQnVpbGQgMTE2KSAgLS0+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zdDAgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iLjYiIHkxPSI3NjguNiIgeDI9IjEuNiIgeTI9Ijc2OS42IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC00MiAzODY4Ni43KSBzY2FsZSg2My40IC01MC4zKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDAwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjIuMyw2LjFjNC4xLDYuNC0xLjcsMTkuNC04LjcsMjguOC03LjEsOS40LTE1LjUsMTUuMy0yNC40LDE1LjYtOC45LjMtMTguNC00LjktMjMuOS0xMy40Qy0uMiwyOC42LTEuNywxNi44LDMuMSwxMCw3LjgsMy4zLDE4LjgsMS42LDMxLjQuN2MxMi42LS45LDI2LjctMS4xLDMwLjksNS40WiIvPgogIDxtZXRhZGF0YT4KICAgIDxzZncgeG1sbnM9Imh0dHA6Ly9ucy5hZG9iZS5jb20vU2F2ZUZvcldlYi8xLjAvIj4KICAgICAgPHNsaWNlcy8+CiAgICAgIDxzbGljZVNvdXJjZUJvdW5kcyB4PSIwLjI1IiB5PSItNTAuNTEiIHdpZHRoPSI2My40NSIgaGVpZ2h0PSI1MC4yNyIgYm90dG9tTGVmdE9yaWdpbj0idHJ1ZSIvPgogICAgPC9zZnc+CiAgPC9tZXRhZGF0YT4KPC9zdmc+);
   mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjQuNyA1MS4zIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuMi4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjAgQnVpbGQgMTE2KSAgLS0+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zdDAgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iLjYiIHkxPSI3NjguNiIgeDI9IjEuNiIgeTI9Ijc2OS42IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC00MiAzODY4Ni43KSBzY2FsZSg2My40IC01MC4zKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDAwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjIuMyw2LjFjNC4xLDYuNC0xLjcsMTkuNC04LjcsMjguOC03LjEsOS40LTE1LjUsMTUuMy0yNC40LDE1LjYtOC45LjMtMTguNC00LjktMjMuOS0xMy40Qy0uMiwyOC42LTEuNywxNi44LDMuMSwxMCw3LjgsMy4zLDE4LjgsMS42LDMxLjQuN2MxMi42LS45LDI2LjctMS4xLDMwLjksNS40WiIvPgogIDxtZXRhZGF0YT4KICAgIDxzZncgeG1sbnM9Imh0dHA6Ly9ucy5hZG9iZS5jb20vU2F2ZUZvcldlYi8xLjAvIj4KICAgICAgPHNsaWNlcy8+CiAgICAgIDxzbGljZVNvdXJjZUJvdW5kcyB4PSIwLjI1IiB5PSItNTAuNTEiIHdpZHRoPSI2My40NSIgaGVpZ2h0PSI1MC4yNyIgYm90dG9tTGVmdE9yaWdpbj0idHJ1ZSIvPgogICAgPC9zZnc+CiAgPC9tZXRhZGF0YT4KPC9zdmc+);
-  background-position: right bottom;
 }
 .blob.blob-shape-1::before {
   padding-top: 79.3%;
@@ -332,14 +332,39 @@ hr.border-top.border-dotted {
     transform: translateX(-50%);
   }
 }
-@keyframes marquee-left {
-  to {
-    transform: translateX(0);
-  }
-  from {
-    transform: translateX(-50%);
-  }
+a {
+  transition: all 0.5s ease !important;
 }
+a.text-decoration-fade {
+  -webkit-text-decoration: underline solid transparent;
+          text-decoration: underline solid transparent;
+  transition: -webkit-text-decoration 0.5s ease;
+  transition: text-decoration 0.5s ease;
+  transition: text-decoration 0.5s ease, -webkit-text-decoration 0.5s ease;
+}
+a.text-decoration-fade:hover, a.text-decoration-fade:focus {
+  -webkit-text-decoration: underline solid currentcolor;
+          text-decoration: underline solid currentcolor;
+}
+a.text-body:hover {
+  color: var(--to-primary) !important;
+}
+a.text-black-hover:hover, a.text-black-hover:focus {
+  color: var(--to-black) !important;
+}
+a.text-primary-hover:hover {
+  color: var(--to-primary) !important;
+}
+a.text-primary-hover:focus {
+  color: #133a7d;
+}
+a.text-secondary-hover:hover {
+  color: var(--to-secondary) !important;
+}
+a.text-secondary-hover:focus {
+  color: #095c45;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, ul, li, blockquote, i, b, span {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -347,7 +372,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, ul, li, blockquote, i, b, span {
   font-feature-settings: "kern";
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  letter-spacing: 0.01rem;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
   display: block;
 }
 
@@ -365,13 +405,6 @@ h5, .h5 {
   text-transform: uppercase;
 }
 
-.display-1,
-.display-2,
-.display-3,
-.display-4 {
-  letter-spacing: 0.01rem;
-}
-
 .lead {
   letter-spacing: 0.01rem;
 }
@@ -380,56 +413,8 @@ h5, .h5 {
   border-left: 4px solid var(--to-gray-200);
 }
 
-a {
-  transition: all 0.5s ease !important;
-}
-a.text-decoration-fade {
-  -webkit-text-decoration: underline solid transparent;
-          text-decoration: underline solid transparent;
-  transition: -webkit-text-decoration 0.5s ease;
-  transition: text-decoration 0.5s ease;
-  transition: text-decoration 0.5s ease, -webkit-text-decoration 0.5s ease;
-}
-a.text-decoration-fade:hover, a.text-decoration-fade:focus {
-  -webkit-text-decoration: underline solid currentcolor;
-          text-decoration: underline solid currentcolor;
-}
-
-a.text-black-hover:hover, a.text-black-hover:focus {
-  color: var(--to-black) !important;
-}
-
-a.text-primary-hover:hover {
-  color: var(--to-primary) !important;
-}
-a.text-primary-hover:focus {
-  color: #133a7d;
-}
-
-a.text-secondary-hover:hover {
-  color: var(--to-secondary) !important;
-}
-a.text-secondary-hover:focus {
-  color: #095c45;
-}
-
-a:hover .text-primary-hover {
-  color: var(--to-primary) !important;
-}
-a.text-body:hover {
-  color: var(--to-primary) !important;
-}
-
-.text-inverse {
-  filter: brightness(0) invert(1);
-}
-
-.text-inverse-dark {
-  filter: brightness(2) invert(1);
-}
-
 .text-inherit {
-  color: var(--to-gray-800);
+  color: var(--to-black);
 }
 .text-inherit:hover {
   color: var(--to-primary) !important;
@@ -438,10 +423,8 @@ a.text-body:hover {
   color: var(--to-primary) !important;
 }
 
-.text-gradient {
-  background: -webkit-linear-gradient(right, #206ef4, #0842a6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.text-inverse {
+  filter: brightness(0) invert(1);
 }
 
 :root,
