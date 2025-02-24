@@ -35,14 +35,19 @@ $grays: map-merge(
   $grays
 );
 
-$primary: #206ef4;
-/*$primary: #2163e8;*/
-$secondary: #0db284;
+/*$primary: #206ef4;*/
+/*$primary: #00686d;*/
+$primary: #00556d;
+/*$secondary: #0db284;*/
+$secondary: #00686d;
 /*$secondary: #65dca4;*/
 /*$secondary: #98cd68;*/
 $success: #03a765;
 /*$info: #0065c3;*/
-$info: #001D38;
+/*$info: #001D38;*/
+/*$info: #001d38;*/
+/*$info: #fdf4ef;*/
+$info: #ecf2f6;
 $warning: #f25d27;
 $danger: #dc2f44;
 $light: $gray-100;
