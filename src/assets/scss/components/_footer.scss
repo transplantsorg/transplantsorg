@@ -1,7 +1,7 @@
 // Footer
 
 .footer {
-  color: $primary;
+  color: $dark;
   font-size: rfs-fluid-value(1.05rem);
   @include media-breakpoint-up(md) { font-size: rfs-fluid-value(1.1rem); }
 
@@ -12,7 +12,7 @@
   }
 
   p {
-    color: rgba(var(--#{$prefix}primary-rgb),.7);
+    color: rgba(var(--#{$prefix}dark-rgb),.7);
     font-size: rfs-fluid-value(1.05rem);
     line-height: $line-height-base;
   }
@@ -20,7 +20,7 @@
   .nav-footer {
     .nav-link {
       padding: 0.2rem 1rem;
-      color: var(--#{$prefix}primary);
+      color: var(--#{$prefix}dark);
       line-height: $line-height-base;
 
       &:hover, &:focus {
@@ -36,9 +36,9 @@
   .social-links a {
     padding: 0.9rem;
     @include media-breakpoint-up(md) { padding: 0.6875rem; }
-    border: 0.125rem solid rgba($primary, 0.3);
+    border: 0.125rem solid rgba($dark, 0.3);
     border-radius: 100rem;
-    color: var(--#{$prefix}primary);
+    color: var(--#{$prefix}dark);
     line-height: $line-height-1;
     
     &:hover, &:focus {
